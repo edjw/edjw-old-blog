@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets");
   eleventyConfig.addPassthroughCopy("uploads")
-  eleventyConfig.addPassthroughCopy("./_headers")
+  eleventyConfig.addPassthroughCopy("_headers")
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -93,28 +93,7 @@ module.exports = function (eleventyConfig) {
   });
 
 
-  /* Markdown Plugins */
-  // let markdownIt = require("markdown-it");
-  // let markdownItAnchor = require("markdown-it-anchor");
-  // let options = {
-  //   html: true,
-  //   breaks: true,
-  //   linkify: true
-  // };
-  // let opts = {
-  //   permalink: false
-  // };
-
-  // eleventyConfig.setLibrary("md", markdownIt(options)
-  //   .use(markdownItAnchor, opts)
-  // );
-
   return {
-    // templateFormats: ["md", "njk", "html", "css", "js"],
-
-    // markdownTemplateEngine: "njk",
-    // htmlTemplateEngine: "njk",
-    // dataTemplateEngine: "njk",
     passthroughFileCopy: true,
     dir: {
       input: ".",
