@@ -4,14 +4,15 @@
 
 [[headers]]
   for = "/*"
-  [headers.values]
+  [header.values]
     X-Frame-Options: DENY
     X-XSS-Protection: 1; mode=block
     X-Content-Type-Options: nosniff
     Referrer-Policy: same-origin
     Content-Security-Policy: default-src 'self'; img-src 'self' data: https://matomo.edjw.co.uk https://*.cloudfront.net; script-src 'self' https://matomo.edjw.co.uk https://*.cloudfront.net https://identity-js.netlify.com https://identity.netlify.com; style-src 'self' 'unsafe-inline' https://*.cloudfront.net https://stackpath.bootstrapcdn.com;
 
-  for = "/admin*"
+[[headers]]
+  for = "/admin/*"
   [headers.values]
     X-Frame-Options: DENY
     X-XSS-Protection: 1; mode=block
