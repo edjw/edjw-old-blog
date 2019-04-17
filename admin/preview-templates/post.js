@@ -16,13 +16,12 @@ const Post = createClass({
             <small>
               <time
                 >${
-                  format(
-                    entry.getIn(["data", "date"], new Date()),
-                    "DD MMM, yyyy"
-                  )
-                }</time
+      format(
+        entry.getIn(["data", "date"], new Date()),
+        "DD MMM, YYYY"
+      )
+      }</time
               >
-              ${" by Author"}
             </small>
           </p>
 
@@ -31,13 +30,13 @@ const Post = createClass({
           ${this.props.widgetFor("body")}
           <p>
             ${
-              entry.getIn(["data", "tags"], []).map(
-                tag =>
-                  html`
+      entry.getIn(["data", "tags"], []).map(
+        tag =>
+          html`
                     <a href="#" rel="tag">${tag}</a>
                   `
-              )
-            }
+      )
+      }
           </p>
         </article>
       </main>
