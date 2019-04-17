@@ -32,6 +32,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets");
   eleventyConfig.addPassthroughCopy("uploads")
+  eleventyConfig.addPassthroughCopy("_headers")
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
