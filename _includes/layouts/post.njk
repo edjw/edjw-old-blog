@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+section: post
+---
+
+{% include "components/scrollbar_indicator.njk" %}
+<article class="h-entry">
+    <div class="mt-3">
+        <h2 class="post-title e-content p-name">{{ title }}</h2>
+    </div>
+    <div class="d-none">
+        <!-- h-entry things -->
+        <a class="u-url" href="{{ page.url }}">
+            <time class="dt-published">{{ page.date }}</time>
+        </a>
+        <a rel="author" class="p-author h-card" href="https://edjohnsonwilliams.co.uk">Ed Johnson-Williams</a>
+    </div>
+    <div class="mt-1">
+        <h5 class="post-date">{{ page.date | readableDate }}</h5>
+        <p class="reading-time">Reading time:<span> {{ content | readingTime }}</span></p>
+    </div>
+    <div class="post-content mt-5 pt-2 border-top">
+        {{ content | safe }}
+    </div>
+</article>

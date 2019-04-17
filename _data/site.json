@@ -1,0 +1,19 @@
+{
+  "title": "Ed Johnson-Williams",
+  "url": "https://edjohnsonwilliams.co.uk",
+  "description": "Ed Johnson-Williams's blog",
+  "repository": "edjw/edjw.github.io",
+  "contentLicence": {
+    "link": "https://creativecommons.org/licenses/by/4.0",
+    "text": "CC BY 4.0 license"
+  },
+  "author": {
+    "name": "Ed Johnson-Williams",
+    "githubUsername": "edjw",
+    "twitterUsername": "_edjw",
+    "mastodonUsername": "@_edjw",
+    "microblogUsername": "edjw"
+  },
+  "indieauth": true,
+  "netlifyCMS": true
+}

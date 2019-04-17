@@ -1,0 +1,7 @@
+---
+layout: layouts/base.njk
+section: home
+---
+{% set postslist = collections.posts %}
+{% include "components/postslist.njk" %}
+{{ layoutContent | safe }}

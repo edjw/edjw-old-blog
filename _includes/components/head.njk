@@ -1,0 +1,44 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="{{ site.description }}">
+  {% if site.author.twitterUsername %}
+  <meta name="twitter:creator" content="{{ site.author.twitterUsername }}">
+  {% endif %}
+
+  <title>{{ site.title }}</title>
+  <meta name="google-site-verification" content="DAXhQi5iFH9IXoyrocu1dZIZklcbWwr87YUCwrOlPMM" />
+
+  {% if site.author.githubUsername %}
+  <link href="https://github.com/{{ site.author.githubUsername }}" rel="me">
+  {% endif %}
+  {% if site.author.microblogUsername %}
+  <link href="https://micro.blog/{{ site.author.microblogUsername }}" rel="me">
+  {% endif %}
+  {% if site.author.mastodonUsername %}
+  <link href="https://mastodon.social/{{ site.author.mastodonUsername }}" rel="me">
+  {% endif %}
+  {% if site.indieauth == true %}
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  {% endif %}
+  {% if site.netlifyCMS == true %}
+  <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {% endif %}
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@1.1.10/css/scroll-hint.css"
+    integrity="sha384-QgWdhuWzC+7oVJvldGuLtpre0frPZJ3nl9FQjhSMchE5blRfVta5IZggUJlwd1qx" crossorigin="anonymous">
+  <script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.min.js"
+    integrity="sha384-zSqpVUzBr2793nyqYIF21Cm6NAojO1qFxgFXs2gvheV1Q6p8Quw/OpM+9CZM6xjz"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/_includes/assets/css/main.css">
+
+
+  <script src="/_includes/assets/js/matomo.js"></script>
+
+</head>

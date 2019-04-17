@@ -1,0 +1,17 @@
+<section>
+	{% for post in postslist | reverse %}
+	<article>
+		<div class="row mt-4 mx-0">
+			<div class="col-12 col-md-3">
+				<h2 class="row post-date"><strong>{{ post.date | readableDate }}</strong></h2>
+			</div>
+			<div class="col-12 col-md-9">
+				<h2 class="row post-title">
+					<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
+				</h2>
+			</div>
+		</div>
+	</article>
+	{% endfor %}
+
+</section>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+{% include "components/head.njk" %}
+
+<body>
+	<div class="container">
+		<header>
+			<div class="row mt-5 mb-4">
+				<div class="col-10 offset-1 col-md-8 offset-md-2 p-0">
+					<h1 class="title">
+						<a class="h-card" rel="me" href="/">{{ site.title }}</a>
+					</h1>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="row">
+				<div class="col-10 offset-1 col-md-8 offset-md-2 p-0">
+					{{ layoutContent | safe }}
+				</div>
+			</div>
+		</main>
+
+		{% include "components/footer.njk" %}
+	</div>
+	  <script src="/_includes/assets/js/main.js"></script>
+
+</body>
+
+</html>
