@@ -4,20 +4,27 @@
         {% if site.author.twitterUsername %}
           <a href="https://twitter.com/{{ site.author.twitterUsername }}" rel="me">Twitter</a>
           <br>
-          {% endif %}
-          {% if site.repository %}
+        {% endif %}
+        {% if site.repository %}
           <a href="https://github.com/{{ site.repository }}">Source</a>
-          {% endif %}
+        {% endif %}
           <br>
           <a href="/feed.xml">RSS</a>
           <br>
-          <a href="/sitemap.xml">Sitemap</a>
-          <a rel="me" href="https://mastodon.social/{{ site.author.mastodonUsername}}"></a>
+        <a href="/sitemap.xml">Sitemap</a>
+        {% if site.author.mastodonUsername %}
+          <link rel="me" href="https://mastodon.social/{{ site.author.mastodonUsername}}">
+        {% endif %}
       </div>
+      {% if site.contentLicence %}
+
       <div class="col-10 offset-1 col-md-6 mt-4 mt-md-0 p-0 border-top">
           <p class="text-md-right">
               Content on this website is under a
-              <a href="{{ site.contentLicence.link }}">{{ site.contentLicence.text }}</a>.</p>
+              <a href="{{ site.contentLicence.link }}">{{ site.contentLicence.text }}</a>.
+          </p>
       </div>
+      {% endif %}
+
   </div>
 </footer>
