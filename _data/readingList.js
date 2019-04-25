@@ -12,7 +12,6 @@ module.exports = async function () {
 			access_token: process.env.POCKET_ACCESS_TOKEN,
 			sort: "newest",
 			detailType: "complete",
-			count: 5
 		}
 	})
 		.then(function (response) {
