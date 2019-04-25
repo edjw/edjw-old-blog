@@ -1,6 +1,6 @@
 ---
 title: A simplistic post on liberalism and Christianity
-date: 2017-06-15 00:00:00Z
+date: 2017-06-14T23:00:00.000Z
 ---
 1. I'm a straight, Christian man who is liberal - both politically and theologically.
 
