@@ -43,7 +43,7 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
 	});
 
-	eleventyConfig.addNunjucksFilter("ISO_8601_Date", dateObj => toISOString(dateObj));
+	eleventyConfig.addNunjucksFilter("ISO_8601_Date", dateObj => dateObj.toISOString());
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
