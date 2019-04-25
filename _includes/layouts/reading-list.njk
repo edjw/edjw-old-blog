@@ -8,18 +8,12 @@ layout: layouts/page.njk
     <div class="col col-md-10">
 
         <p>
-            This is a list of the links that are currently saved in <a href="http://getpocket.com">my Pocket account</a>
+            This is a list of the {{ readingList | length }} (🤦‍) links that are currently saved in <a href="http://getpocket.com">my Pocket account</a>
             that I haven't tagged as 'private'.
         </p>
 
         <p>
-            I've written up how this website pulls in that data using <a
-                href="https://www.11ty.io/docs/data-js">Eleventy
-                Javascript data files
-            </a> and <a href="https://getpocket.com/developer">the Pocket API</a> in <a href="">
-                a blogpost
-                here
-            </a>.
+            I've written up how this website pulls in that data in <a href="">a blogpost here</a>.
         </p>
         <hr>
 
@@ -66,22 +60,5 @@ layout: layouts/page.njk
             {% endfor %}
 
         </ul>
-    </div>
-</div>
-
-
-<hr>
-<div class="row">
-    <div class="col col-md-10">
-        <p>
-            Thanks to <a href="https://bryanlrobinson.com/blog/2019/04/02/using-eleventys-javascript-data-files">Bryan
-                L. Robinson for his blog</a> explaining how to get Eleventy's Javascript data files working with an
-            external API.
-        </p>
-
-        <p>
-            Thanks also to <a href="https://reader.fxneumann.de/plugins/oneclickpocket/auth.php">Felix Neumann's
-                webpage</a> for easily generating a Pocket Access Token.
-        </p>
     </div>
 </div>
