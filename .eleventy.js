@@ -5,7 +5,7 @@ const absoluteUrl = require("@11ty/eleventy-plugin-rss/src/absoluteUrl");
 const htmlToAbsoluteUrls = require("@11ty/eleventy-plugin-rss/src/htmlToAbsoluteUrls");
 
 // Reading time
-const readingTime = require('eleventy-plugin-reading-time');
+const readingTime = require("eleventy-plugin-reading-time");
 
 // Syntax Highlighting
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -17,89 +17,88 @@ const { DateTime } = require("luxon");
 const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
+	// Collections
+	eleventyConfig.addCollection("posts", (collection) => {
+		return collection.getFilteredByGlob("posts/*.md");
+	});
 
-  // Collections
-  eleventyConfig.addCollection("posts", (collection) => {
-    return collection.getFilteredByGlob("posts/*.md");
-  });
+	// Plugins
+	eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(readingTime);
+	eleventyConfig.addPlugin(syntaxHighlight);
 
-  // Plugins
-  eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(readingTime);
-  eleventyConfig.addPlugin(syntaxHighlight);
+	// Don't process folders with static assets e.g. images
+	eleventyConfig.addPassthroughCopy("admin");
+	eleventyConfig.addPassthroughCopy("assets");
+	eleventyConfig.addPassthroughCopy("uploads");
+	eleventyConfig.addPassthroughCopy("_headers");
 
-  // Don't process folders with static assets e.g. images
-  eleventyConfig.addPassthroughCopy("admin");
-  eleventyConfig.addPassthroughCopy("_includes/assets");
-  eleventyConfig.addPassthroughCopy("uploads")
-  eleventyConfig.addPassthroughCopy("_headers")
+	// Date formatting (human readable)
+	eleventyConfig.addFilter("readableDate", dateObj => {
+		return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
+	});
 
-  // Date formatting (human readable)
-  eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
-  });
+	// Date formatting (machine readable)
+	eleventyConfig.addFilter("machineDate", dateObj => {
+		return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
+	});
 
-  // Date formatting (machine readable)
-  eleventyConfig.addFilter("machineDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
-  });
+	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+	});
 
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
-  });
+	// Clean slugs
+	eleventyConfig.addFilter("removeColonsApostrophes", slugObj => {
+		return slugObj.replace(":", "").replace("'", "-").replace("--", "-");
+	});
 
-  // Clean slugs
-  eleventyConfig.addFilter("removeColonsApostrophes", slugObj => {
-    return slugObj.replace(":", "").replace("'", "-").replace("--", "-");
-  });
+	// RSS/Atom feed filters
+	eleventyConfig.addNunjucksFilter("rssLastUpdatedDate", collection => {
+		if (!collection || !collection.length) {
+			throw new Error("Collection is empty in rssLastUpdatedDate filter.");
+		}
+		// Newest date in the collection
+		return dateToISO(collection[collection.length - 1].date);
+	});
 
-  // RSS/Atom feed filters
-  eleventyConfig.addNunjucksFilter("rssLastUpdatedDate", collection => {
-    if (!collection || !collection.length) {
-      throw new Error("Collection is empty in rssLastUpdatedDate filter.");
-    }
-    // Newest date in the collection
-    return dateToISO(collection[collection.length - 1].date);
-  });
+	eleventyConfig.addNunjucksFilter("rssDate", dateObj => dateToISO(dateObj));
 
-  eleventyConfig.addNunjucksFilter("rssDate", dateObj => dateToISO(dateObj));
+	eleventyConfig.addNunjucksFilter("absoluteUrl", (href, base) => absoluteUrl(href, base));
 
-  eleventyConfig.addNunjucksFilter("absoluteUrl", (href, base) => absoluteUrl(href, base));
+	eleventyConfig.addNunjucksAsyncFilter("htmlToAbsoluteUrls", (htmlContent, base, callback) => {
+		if (!htmlContent) {
+			callback(null, "");
+			return;
+		}
 
-  eleventyConfig.addNunjucksAsyncFilter("htmlToAbsoluteUrls", (htmlContent, base, callback) => {
-    if (!htmlContent) {
-      callback(null, "");
-      return;
-    }
+		htmlToAbsoluteUrls(htmlContent, base).then(result => {
+			callback(null, result.html);
+		});
+	});
 
-    htmlToAbsoluteUrls(htmlContent, base).then(result => {
-      callback(null, result.html);
-    });
-  });
-
-  // Minify HTML output
-  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-    if (outputPath.indexOf(".html") > -1) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-        cssmin: true,
-        jsmin: true
-      });
-      return minified;
-    }
-    return content;
-  });
+	// Minify HTML output
+	eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+		if (outputPath.indexOf(".html") > -1) {
+			let minified = htmlmin.minify(content, {
+				useShortDoctype: true,
+				removeComments: true,
+				collapseWhitespace: true,
+				cssmin: true,
+				jsmin: true
+			});
+			return minified;
+		}
+		return content;
+	});
 
 
-  return {
-    passthroughFileCopy: true,
-    dir: {
-      input: ".",
-      includes: "_includes",
-      data: "_data",
-      output: "_site"
-    }
-  };
+	return {
+		passthroughFileCopy: true,
+		dir: {
+			input: ".",
+			includes: "_includes",
+			data: "_data",
+			output: "_site"
+		}
+	};
 };
