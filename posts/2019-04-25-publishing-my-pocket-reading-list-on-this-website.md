@@ -12,11 +12,8 @@ I recently switched this blog from [Jekyll](https://jekyllrb.com) to [Eleventy](
 
 Eleventy lets you [make any data returned by a Javascript file](https://www.11ty.io/docs/data-js/) available to your website. This means you can pull in data from an external API and feed it to your templates to display on your website as static HTML. So the only time a call to the Pocket API is made is when the site is being built on the server.
 
-Thanks to [Bryan L. Robinson for his blog](https://bryanlrobinson.com/blog/2019/04/02/using-eleventys-javascript-data-files) for explaining how to get Eleventy's Javascript data files working with the Meetup API. I've adapted his work for my purposes.
 
 For my site, I use a Javascript file called [`readingList.js`](https://github.com/edjw/edjw-blog/blob/master/_data/readingList.js) that 1) pulls in all my items saved in Pocket, 2) reverses the order so they're roughly in descending publication date order, and 3) excludes any items I've tagged in Pocket as 'private'. Then the data from [Pocket's API](https://getpocket.com/developer/docs/v3/retrieve) is available to my templates – written in Nunjucks in my case.
-
-You need a Pocket API Consumer Key to access the Pocket API which [you can get here](https://getpocket.com/developer/apps). You also need a Pocket Access Token. [Felix Neumann's tool here](https://reader.fxneumann.de/plugins/oneclickpocket/auth.php) lets you easily generate a Pocket Access Token.
 
 I host this website on [Netlify](https://www.netlify.com). Netlify runs a build of your site when you make a change to the git repository it's linked to. But when I add an article to Pocket, no changes are made to the files in the git repository. The readingList.js file stays the same.
 
@@ -30,4 +27,10 @@ These 'applets' above send a webhook to Netlify to start a build - using a 'Buil
 
 Notice you can include a trigger title which can be unique to each IFTT applet.
 
-When these applets start a new build, the site pulls in the updated Pocket data and passes it through to
+When these applets start a new build, the site pulls in the updated Pocket data and passes it through to 
+
+--
+
+Thanks to [Bryan L. Robinson for his blog](https://bryanlrobinson.com/blog/2019/04/02/using-eleventys-javascript-data-files) for explaining how to get Eleventy's Javascript data files working with the Meetup API. I've adapted his work for my purposes.
+
+Thanks also for [Felix Neumann's tool here](https://reader.fxneumann.de/plugins/oneclickpocket/auth.php) that lets you easily generate a Pocket Access Token.
