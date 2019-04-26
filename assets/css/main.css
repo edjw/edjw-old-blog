@@ -26,11 +26,20 @@ a:focus {
     text-decoration: none;
 }
 
+a.nav-link {
+    border-top: 2px solid #2341C1;
+    border-bottom: 2px solid #2341C1;
+}
+
 .title {
     color: #363636;
     font-weight: 600;
     line-height: 1.125;
     font-size: 2rem;
+}
+
+.title>a {
+    border: none;
 }
 
 .post-date {
