@@ -26,7 +26,7 @@ layout: layouts/page.njk
             <li class="mb-3">
                 <p class="mb-1">
                     <a
-                        href="{{ item.resolved_url }}">{{ item.resolved_title if item.resolved_title else item.resolved_url }}</a>{% if item.authors %}
+                        href="{{ item.resolved_url }}" class="word-wrap-break-word">{{ item.resolved_title if item.resolved_title else item.resolved_url }}</a>{% if item.authors %}
                     by {% for authorID, authorDetails in item.authors %} <em>{{ authorDetails.name | title }} </em>
                     {% endfor %} {% endif %}
 
