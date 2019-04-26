@@ -2,7 +2,7 @@
 layout: layouts/home.njk
 title: Home
 permalink: /
-navtitle: Blog
+navtitle: Home
 navorder: 1
 tags:
   - nav
