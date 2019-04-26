@@ -2,6 +2,5 @@
 title: About me
 date: 2019-04-17T23:00:00.000Z
 permalink: /about/index.html
-layout: layouts/page.njk
 ---
-<!-- -->
+About me
