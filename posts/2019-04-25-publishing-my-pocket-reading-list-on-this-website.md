@@ -16,7 +16,7 @@ For my site, I use a Javascript file called [`readingList.js`](https://github.co
 
 The data from [Pocket's API](https://getpocket.com/developer/docs/v3/retrieve) is then available to my [templates](https://github.com/edjw/edjw-blog/blob/master/_includes/layouts/reading-list.njk) – written in Nunjucks in my case.
 
-I host this website on [Netlify](https://www.netlify.com). Netlify runs a build of your site when you make a change to the git repository it's linked to, such as adding a new blogpost or changing some CSS. But when I add an article to Pocket, no changes are made to the files in the git repository. The readingList.js file stays the same.
+I host this website on [Netlify](https://www.netlify.com). Netlify runs a build of your site when you make a change to the git repository it's linked to. Usually these changes would be things like adding a new blogpost or changing some CSS. But when I add an article to Pocket, no changes are made to the files in the git repository. The readingList.js file stays the same.
 
 So, for automated updating of the Reading List page, I need to trigger a build whenever something changes in my Pocket account.
 
