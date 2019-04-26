@@ -8,13 +8,15 @@ layout: layouts/page.njk
     <div class="col col-md-10">
 
         <p>
-            This is a list of the {{ readingList | length }} (🤦‍) links that are currently saved in <a href="http://getpocket.com">my Pocket account</a>
-            that I haven't tagged as 'private'.
+            This is a list of the {{ readingList | length }} {% if readingList | length > 50 %} (🤦‍‍‍‍) {% endif %} links that are currently saved in <a href="https://getpocket.com">my Pocket account</a>
+            that I haven't tagged as 'private'. The Pocket article links only work if you've got a Pocket account.
         </p>
 
         <p>
-            I've written up how this website pulls in that data in <a href="">a blogpost here</a>.
+            I've written up how this website pulls in that data in <a href="/2019-04-25-publishing-my-pocket-reading-list-on-this-website">a blogpost here</a>.
         </p>
+
+
         <hr>
 
         <ul class="list-unstyled mt-4">
