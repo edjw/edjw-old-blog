@@ -2,7 +2,7 @@
 title: Publishing my Pocket reading list on this website
 date: 2019-04-26T08:00:00.000Z
 ---
-I've recently added [a page called Reading List to this website](/reading-list). It's a page that shows the unread articles in my [Pocket account](https://getpocket.com/).
+I've recently added [a page called Reading List to this website](/reading-list). It's a page that shows the unread articles in my [Pocket account](https://getpocket.com/) that I haven't tagged as 'private'.
 
 This post details how this works using Eleventy Javascript data files, the Pocket API, IFTT webhooks, and Netlify build webhooks.
 
