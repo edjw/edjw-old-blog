@@ -1,3 +1,5 @@
+// const orderBy = require("lodash.orderby");
+
 // RSS imports
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const dateToISO = require("@11ty/eleventy-plugin-rss/src/dateToISO");

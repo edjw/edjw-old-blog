@@ -15,5 +15,6 @@
     "microblogUsername": "edjw"
   },
   "indieauth": true,
+  "micropub": true,
   "netlifyCMS": true
 }

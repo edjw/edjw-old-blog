@@ -2,8 +2,8 @@
 layout: layouts/home.njk
 title: Home
 permalink: /
-navtitle: Home
-navorder: 1
+navtitle: Blog
+# nav_position: 1
 tags:
   - nav
 ---

@@ -3,7 +3,7 @@
     <nav>
       <ul class="nav justify-content-center justify-content-sm-start justify-content-md-center">
 
-        {% for nav in collections.nav | sort(attribute="navorder") %}
+        {% for nav in collections.nav %}
         <li class="nav-item">
           <a href="{{ nav.url | url }}"
             class="nav-link {% if nav.url == page.url %}active{% endif %}">{{ nav.data.navtitle or nav.data.title }}</a>
