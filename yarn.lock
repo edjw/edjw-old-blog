@@ -12,10 +12,10 @@
     posthtml "^0.11.2"
     posthtml-urls "^1.0.0"
 
-"@11ty/eleventy-plugin-syntaxhighlight@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-2.0.1.tgz#9c3eb503fbea01e8ca80f91fdbd9061a799628a1"
-  integrity sha512-6Jv/uV0kgJhfZNTO/77AJCo393jkoGBBQJzyU0r9W+wGecakogBUnMuL3ICFdXWLm+z1ENOBLR6Xw+WpWPWqcg==
+"@11ty/eleventy-plugin-syntaxhighlight@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-2.0.3.tgz#49193015d1bf561926ebd93c14800d83de27d752"
+  integrity sha512-tPoNaEawOG1kkOYAvr4fwKaMOXRhNueOH7z5aepA0vjfnGCagUlSbUipvjCcUUOf+nQgfJYW2rwR2g97Vv8/rg==
   dependencies:
     prismjs "^1.15.0"
 
