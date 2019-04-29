@@ -13,19 +13,28 @@
   {% if site.author.githubUsername %}
   <link href="https://github.com/{{ site.author.githubUsername }}" rel="me">
   {% endif %}
+
   {% if site.author.microblogUsername %}
   <link href="https://micro.blog/{{ site.author.microblogUsername }}" rel="me">
   {% endif %}
+
   {% if site.author.mastodonUsername %}
   <link href="https://mastodon.social/{{ site.author.mastodonUsername }}" rel="me">
   {% endif %}
+
   {% if site.indieauth == true %}
   <link rel="authorization_endpoint" href="https://indieauth.com/auth">
   <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
   {% endif %}
+
   {% if site.micropub == true %}
   <link rel="micropub" href="{{ site.url }}/micropub">
   {% endif %}
+
+  {% if site.author.instagramUsername %}
+  <link href="https://instagram.com/{{ site.instagramUsername }}" rel="me">
+  {% endif %}
+
   {% if site.netlifyCMS == true %}
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {% endif %}
