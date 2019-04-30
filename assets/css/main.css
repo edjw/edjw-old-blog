@@ -31,12 +31,10 @@ a:focus {
 }
 
 a.nav-link {
-    border-top: 2px solid #2341C1;
-    border-bottom: 2px solid #2341C1;
+    background-color: #2341C1;
 }
 
 .title {
-    color: #363636;
     font-weight: 600;
     line-height: 1.125;
     font-size: 2rem;
@@ -44,6 +42,14 @@ a.nav-link {
 
 .title>a {
     border: none;
+    color: #2341C1;
+}
+
+.title>a:hover,
+.title>a:active,
+.title>a:focus {
+    border-bottom: 2px solid #2341C1;
+    color: #2341C1;
 }
 
 .post-date {

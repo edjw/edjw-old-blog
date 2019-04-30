@@ -1,12 +1,10 @@
-<div class="row mt-2 mb-4">
-  <div class="col-10 offset-1 px-0">
+  <div class="col-12 col-md-9 px-0 mt-4 d-flex justify-content-center">
     <nav>
-      <ul class="nav justify-content-center justify-content-sm-start justify-content-md-center">
-
+      <ul class="nav">
         {% for nav in collections.nav %}
-        <li class="nav-item">
+        <li class="nav-item {% if nav.url == page.url %}active{% endif %} ">
           <a href="{{ nav.url | url }}"
-            class="nav-link {% if nav.url == page.url %}active{% endif %}">{{ nav.data.navtitle or nav.data.title }}</a>
+            class="nav-link text-light mx-1 {% if loop.first %}rounded-left{% endif %} {% if loop.last %}rounded-right{% endif %}">{{ nav.data.navtitle or nav.data.title }}</a>
         </li>
         {% endfor %}
 
@@ -14,4 +12,3 @@
     </nav>
 
   </div>
-</div>

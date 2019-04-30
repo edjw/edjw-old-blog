@@ -7,13 +7,14 @@
 	<div class="container">
 		<header>
 			<div class="row mt-4 mb-4">
-				<div class="col-10 offset-1 col-md-6 offset-md-2 p-0">
+				<div class="col-md-9 p-0 d-flex justify-content-center">
 					<h1 class="title">
 						<a class="h-card" rel="me" href="/">{{ site.title }}</a>
 					</h1>
 				</div>
+				{% include "components/nav.njk" %}
+
 			</div>
-		{% include "components/nav.njk" %}
 
 		</header>
 
