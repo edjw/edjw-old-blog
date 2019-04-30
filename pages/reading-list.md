@@ -1,8 +1,8 @@
 ---
 title: Reading List
-# date: 2019-04-19T18:41:12.917Z
+date: 2000-01-01t00:00:00.02+00:00
+# nav_position:           02
 layout: layouts/reading-list.njk
-# nav_position: 3
 tags:
   - nav
 ---

@@ -1,8 +1,8 @@
 ---
 title: About me
-# date: 2019-04-17T23:00:00.000Z
+date: 2000-01-01t00:00:00.03+00:00
+# nav_position:           03
 permalink: /about/index.html
-# nav_position: 2
 tags:
   - nav
 layout: layouts/page.njk
