@@ -74,6 +74,20 @@ pre.highlight {
     border-bottom: 1px solid #2341C1;
 }
 
+#navigation>nav>button {
+    background-color: #2341C1;
+    outline: none;
+    min-width: 98%;
+}
+
+.nav-item {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /* Scroll Indicator */
 
 .header {

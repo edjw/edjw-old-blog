@@ -1,15 +1,21 @@
-  <div class="col-11 offset-1 col-md-9 offset-md-2 px-0 mt-4">
-    <nav>
-      <ul class="nav">
+<div class="col-11 offset-1 col-md-9 offset-md-2 pl-0" id="navigation">
+  <nav class="navbar navbar-expand-md">
+    <button class="navbar-toggler text-light py-2 mx-1" id="menu-button" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"><span class="px-5 py-3" id="menu-text">Menu</span>
+    </button>
+
+    <div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarToggler">
+
+      <ul class="nav flex-column flex-md-row justify-content-center">
         {% for nav in collections.nav %}
-        <li class="nav-item {% if nav.url == page.url %}active{% endif %}">
+        <li class="nav-item {% if nav.url == page.url %}active{% endif %} {% if loop.index0 > 0 %}mt-1 mt-md-0{% endif %}">
 
           <a href="{{ nav.url | url }}"
-            class="nav-link text-light mx-1 {% if loop.first %}rounded-left{% endif %} {% if loop.last %}rounded-right{% endif %}"><img src="/assets/internal_images/{{ nav.data.navicon }}" class="img-fluid mr-2" width="20">{{ nav.data.navtitle or nav.data.title }}</a>
+            class="nav-link text-light mx-1 {#{% if loop.first %}rounded-left{% endif %} {% if loop.last %}rounded-right{% endif %}#} py-3 py-md-2"><img
+              src="/assets/internal_images/{{ nav.data.navicon }}" class="img-fluid mr-2"
+              width="15">{{ nav.data.navtitle or nav.data.title }}</a>
         </li>
         {% endfor %}
 
       </ul>
-    </nav>
-
-  </div>
+  </nav>
+</div>

@@ -17,5 +17,7 @@
   },
   "indieauth": true,
   "micropub": true,
-  "netlifyCMS": true
+  "netlifyCMS": true,
+  "RSSFeed": true,
+  "sitemap": true
 }

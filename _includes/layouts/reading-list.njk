@@ -4,63 +4,59 @@ permalink: /reading-list/index.html
 layout: layouts/page.njk
 ---
 
-<div class="row mt-4">
-    <div class="col col-md-10">
+<p>
+    This is a list of the {{ readingList | length }} {% if readingList | length > 50 %} (🤦‍‍‍‍) {% endif %} links that
+    are currently saved in <a href="https://getpocket.com">my Pocket account</a>
+    that I haven't tagged as 'private'. The Pocket article links only work if you've got a Pocket account.
+</p>
 
-        <p>
-            This is a list of the {{ readingList | length }} {% if readingList | length > 50 %} (🤦‍‍‍‍) {% endif %} links that are currently saved in <a href="https://getpocket.com">my Pocket account</a>
-            that I haven't tagged as 'private'. The Pocket article links only work if you've got a Pocket account.
+<p>
+    I've written up how this website pulls in that data in <a
+        href="/2019/04/26/publishing-my-pocket-reading-list-on-this-website">a blogpost here</a>.
+</p>
+
+
+<hr>
+
+<ul class="list-unstyled mt-4">
+
+    {% for item in readingList %}
+
+    <li class="mb-3">
+        <p class="mb-1">
+            <a href="{{ item.resolved_url }}"
+                class="word-wrap-break-word">{{ item.resolved_title if item.resolved_title else item.resolved_url }}</a>{% if item.authors %}
+            by {% for authorID, authorDetails in item.authors %} <em>{{ authorDetails.name | title }} </em>
+            {% endfor %} {% endif %}
+
         </p>
 
-        <p>
-            I've written up how this website pulls in that data in <a href="/2019/04/26/publishing-my-pocket-reading-list-on-this-website">a blogpost here</a>.
-        </p>
+        <small>
+            <a href="https://getpocket.com/a/read/{{ item.item_id }}" class="border-0">
+                <img src="/assets/internal_images/pocket.svg" alt="Pocket logo" class="img-fluid mr-2" width="20">
+            </a>
+            <a href="https://getpocket.com/a/read/{{ item.item_id }}">
+                Pocket article link
+            </a>
+        </small>
 
+        {% if item.excerpt %}
+        <p class="mt-2 mb-1"><i>Summary: </i>{{ item.excerpt }}</p>
+        {% endif %}
 
-        <hr>
-
-        <ul class="list-unstyled mt-4">
-
-            {% for item in readingList %}
-
-            <li class="mb-3">
-                <p class="mb-1">
-                    <a
-                        href="{{ item.resolved_url }}" class="word-wrap-break-word">{{ item.resolved_title if item.resolved_title else item.resolved_url }}</a>{% if item.authors %}
-                    by {% for authorID, authorDetails in item.authors %} <em>{{ authorDetails.name | title }} </em>
-                    {% endfor %} {% endif %}
-
-                </p>
-
-                <small>
-                    <a href="https://getpocket.com/a/read/{{ item.item_id }}" class="border-0">
-                        <img src="/assets/internal_images/pocket.svg" alt="Pocket logo" class="img-fluid mr-2"
-                            width="20">
-                    </a>
-                    <a href="https://getpocket.com/a/read/{{ item.item_id }}">
-                        Pocket article link
-                    </a>
-                </small>
-
-                {% if item.excerpt %}
-                <p class="mt-2 mb-1"><i>Summary: </i>{{ item.excerpt }}</p>
-                {% endif %}
-
-                {% if item.tags %}
-                <small><i>Tags: </i>
-                    {% for tag, tagHash in item.tags %}
-                    <a href="https://getpocket.com/explore/{{ tag }}">{{ tag }}</a>{% if loop.revindex > 1 %},{% endif %}
-                    {% endfor %}
-                </small>
-                {% endif %}
-
-            </li>
-            {% if loop.revindex > 1 %}
-            <hr>
-            {% endif %}
-
+        {% if item.tags %}
+        <small><i>Tags: </i>
+            {% for tag, tagHash in item.tags %}
+            <a href="https://getpocket.com/explore/{{ tag }}">{{ tag }}</a>{% if loop.revindex > 1 %},{% endif %}
             {% endfor %}
+        </small>
+        {% endif %}
 
-        </ul>
-    </div>
-</div>
+    </li>
+    {% if loop.revindex > 1 %}
+    <hr>
+    {% endif %}
+
+    {% endfor %}
+
+</ul>
