@@ -1,4 +1,4 @@
-<div class="col-11 offset-1 col-md-9 offset-md-2 pl-0" id="navigation">
+<div class="col-11 offset-1 col-md-9 offset-md-1 pl-0" id="navigation">
   <nav class="navbar navbar-expand-md">
     <button class="navbar-toggler text-light py-2 mx-1" id="menu-button" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"><span class="px-5 py-3" id="menu-text">Menu</span>
     </button>
@@ -7,7 +7,7 @@
 
       <ul class="nav flex-column flex-md-row justify-content-center">
         {% for nav in collections.nav %}
-        <li class="nav-item {% if nav.url == page.url %}active{% endif %} {% if loop.index0 > 0 %}mt-1 mt-md-0{% endif %}">
+        <li class="nav-item {% if nav.url == page.url %}active{% endif %} {% if loop.index0 > 0 %}mt-1 mt-md-0{% endif %} hvr-underline-from-center">
 
           <a href="{{ nav.url | url }}"
             class="nav-link text-light mx-1 {#{% if loop.first %}rounded-left{% endif %} {% if loop.last %}rounded-right{% endif %}#} py-3 py-md-2"><img

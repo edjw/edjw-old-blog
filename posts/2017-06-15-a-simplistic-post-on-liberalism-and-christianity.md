@@ -4,7 +4,7 @@ date: 2017-06-14T23:00:00.000Z
 ---
 1. I'm a straight, Christian man who is liberal - both politically and theologically.
 
-1. I disagree with Tim Farron's apparent view that having an abortion or gay sex is a sin
+1. I disagree with Tim Farron's apparent view that having an abortion or gay sex is a sin.
 
 1. I also disagree with Tim Farron's comments that being a liberal leader and a "faithful Christian" is irreconcilable. There are lots of liberal Christians.
 
