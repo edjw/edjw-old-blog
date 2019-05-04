@@ -1,6 +1,6 @@
 ---
 title: 'Rebuilt website: Durham Sacred Harp'
-date: 2019-05-04T22:40:11.516Z
+date: 2019-05-04T20:40:11.516Z
 ---
 I've rebuilt the [Durham Sacred Harp site](https://durhamsacredharp.co.uk) in [Eleventy](https://www.11ty.io). The [source is on Github here](https://github.com/durhamsacredharp/durham-sacred-harp). 
 
