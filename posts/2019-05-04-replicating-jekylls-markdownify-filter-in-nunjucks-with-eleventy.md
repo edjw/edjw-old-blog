@@ -19,6 +19,6 @@ module.exports = function (eleventyConfig) {
 };
 ```
 
-Then in a Nunjucks template, you can use <code>{{ someMarkdownString | markdownify | safe }}</code> to convert any Markdown string to HTML.
+In a Nunjucks template, you can now use <code>{{ someMarkdownString | markdownify | safe }}</code> to convert any Markdown string to HTML.
 
-I'm not 100% sure about the `| safe` bit but it's working for me like this.
+I'm not 100% sure about the `| safe` bit, but it's working for me like this.
