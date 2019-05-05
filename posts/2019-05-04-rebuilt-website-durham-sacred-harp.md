@@ -1,10 +1,11 @@
 ---
 title: 'Rebuilt website: Durham Sacred Harp'
 date: 2019-05-04T20:40:11.516Z
+socialDescription:
 ---
-I've rebuilt the [Durham Sacred Harp site](https://durhamsacredharp.co.uk) in [Eleventy](https://www.11ty.io). The [source is on Github here](https://github.com/durhamsacredharp/durham-sacred-harp). 
+I've rebuilt the [Durham Sacred Harp site](https://durhamsacredharp.co.uk) in [Eleventy](https://www.11ty.io). The [source is on Github here](https://github.com/durhamsacredharp/durham-sacred-harp).
 
-This let me add in Netlify CMS which will make managing the content a lot easier as it was just one big HTML file before. The site should look the same. 
+This let me add in Netlify CMS which will make managing the content a lot easier as it was just one big HTML file before. The site should look the same.
 
 On the old site, I was using client-side Javascript to work out the dates of the next three singings. This was always a hack that I wasn't that happy with. If someone had the date and time wrong on their computer it wouldn't show the correct dates.
 

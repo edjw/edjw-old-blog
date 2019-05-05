@@ -7,7 +7,7 @@ permalink: /about/index.html
 navicon: person_icon.svg
 tags:
   - nav
-description: My 'About me' page
+socialDescription: My 'About me' page
 ---
 
 I'm Ed Johnson-Williams. This is my personal blog. I'm also [on Twitter at @_edjw](https://twitter.com/_edjw).

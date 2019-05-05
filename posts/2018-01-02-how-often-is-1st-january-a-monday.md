@@ -1,6 +1,7 @@
 ---
 title: How often is 1st January a Monday?
 date: 2018-01-02 00:00:00Z
+socialDescription:
 ---
 **Answer...less often than every other day except Saturday. I have no idea why.**
 

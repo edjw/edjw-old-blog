@@ -1,6 +1,7 @@
 ---
 title: Square numbers in Sacred Harp song numbers
 date: 2018-06-10 00:00:00Z
+socialDescription:
 ---
 A singer at the [Sacred Harp singing in Durham](https://durhamsacredharp.co.uk/) yesterday was calling only [square numbers](https://en.wikipedia.org/wiki/Square_number).
 

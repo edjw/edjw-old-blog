@@ -7,5 +7,5 @@ date: 2000-01-01t00:00:02+00:00
 navicon: book_icon.svg
 tags:
   - nav
-description: My saved Pocket articles
+socialDescription: My saved Pocket articles
 ---

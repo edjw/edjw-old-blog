@@ -1,6 +1,7 @@
 ---
 title: A simplistic post on quick trade agreements
 date: 2017-07-10 14:14:38Z
+socialDescription:
 ---
 
 
