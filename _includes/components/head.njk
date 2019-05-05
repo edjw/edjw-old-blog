@@ -2,14 +2,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="{{ site.description }}">
+  <meta name="google-site-verification" content="DAXhQi5iFH9IXoyrocu1dZIZklcbWwr87YUCwrOlPMM" />
+
+  <title>{{ title }} - {{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+
+  {# Twitter metadata #}
+  <meta name="twitter:card" content="summary">
+  {% if site.author.twitterUsername %}
+  <meta name="twitter:site" content="{{ site.author.twitterUsername }}">
+  {% endif %}
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
   {% if site.author.twitterUsername %}
   <meta name="twitter:creator" content="{{ site.author.twitterUsername }}">
   {% endif %}
+  {# <meta name="twitter:image" content="http://www.example.com/image.jpg"> #}
+  {# End of Twitter metadata #}
 
-  <title>{{ site.title }}</title>
-  <meta name="google-site-verification" content="DAXhQi5iFH9IXoyrocu1dZIZklcbWwr87YUCwrOlPMM" />
+  {# Facebook / Open Graph metadata #}
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ site.url}}{{ page.url }}" />
+  {# <meta property="og:image" content="http://example.com/image.jpg" /> #}
+  <meta property="og:description" content="{{ description or site.description }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  {# End of Facebook / Open Graph metadata #}
 
+
+  {# Rel links #}
   {% if site.author.githubUsername %}
   <link href="https://github.com/{{ site.author.githubUsername }}" rel="me">
   {% endif %}
@@ -21,6 +42,7 @@
   {% if site.author.mastodonUsername %}
   <link href="https://mastodon.social/{{ site.author.mastodonUsername }}" rel="me">
   {% endif %}
+  {# End of Rel links #}
 
   {% if site.indieauth == true %}
   <link rel="authorization_endpoint" href="https://indieauth.com/auth">
