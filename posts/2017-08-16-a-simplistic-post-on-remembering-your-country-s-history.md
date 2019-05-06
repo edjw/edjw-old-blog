@@ -1,11 +1,11 @@
 ---
 date: 2017-08-16 17:27:30Z
 title: A simplistic post on remembering your country's history
-socialDescription:
+socialDescription: You can remember you history without celebrating the worst parts of it
 ---
 
 
-Donald Trump says that removing statues to Confederate generals is "<a href="http://www.politico.com/story/2017/08/15/full-text-trump-comments-white-supremacists-alt-left-transcript-241662" data-vivaldi-spatnav-clickable="1">changing history</a>".
+Donald Trump says that removing statues to Confederate generals is [changing history](http://www.politico.com/story/2017/08/15/full-text-trump-comments-white-supremacists-alt-left-transcript-241662).
 
 He's wrong.
 

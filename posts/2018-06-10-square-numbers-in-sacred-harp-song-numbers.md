@@ -1,98 +1,35 @@
 ---
 title: Square numbers in Sacred Harp song numbers
 date: 2018-06-10 00:00:00Z
-socialDescription:
+socialDescription: Sacred Harp songs that are square numbers
 ---
 A singer at the [Sacred Harp singing in Durham](https://durhamsacredharp.co.uk/) yesterday was calling only [square numbers](https://en.wikipedia.org/wiki/Square_number).
 
 I went and made a list of those numbers.
 
-<table>
-<tr>
-<th style="padding-right: 2rem;">Square root</th>
-<th>Song number</th>
-</tr>
-<tr>
-<td>6</td>
-<td>36t</td>
-</tr>
-<tr>
-<td>6</td>
-<td>36b</td>
-</tr>
-<tr>
-<td>7</td>
-<td>49t</td>
-</tr>
-<tr>
-<td>7</td>
-<td>49b</td>
-</tr>
-<tr>
-<td>8</td>
-<td>64</td>
-</tr>
-<tr>
-<td>9</td>
-<td>81t</td>
-</tr>
-<tr>
-<td>9</td>
-<td>81b</td>
-</tr>
-<tr>
-<td>10</td>
-<td>100</td>
-</tr>
-<tr>
-<td>11</td>
-<td>121<br></td>
-</tr>
-<tr>
-<td>12</td>
-<td>144</td>
-</tr>
-<tr>
-<td>13</td>
-<td>169</td>
-</tr>
-<tr>
-<td>14</td>
-<td>196</td>
-</tr>
-<tr>
-<td>15</td>
-<td>225t</td>
-</tr>
-<tr>
-<td>15</td>
-<td>225b</td>
-</tr>
-<tr>
-<td>17</td>
-<td>289</td>
-</tr>
-<tr>
-<td>18</td>
-<td>324</td>
-</tr>
-<tr>
-<td>19</td>
-<td>361</td>
-</tr>
-<tr>
-<td>20</td>
-<td>400</td>
-</tr>
-<tr>
-<td>21</td>
-<td>441</td>
-</tr>
-<tr>
-<td>22</td>
-<td>484</td>
-</tr>
-</table>
+|Square root|Song number|
+|--- |--- |
+|6|36t|
+|6|36b|
+|7|49t|
+|7|49b|
+|8|64|
+|9|81t|
+|9|81b|
+|10|100|
+|11|121|
+|12|144|
+|13|169|
+|14|196|
+|15|225t|
+|15|225b|
+|17|289|
+|18|324|
+|19|361|
+|20|400|
+|21|441|
+|22|484|
+
 
 And the Python code I used to find this…
 

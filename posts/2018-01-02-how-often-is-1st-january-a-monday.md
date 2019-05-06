@@ -1,11 +1,11 @@
 ---
 title: How often is 1st January a Monday?
 date: 2018-01-02 00:00:00Z
-socialDescription:
+socialDescription: How often has the first day of the week been the first day of the year?
 ---
 **Answer...less often than every other day except Saturday. I have no idea why.**
 
-Yesterday, 1st January 2018 was a Monday. Monday is the first day of the week. Some people think it's Sunday. I don't understand those people.
+Yesterday, 1st January 2018 was a Monday. Monday is the first day of the week. Some people think Sunday is the first day of the week. I don't understand those people.
 
 Anyway, it made me wonder...How often has the first day of the week been the first day of the year? And how many years will we have to wait until the first day of the year is a Monday again?
 

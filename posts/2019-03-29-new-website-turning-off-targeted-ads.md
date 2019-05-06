@@ -2,7 +2,7 @@
 date: 2019-03-29 20:24:00Z
 title: 'New website: Turning off targeted ads'
 permalink: /2019/03/29/turning-off-targeted-ads.html
-socialDescription:
+socialDescription: I made a website that helps you turn off targeted ads
 ---
 I’ve made a website. It’s called [Stop Targeting Ads at Me](https://stoptargetingads.me).
 

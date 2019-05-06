@@ -1,7 +1,7 @@
 ---
 title: A dataset for Sacred Harp songs
 date: 2018-10-08 00:00:00Z
-socialDescription:
+socialDescription: CSV and JSON datasets of the Sacred Harp
 ---
 I've previously done some analysis involving songs from the Sacred Harp. Some [have been serious](https://edjohnsonwilliams.co.uk/2018/02/08/female-composers-in-the-sacred-harp.html); some [less](https://edjohnsonwilliams.co.uk/2018/06/10/football-formations-in-sacred-harp-numbers.html) [so](https://edjohnsonwilliams.co.uk/2018/06/10/square-numbers-in-sacred-harp-song-numbers.html).
 

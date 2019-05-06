@@ -1,7 +1,7 @@
 ---
 title: A simplistic post on liberalism and Christianity
 date: 2017-06-14T23:00:00.000Z
-socialDescription:
+socialDescription: You can be a liberal politician and a theological conservative as long as you don't use your power to impose your conservative theology on others.
 ---
 1. I'm a straight, Christian man who is liberal - both politically and theologically.
 
@@ -9,7 +9,7 @@ socialDescription:
 
 1. I also disagree with Tim Farron's comments that being a liberal leader and a "faithful Christian" is irreconcilable. There are lots of liberal Christians.
 
-1. It *helps* to be a Christian who embraces people of all sexualities and is pro-choice if you want to be a liberal leader.
+1. If you want to be a liberal leader who is also a Christian, it *helps* (politically) to be a Christian who embraces people of all sexualities and is pro-choice.
 
 1. I do however think that you can hold personal views that are illiberal and still be a liberal politician so long as you don't impose your personal views on others.
 

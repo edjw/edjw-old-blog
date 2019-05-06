@@ -1,7 +1,7 @@
 ---
 title: 'New website: Newcastle Sacred Harp'
 date: 2019-05-02T19:38:39.905Z
-socialDescription:
+socialDescription: I made a new website for Newcastle Sacred Harp.
 ---
 I made a website for the Newcastle Sacred Harp singing group. It's available at <https://newcastlesacredharp.co.uk>.
 

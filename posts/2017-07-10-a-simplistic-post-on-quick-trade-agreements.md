@@ -1,9 +1,8 @@
 ---
 title: A simplistic post on quick trade agreements
 date: 2017-07-10 14:14:38Z
-socialDescription:
+socialDescription: You shouldn't aim for speed in trade agreements with big trading blocs
 ---
-
 
 A quick trade deal means the country with the smaller economy being forced to accept the demands of the larger economy in return for the speed of the deal.
 
