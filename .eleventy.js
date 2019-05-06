@@ -22,7 +22,6 @@ module.exports = function (eleventyConfig) {
 	// Plugins
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(readingTime);
-	eleventyConfig.addPlugin(syntaxHighlight);
 
 	// Don't process folders with static assets e.g. images
 	eleventyConfig.addPassthroughCopy("admin");
