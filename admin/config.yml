@@ -11,7 +11,7 @@ backend:
 # Uncomment below to enable drafts
 publish_mode: editorial_workflow
 
-site_url: https://edjohnsonwilliams.co.uk
+# site_url: https://edjohnsonwilliams.co.uk
 
 media_folder: "assets/images" # Media files will be stored in the repo under images/uploads
 
