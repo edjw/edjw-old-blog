@@ -1,5 +1,3 @@
-// const orderBy = require("lodash.orderby");
-
 // RSS imports
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const dateToISO = require("@11ty/eleventy-plugin-rss/src/dateToISO");
@@ -8,9 +6,6 @@ const htmlToAbsoluteUrls = require("@11ty/eleventy-plugin-rss/src/htmlToAbsolute
 
 // Reading time
 const readingTime = require("eleventy-plugin-reading-time");
-
-// Syntax Highlighting
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 // Date and time
 const { DateTime } = require("luxon");
