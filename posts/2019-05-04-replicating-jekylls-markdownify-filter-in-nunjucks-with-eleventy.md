@@ -1,6 +1,7 @@
 ---
 title: Replicating Jekyll's `markdownify` filter in Nunjucks with Eleventy
 date: 2019-05-04T20:11:19.010Z
+socialDescription: Converting Markdown strings to HTML with Nunjucks and Eleventy
 ---
 Jekyll has a useful filter called `markdownify` that converts a Markdown string into HTML. Nunjucks doesn't have this filter.
 
