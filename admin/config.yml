@@ -25,7 +25,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Social Description", name: "socialDescription", widget: "string", pattern: [".{,155}", "Maximum of 155 characters"], default: "Ed Johnson-Williams' blog" }
+      - { label: "Social Description", name: "socialDescription", widget: "string", pattern: [".{0,155}", "Maximum of 155 characters"], default: "Ed Johnson-Williams' blog" }
       - { label: "Body", name: "body", widget: "markdown" }
 
 
@@ -39,5 +39,5 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Permalink", name: "permalink", widget: "string" }
-      - { label: "Social Description", name: "socialDescription", widget: "string", pattern: [".{,155}", "Maximum of 155 characters"], default: "Ed Johnson-Williams' blog" }
+      - { label: "Social Description", name: "socialDescription", widget: "string", pattern: [".{0,155}", "Maximum of 155 characters"], default: "Ed Johnson-Williams' blog" }
       - { label: "Body", name: "body", widget: "markdown" }
