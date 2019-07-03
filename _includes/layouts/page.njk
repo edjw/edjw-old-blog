@@ -4,5 +4,7 @@ section: page
 ---
 {% include "components/scrollbar_indicator.njk" %}
 
-<h2 class="h3">{{ title }}</h2>
-{{ content | safe }}
+<div class="pl-0 mt-2 col-12 col-md-10">
+	<h2 class="post-title">{{ title }}</h2>
+	{{ content | safe }}
+</div>
