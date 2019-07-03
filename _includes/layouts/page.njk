@@ -3,8 +3,13 @@ layout: layouts/base.njk
 section: page
 ---
 {% include "components/scrollbar_indicator.njk" %}
+<div class="row py-2 my-0 mx-0">
 
-<div class="pl-0 mt-2 col-12 col-md-10">
-	<h2 class="post-title">{{ title }}</h2>
-	{{ content | safe }}
+	<div class="col-10 offset-1 col-md-8 offset-md-1 pl-0 mt-3">
+
+			<h2 class="post-title">{{ title }}</h2>
+
+			{{ content | safe }}
+
+	</div>
 </div>
