@@ -3,6 +3,12 @@ layout: layouts/base.njk
 section: home
 ---
 {% set postslist = collections.posts %}
+<div class="row mt-5">
+	<div class="col-10 offset-1">
 
-<h2 class="h3 pl-3">Blogposts</h2>
-{% include "components/postslist.njk" %}
+		<h2 class="h3 post-title">Blogposts</h2>
+		<div class="mt-4">
+			{% include "components/postslist.njk" %}
+		</div>
+	</div>
+</div>
