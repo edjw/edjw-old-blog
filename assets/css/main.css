@@ -99,6 +99,10 @@ pre.highlight {
     border-bottom: 1px solid #2341C1;
 }
 
+.max-full-height {
+    max-height: 98vh;
+}
+
 /* Scroll Indicator */
 
 .header {
@@ -120,6 +124,9 @@ pre.highlight {
     background: #2341C1;
     width: 0%;
 }
+
+/* End of Scroll Indicator */
+
 
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)
@@ -163,3 +170,5 @@ pre.highlight {
     left: 15px;
     right: 15px;
 }
+
+/* End of Hover css */
