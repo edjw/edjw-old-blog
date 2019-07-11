@@ -99,6 +99,10 @@ pre.highlight {
     border-bottom: 1px solid #2341C1;
 }
 
+.w-80 {
+    width: 80%;
+}
+
 /* Scroll Indicator */
 
 .header {
