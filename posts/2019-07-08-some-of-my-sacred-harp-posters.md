@@ -13,7 +13,7 @@ This one is very close to the one that I printed up and put around town. There a
 <br><br>
 
 <div class="d-flex justify-content-center">
-    <img src="/assets/images/blue_square.png" class="border border-dark max-full-height img-fluid">
+    <img src="/assets/images/blue_square.png" class="border border-dark img-fluid">
 </div>
 
 <br><br><br>
@@ -24,7 +24,7 @@ This is a bookwrap with a similar design made landscape. It wraps around the loa
 <br><br>
 
 <div class="d-flex justify-content-center">
-    <img src="/assets/images/blue_square_bookwrap.png" class="border border-dark max-full-height img-fluid">
+<img src="/assets/images/blue_square_bookwrap.png" class="border border-dark img-fluid">
 </div>
 
 <br><br><br>
@@ -34,11 +34,11 @@ This is a bookwrap with a similar design made landscape. It wraps around the loa
 These are a couple of designs that I kind of wimped out of getting printed and sticking up around town. I particularly like the first one. The shapes at the top are from [the shapenote notation system](https://en.wikipedia.org/wiki/Sacred_Harp#The_music_and_its_notation) that Sacred Harp uses.
 
 <div class="d-flex justify-content-center">
-    <img src="/assets/images/funky_squares.png" class="border border-dark max-full-height img-fluid">
+    <img src="/assets/images/funky_squares.png" class="border border-dark img-fluid">
 </div>
 
 <br><br>
 
 <div class="d-flex justify-content-center">
-    <img src="/assets/images/funky_squares_gharish.png" class="border border-dark max-full-height img-fluid">
+    <img src="/assets/images/funky_squares_gharish.png" class="border border-dark img-fluid">
 </div>
