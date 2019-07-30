@@ -3,9 +3,13 @@ layout: layouts/page.njk
 section: reading-list
 ---
 <p>
-    This is a list of the {{ readingList | length }} {% if readingList | length > 50 %} (<a href="https://github.com/edjw/edjw-blog/blob/9761e3f209ed003b3df2cc5942ab7fb3e6aa5da6/_includes/layouts/reading-list.njk#L6">🤦‍‍‍‍</a>) {% endif %} links that
-    are currently saved in <a href="https://getpocket.com">my Pocket account</a>
-    that I haven't tagged as 'private'. The Pocket article links only work if you've got a Pocket account.
+    This is a list of the {{ readingList | length }}
+    {% if readingList | length > 50 %}
+        <a href="https://github.com/edjw/edjw-blog/blob/9761e3f209ed003b3df2cc5942ab7fb3e6aa5da6/_includes/layouts/reading-list.njk#L6">
+            (🤦‍‍‍‍)
+        </a>
+    {% endif %}
+    links that are currently saved in <a href="https://getpocket.com">my Pocket account</a> that I haven't tagged as 'private'. The Pocket article links only work if you've got a Pocket account.
 </p>
 
 <p>
