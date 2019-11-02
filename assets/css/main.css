@@ -19,8 +19,11 @@ body {
     font-size: 1.125rem;
 }
 
-.word-wrap-break-word {
-    word-wrap: break-word;
+.word-wrap-break-word, .footnote-item {
+    word-wrap: anywhere;
+    word-break: break-all;
+
+}
 }
 
 a {
