@@ -21,6 +21,7 @@
     "html-minifier": "^4.0.0",
     "lodash.has": "^4.5.2",
     "luxon": "^1.17.1",
+    "markdown-it-footnote": "^3.0.2",
     "uglify-es": "^3.3.9"
   }
 }
