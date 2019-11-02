@@ -14,6 +14,18 @@ const { DateTime } = require("luxon");
 const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
+
+	let markdownIt = require("markdown-it");
+	let markdownItFootnote = require("markdown-it-footnote");
+	let options = {
+		html: true,
+		breaks: true,
+		linkify: true
+	};
+	let markdownLib = markdownIt(options).use(markdownItFootnote);
+
+	eleventyConfig.setLibrary("md", markdownLib);
+
 	// Collections
 	eleventyConfig.addCollection("posts", (collection) => {
 		return collection.getFilteredByGlob("posts/*.md");
