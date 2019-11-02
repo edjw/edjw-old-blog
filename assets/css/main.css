@@ -22,8 +22,6 @@ body {
 .word-wrap-break-word, .footnote-item {
     word-wrap: anywhere;
     word-break: break-all;
-
-}
 }
 
 a {
