@@ -59,7 +59,7 @@ module.exports = function (eleventyConfig) {
 
 	// Clean slugs
 	eleventyConfig.addFilter("removeColonsApostrophes", slugObj => {
-		return slugObj.replace(":", "").replace("'", "-").replace("--", "-").replace("(", "").replace("}", "").replace('"', "").replace("'", "");
+		return slugObj.replace(":", "").replace("'", "-").replace("--", "-").replace("(", "").replace(")", "").replace('"', "").replace("'", "");
 	});
 
 	// RSS/Atom feed filters
