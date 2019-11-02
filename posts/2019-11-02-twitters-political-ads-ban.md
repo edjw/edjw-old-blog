@@ -23,6 +23,6 @@ And other groups will just be upset that they can't use Twitter ads to push back
 
 A few other questions…
 
-1. How does a campaign group know when their issue has reached national importance?
-2. How does Twitter know when an issue has crossed that threshold?
+1. How does a campaign group know when their issue has reached national importance and should expect their ads not to be allowed?
+2. How does Twitter know when an issue has crossed that threshold? How nationally important is too nationally important?
 3. How broadly is Twitter defining 'national security' and 'taxes'?
