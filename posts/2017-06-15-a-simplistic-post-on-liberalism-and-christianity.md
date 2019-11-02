@@ -3,7 +3,7 @@ title: A simplistic post on liberalism and Christianity
 date: 2017-06-14T23:00:00.000Z
 socialDescription: A simplistic post on liberalism and Christianity
 ---
-1. I'm a straight, Christian man who is liberal - both politically and theologically.^[inline footnote]
+1. I'm a straight, Christian man who is liberal - both politically and theologically.
 
 2. I disagree with Tim Farron's apparent view that having an abortion or gay sex is a sin
 
