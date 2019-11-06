@@ -7,5 +7,5 @@ The Conservative party is running a video on its Facebook ^[<https://www.faceboo
 
 The BBC journalist Daniel Sandford pointed this out.  ^[<https://twitter.com/BBCDanielS/status/1191732381306277890>]
 
-This is a political party purposefully 
+A political party is putting out 
 
