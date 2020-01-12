@@ -37,6 +37,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Layout", name: "layout", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Permalink", name: "permalink", widget: "string" }
       - { label: "Social Description", name: "socialDescription", widget: "string", pattern: [".{0,155}", "Maximum of 155 characters"], default: "Ed Johnson-Williams' blog" }
