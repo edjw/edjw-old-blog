@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "text": "Home",
+            "url": "/",
+            "navicon": "home_icon.svg"
+        },
+        {
+            "text": "Reading List",
+            "url": "/reading-list",
+            "navicon": "book_icon.svg"
+        },
+        {
+            "text": "About me",
+            "url": "about",
+            "navicon": "person_icon.svg"
+        }
+    ]
+}

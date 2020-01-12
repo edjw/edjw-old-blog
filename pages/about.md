@@ -1,11 +1,9 @@
 ---
 title: About me
-date: 2000-01-01T00:00:03.000Z
+date:
 permalink: /about/index.html
 socialDescription: My 'About me' page
-navicon: person_icon.svg
 tags:
-  - nav
 ---
 I'm Ed Johnson-Williams. This is my personal website. I'm also [on Twitter at @_edjw](https://twitter.com/_edjw).
 
