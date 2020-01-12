@@ -1,6 +1,5 @@
 ---
 title: About me
-date:
 permalink: /about/index.html
 socialDescription: My 'About me' page
 tags:
