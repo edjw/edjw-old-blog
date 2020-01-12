@@ -3,6 +3,7 @@ title: About me
 permalink: /about/index.html
 socialDescription: My 'About me' page
 tags:
+layout: /layouts/page.njk
 ---
 I'm Ed Johnson-Williams. This is my personal website. I'm also [on Twitter at @_edjw](https://twitter.com/_edjw).
 
