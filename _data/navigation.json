@@ -1,0 +1,29 @@
+{
+    "items": [
+        {
+            "text": "Home",
+            "url": "/",
+            "navicon": "home_icon.svg"
+        },
+        {
+            "text": "Reading List",
+            "url": "/reading-list",
+            "navicon": "book_icon.svg"
+        },
+        {
+            "text": "About me",
+            "url": "/about",
+            "navicon": "person_icon.svg"
+        },
+        {
+            "text": "Twitter",
+            "url": "https://twitter.com/_edjw",
+            "navicon": "twitter.svg"
+        },
+        {
+            "text": "Github",
+            "url": "https://github.com/edjw",
+            "navicon": "github.svg"
+        }
+    ]
+}

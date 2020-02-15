@@ -1,18 +1,13 @@
 ---
 title: About me
-layout: layouts/page.njk
-date: 2000-01-01t00:00:03+00:00
-# nav_position:        03
 permalink: /about/index.html
-navicon: person_icon.svg
-tags:
-  - nav
 socialDescription: My 'About me' page
+tags:
+layout: /layouts/page.njk
 ---
+I'm Ed Johnson-Williams. This is my personal website. I'm also [on Twitter at @_edjw](https://twitter.com/_edjw).
 
-I'm Ed Johnson-Williams. This is my personal blog. I'm also [on Twitter at @_edjw](https://twitter.com/_edjw).
-
-I work at [Open Rights Group](https://openrightsgroup.org) researching ethics in Internet of Things development as well as issues around data protection, design, and user experience.
+I work at [Traidcraft Exchange](https://traidcraftexchange.org/) campaigning on trade, poverty, and human rights.
 
 I sing [Sacred Harp](https://en.wikipedia.org/wiki/Sacred_Harp) and [other](https://en.wikipedia.org/wiki/The_Christian_Harmony) [shapenote music](https://en.wikipedia.org/wiki/Shape_note).
 
