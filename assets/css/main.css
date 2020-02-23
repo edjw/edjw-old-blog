@@ -48,7 +48,7 @@ a.nav-link:focus {
 
 #navigation>nav>button {
     background-color: #2341C1;
-    outline: none;
+/*     outline: none; */
     min-width: 98%;
 }
 
