@@ -3,27 +3,32 @@
         {
             "text": "Home",
             "url": "/",
-            "navicon": "home_icon.svg"
+            "navicon": "home_icon.svg",
+            "alt_text": "Home"
         },
         {
             "text": "Reading List",
             "url": "/reading-list",
-            "navicon": "book_icon.svg"
+            "navicon": "book_icon.svg",
+            "alt_text": "Book"
         },
         {
             "text": "About me",
             "url": "/about",
-            "navicon": "person_icon.svg"
+            "navicon": "person_icon.svg",
+            "alt_text": "Person"
         },
         {
             "text": "Twitter",
             "url": "https://twitter.com/_edjw",
-            "navicon": "twitter.svg"
+            "navicon": "twitter.svg",
+            "alt_text": "Twitter"
         },
         {
             "text": "Github",
             "url": "https://github.com/edjw",
-            "navicon": "github.svg"
+            "navicon": "github.svg",
+            "alt_text": "Github"
         }
     ]
 }
