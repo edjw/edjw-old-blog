@@ -1,6 +1,6 @@
 {
   "name": "ed-johnson-williams",
-  "description": "",
+  "description": "Ed Johnson-Williams' personal website",
   "scripts": {
     "start": "yarn run dev",
     "build": "ELEVENTY_ENV=production yarn eleventy",
