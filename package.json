@@ -5,7 +5,7 @@
     "start": "yarn run dev",
     "build": "cross-env ELEVENTY_ENV=production yarn eleventy",
     "dev": "cross-env ELEVENTY_ENV=development yarn eleventy --serve",
-    "debug": "DEBUG=* yarn eleventy"
+    "debug": "cross-env DEBUG=* yarn eleventy"
   },
   "license": "MIT",
   "devDependencies": {
