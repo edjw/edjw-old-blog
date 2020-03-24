@@ -4,15 +4,13 @@ date: 2020-03-24T14:45:00.000Z
 socialDescription: Here's how to have different favicons for dev and prod in 11ty
 ---
 
-*CSS Tricks* has an article up about [using a different favicon for local development and production](https://css-tricks.com/different-favicon-for-development). That way, when you've got both open, you can easily tell the difference.
+*CSS Tricks* has an article up about [using a different favicon for local development and production](https://css-tricks.com/different-favicon-for-development). That way, when you've got both open, you can easily tell which tab is which.
 
-*Production and development favicons in Eleventy*
+**Here's a way to have different production and development favicons in [Eleventy](https://www.11ty.dev).**
 
-Here's a way to do this in Eleventy.
+1. **Have two folders for your site's favicons.** Keep your favicons for production in one folder. And keep your favicons for development in the other folder.
 
-Have two folders for your site's favicons. Keep your favicons for production in one folder. And keep your favicons for development in the other folder.
-
-Set the `ELEVENTY_ENV` environment variable in the scripts section of your `package.json`. Set `ELEVENTY_ENV` to "dev" when you're in development and using `eleventy --serve`. Set it to "prod" for the build script.
+2. **Set the `ELEVENTY_ENV` environment variable in the scripts section of your `package.json`.** Set `ELEVENTY_ENV` to "dev" when you're in development and using `eleventy --serve`. Set it to "prod" for the build script.
 
 ```json
 // package.json
@@ -23,7 +21,8 @@ Set the `ELEVENTY_ENV` environment variable in the scripts section of your `pack
 }
 ```
 
-In your `eleventy.js` file, get the `ELEVENTY_ENV` variable. Then, if it's "prod", pass through your production favicons. If it's "dev", pass through your development icons.
+
+3. **Pass through the relevant favicons directory.** In your `eleventy.js` file, get the `ELEVENTY_ENV` variable. Then, if it's "prod", pass through your production favicons. If it's "dev", pass through your development icons.
 
 ```js
 //.eleventy.js
