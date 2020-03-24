@@ -6,7 +6,7 @@ socialDescription: Here's how to have different favicons for dev and prod in 11t
 
 *CSS Tricks* has an article up about [using a different favicon for local development and production](https://css-tricks.com/different-favicon-for-development). That way, when you've got both open, you can easily tell the difference.
 
-## Production and development favicons in Eleventy
+*Production and development favicons in Eleventy*
 
 Here's a way to do this in Eleventy.
 
