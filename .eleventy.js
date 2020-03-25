@@ -109,6 +109,8 @@ module.exports = function (eleventyConfig) {
 			includes: "_includes",
 			data: "_data",
 			output: "_site"
-		}
+		},
+		templateFormats: ["njk", "md"],
+		htmlTemplateEngine: "njk",
 	};
-};
+}
