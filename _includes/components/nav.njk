@@ -1,19 +1,18 @@
 {% if navigation.items %}
 
-  <div class="col-11 col-md-9 offset-0 offset-md-1" id="navigation">
-    <nav class="navbar navbar-expand-md pl-md-0">
-      <button class="navbar-toggler text-light py-2 mx-1" id="menu-button" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"><span class="" id="menu-text">Menu</span>
-      </button>
+  <div>
+    <nav>
+      <button type="button">Menu</button>
 
-      <div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarToggler">
+      <div>
 
-        <ul class="nav flex-column flex-md-row justify-content-center">
+        <ul>
           {% for nav in navigation.items %}
-          <li class="nav-item {% if nav.url == page.url %}active{% endif %} {% if loop.index0 > 0 %}mt-1 mt-md-0{% endif %} hvr-underline-from-center">
+          <li>
 
             <a href="{{ nav.url | url }}"
-              class="nav-link text-light mx-1 {#{% if loop.first %}rounded-left{% endif %} {% if loop.last %}rounded-right{% endif %}#} py-3 py-md-2"><img
-                src="/assets/internal_images/{{ nav.navicon }}" class="img-fluid mr-2"
+             ><img
+                src="/assets/internal_images/{{ nav.navicon }}"
                 width="15" alt="{{ nav.alt_text }}">{{ nav.text }}</a>
           </li>
           {% endfor %}
