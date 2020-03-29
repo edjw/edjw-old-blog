@@ -3,26 +3,23 @@
     <div class="col-10 offset-1 col-md-1 offset-md-1 p-0 border-top">
 
       {% if site.author.twitterUsername %}
-      <a href="https://twitter.com/{{ site.author.twitterUsername }}" rel="me">Twitter</a>
-      <br>
+      <a href="https://twitter.com/{{ site.author.twitterUsername }}" class="footer_link" rel="me">Twitter</a>
       {% endif %}
 
       {% if site.repository %}
-      <a href="https://github.com/{{ site.repository }}">Source</a>
-      <br>
+      <a href="https://github.com/{{ site.repository }}" class="footer_link">Source</a>
       {% endif %}
 
       {% if site.RSSFeed %}
-      <a href="/feed.xml">RSS</a>
-      <br>
+      <a href="/feed.xml" class="footer_link">RSS</a>
       {% endif %}
 
       {% if site.sitemap %}
-      <a href="/sitemap.xml">Sitemap</a>
+      <a href="/sitemap.xml" class="footer_link">Sitemap</a>
       {% endif %}
 
       {% if site.author.mastodonUsername %}
-      <link rel="me" href="https://mastodon.social/{{ site.author.mastodonUsername}}">
+      <link rel="me" href="https://mastodon.social/{{ site.author.mastodonUsername}}" class="footer_link">
       {% endif %}
 
     </div>

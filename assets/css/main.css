@@ -30,15 +30,18 @@ body {
 }
 
 a {
-  border-bottom: 2px solid #2341c1;
+  /* border-bottom: 2px solid #2341c1; */
   color: #212121;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #2341c1;
+  text-decoration-color: #2341c1;
 }
 
 a:hover,
 a:active,
 a:focus {
   color: #2341c1;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 a.nav-link {
@@ -112,6 +115,11 @@ pre {
 
 .w-80 {
   width: 80%;
+}
+
+.footer_link {
+  display: block;
+  margin-top: .5rem;
 }
 
 /* Scroll Indicator */
