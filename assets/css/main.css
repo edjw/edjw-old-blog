@@ -41,10 +41,19 @@ body {
   border-top: 0.5rem solid var(--color-primary);
 }
 
+a {
+  /* border-bottom: 2px solid #2341c1; */
+  color: #212121;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #2341c1;
+  text-decoration-color: #2341c1;
+}
+
 /* Sticky footer */
 html {
   height: 100%;
-}
+}  
+
 body {
   display: flex;
   flex-direction: column;
@@ -143,6 +152,11 @@ pre {
   position: absolute;
   width: 1px;
   white-space: nowrap;
+}
+
+ .footer_link {
+  display: block;
+  margin-top: .5rem;
 }
 
 .no_text_decoration {
