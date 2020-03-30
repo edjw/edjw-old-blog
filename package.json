@@ -10,6 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "clean-css": "^4.2.3",
     "cross-env": "^7.0.2"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
     "html-minifier": "^4.0.0",
     "lodash.has": "^4.5.2",
     "luxon": "^1.22.0",
-    "markdown-it-footnote": "^3.0.2"
+    "markdown-it-footnote": "^3.0.2",
+    "modern-css-reset": "^1.1.0"
   }
 }

@@ -1,39 +1,46 @@
-<footer>
-  <div class="row mt-4 mb-4">
-    <div class="col-10 offset-1 col-md-1 offset-md-1 p-0 border-top">
+<footer class="section">
+  <nav>
+
+    <ul class="footer_nav_list">
 
       {% if site.author.twitterUsername %}
-      <a href="https://twitter.com/{{ site.author.twitterUsername }}" class="footer_link" rel="me">Twitter</a>
+        <li class="footer_nav_item">
+          <a href="https://twitter.com/{{ site.author.twitterUsername }}" rel="me">Twitter</a>
+        </li>
       {% endif %}
 
       {% if site.repository %}
-      <a href="https://github.com/{{ site.repository }}" class="footer_link">Source</a>
+        <li class="footer_nav_item">
+          <a href="https://github.com/{{ site.repository }}">Source</a>
+        </li>
       {% endif %}
 
       {% if site.RSSFeed %}
-      <a href="/feed.xml" class="footer_link">RSS</a>
+        <li class="footer_nav_item">
+          <a href="/feed.xml">RSS</a>
+        </li>
       {% endif %}
 
       {% if site.sitemap %}
-      <a href="/sitemap.xml" class="footer_link">Sitemap</a>
+        <li class="footer_nav_item">
+          <a href="/sitemap.xml">Sitemap</a>
+        </li>
+
       {% endif %}
+    </ul>
+  </nav>
 
-      {% if site.author.mastodonUsername %}
-      <link rel="me" href="https://mastodon.social/{{ site.author.mastodonUsername}}" class="footer_link">
-      {% endif %}
+  {% if site.author.mastodonUsername %}
+    <link rel="me" href="https://mastodon.social/{{ site.author.mastodonUsername}}">
+  {% endif %}
 
-    </div>
+  {% if site.contentLicence %}
 
-    {% if site.contentLicence %}
-
-    <div class="col-10 offset-1 offset-md-3 col-md-4 mt-4 mt-md-0 p-0 border-top">
-      <p class="text-md-right">
+    <p>
         Content on this website is under a
         <a href="{{ site.contentLicence.link }}">{{ site.contentLicence.text }}</a>.
       </p>
-    </div>
 
-    {% endif %}
+  {% endif %}
 
-  </div>
 </footer>

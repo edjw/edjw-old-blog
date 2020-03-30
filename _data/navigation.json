@@ -2,33 +2,23 @@
     "items": [
         {
             "text": "Home",
-            "url": "/",
-            "navicon": "home_icon.svg",
-            "alt_text": "Home"
+            "url": "/"
         },
         {
             "text": "Reading List",
-            "url": "/reading-list",
-            "navicon": "book_icon.svg",
-            "alt_text": "Book"
+            "url": "/reading-list"
         },
         {
             "text": "About me",
-            "url": "/about",
-            "navicon": "person_icon.svg",
-            "alt_text": "Person"
+            "url": "/about"
         },
         {
             "text": "Twitter",
-            "url": "https://twitter.com/_edjw",
-            "navicon": "twitter.svg",
-            "alt_text": "Twitter"
+            "url": "https://twitter.com/_edjw"
         },
         {
             "text": "Github",
-            "url": "https://github.com/edjw",
-            "navicon": "github.svg",
-            "alt_text": "Github"
+            "url": "https://github.com/edjw"
         }
     ]
 }

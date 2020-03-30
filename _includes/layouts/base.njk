@@ -1,21 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-{% include "components/head.njk" %}
+	{% include "components/head.njk" %}
 
-<body>
-	<div class="container">
+	<body class="container">
 		<header>
-			<div class="row mt-4 mb-4 justify-content-center justify-content-md-start">
-				<div class="col-11 offset-0 col-md-9 offset-md-1 p-0 pl-3">
-					<h1 class="title">
-						<a class="h-card" rel="me" href="/">{{ site.title }}</a>
-					</h1>
-				</div>
+			<h1 class="site_title">
+				<a class="h-card" rel="me" href="/">{{ site.title }}</a>
+			</h1>
 
-				{% include "components/nav.njk" %}
-
-			</div>
+			{% include "components/nav.njk" %}
 
 		</header>
 
@@ -24,9 +18,13 @@
 		</main>
 
 		{% include "components/footer.njk" %}
-	</div>
-	<script src="/assets/js/main.js"></script>
 
-</body>
+		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/matomo.js" defer></script>
+		{# {% if site.netlifyCMS == true %}
+			<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		{% endif %} #}
+
+	</body>
 
 </html>

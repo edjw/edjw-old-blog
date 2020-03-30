@@ -629,7 +629,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-clean-css@^4.1.11, clean-css@^4.2.1:
+clean-css@^4.1.11, clean-css@^4.2.1, clean-css@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.3.tgz#507b5de7d97b48ee53d84adb0160ff6216380f78"
   integrity sha512-VcMWDN54ZN/DS+g58HYL5/n4Zrqe8vHJpGA8KdgUXFU4fuP/aHNw8eld9SyEIyabIMJX/0RaY/fplOo5hYLSFA==
@@ -2075,6 +2075,11 @@ mkdirp@^0.5.1, mkdirp@~0.5.1:
   integrity sha512-P+2gwrFqx8lhew375MQHHeTlY8AuOJSrGf0R5ddkEndUkmwpgUob/vQuBD1V22/Cw1/lJr4x+EjllSezBThzBg==
   dependencies:
     minimist "^1.2.5"
+
+modern-css-reset@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/modern-css-reset/-/modern-css-reset-1.1.0.tgz#91be70bcf6b2aefed0d16e8a439ef174a5f7459a"
+  integrity sha512-JOsOWxyDiZJWhvvx0LVtY9l4MT/1tlDevBkmPbGFEvxTLGVwCOJ/f0ZoT9moTdMsrqZeShJOX/bTaUfI4WfFQw==
 
 moo@^0.5.1:
   version "0.5.1"

@@ -94,7 +94,7 @@ Here's a full list of years where Western Easter Sunday is on April Fools' Day.
 
 ## The Code
 
-<pre class="js-scrollable">
+<pre>
 
 ```
 from dateutil.easter import easter
