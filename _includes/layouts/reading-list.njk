@@ -39,8 +39,8 @@ section: reading-list
         </small>
 
         {% if item.excerpt %}
-            <p>
-                <i>Summary: </i>{{ item.excerpt }}</p>
+            <p class="word-wrap-break-word">
+                <em>Summary: </em>{{ item.excerpt }}</p>
         {% endif %}
 
         {% if item.tags %}
