@@ -6,7 +6,7 @@
 	<body class="container">
 		<header>
 			<h1 class="site_title">
-				<a class="h-card" rel="me" href="/">Ed <wbr>Johnson-Williams</a>
+				<a class="h-card" rel="me" href="/">{{ site.title }}</a>
 			</h1>
 
 			{% include "components/nav.njk" %}
@@ -18,7 +18,12 @@
 		</main>
 
 		{% include "components/footer.njk" %}
+
 		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/matomo.js" defer></script>
+		{# {% if site.netlifyCMS == true %}
+			<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		{% endif %} #}
 
 	</body>
 

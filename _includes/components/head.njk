@@ -58,10 +58,6 @@
   <link href="https://instagram.com/{{ site.author.instagramUsername }}" rel="me">
   {% endif %}
 
-  {% if site.netlifyCMS == true %}
-  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  {% endif %}
-
     {% set css %}
     {% include "../../node_modules/modern-css-reset/dist/reset.min.css" %}
     {% include "../../assets/css/main.css" %}
@@ -69,7 +65,5 @@
     <style>
       {{ css | cssmin | safe }}
     </style>
-
-  <script src="/assets/js/matomo.js" defer></script>
 
 </head>
