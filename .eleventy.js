@@ -1,8 +1,13 @@
+let env = process.env.ELEVENTY_ENV;
+
 // RSS imports
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const dateToISO = require("@11ty/eleventy-plugin-rss/src/dateToISO");
 const absoluteUrl = require("@11ty/eleventy-plugin-rss/src/absoluteUrl");
 const htmlToAbsoluteUrls = require("@11ty/eleventy-plugin-rss/src/htmlToAbsoluteUrls");
+
+// Minify CSS
+const CleanCSS = require("clean-css");
 
 // Reading time
 const readingTime = require("eleventy-plugin-reading-time");
@@ -62,6 +67,10 @@ module.exports = function (eleventyConfig) {
 		return slugObj.replace(":", "").replace("'", "-").replace("--", "-").replace("(", "").replace(")", "").replace('"', "").replace("'", "");
 	});
 
+	eleventyConfig.addFilter("cssmin", function (code) {
+		return new CleanCSS({}).minify(code).styles;
+	});
+
 	// RSS/Atom feed filters
 	eleventyConfig.addNunjucksFilter("rssLastUpdatedDate", collection => {
 		if (!collection || !collection.length) {
@@ -86,21 +95,22 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
-	// Minify HTML output
-	eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-		if (outputPath.indexOf(".html") > -1) {
-			let minified = htmlmin.minify(content, {
-				useShortDoctype: true,
-				removeComments: true,
-				collapseWhitespace: true,
-				cssmin: true,
-				jsmin: true
-			});
-			return minified;
-		}
-		return content;
-	});
-
+	if (env === "prod") {
+		// Minify HTML output
+		eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+			if (outputPath.indexOf(".html") > -1) {
+				let minified = htmlmin.minify(content, {
+					useShortDoctype: true,
+					removeComments: true,
+					collapseWhitespace: true,
+					cssmin: true,
+					jsmin: true
+				});
+				return minified;
+			}
+			return content;
+		});
+	}
 
 	return {
 		passthroughFileCopy: true,

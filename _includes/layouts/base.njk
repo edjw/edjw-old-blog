@@ -1,21 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-{% include "components/head.njk" %}
+	{% include "components/head.njk" %}
 
-<body>
-	<div>
+	<body class="container">
 		<header>
-			<div>
-				<div>
-					<h1>
-						<a class="h-card" rel="me" href="/">{{ site.title }}</a>
-					</h1>
-				</div>
+			<h1 class="site_title">
+				<a class="h-card" rel="me" href="/">Ed <wbr>Johnson-Williams</a>
+			</h1>
 
-				{% include "components/nav.njk" %}
-
-			</div>
+			{% include "components/nav.njk" %}
 
 		</header>
 
@@ -24,9 +18,8 @@
 		</main>
 
 		{% include "components/footer.njk" %}
-	</div>
-	<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/main.js"></script>
 
-</body>
+	</body>
 
 </html>

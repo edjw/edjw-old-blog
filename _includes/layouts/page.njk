@@ -2,14 +2,7 @@
 layout: layouts/base.njk
 section: page
 ---
-{% include "components/scrollbar_indicator.njk" %}
-<div>
-
-	<div>
-
-			<h2>{{ title }}</h2>
-
-			{{ content | safe }}
-
-	</div>
-</div>
+<article class="section">
+    <h2>{{ title }}</h2>
+    {{ content | safe }}
+</article>

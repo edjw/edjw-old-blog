@@ -3,32 +3,24 @@ layout: layouts/base.njk
 section: post
 ---
 
-{% include "components/scrollbar_indicator.njk" %}
-<div>
+<article class="h-entry section">
 
-	<div>
-    <article class="h-entry mt-2">
+    <!-- h-entry things -->
+    <div class="hidden">
+        <a href="{{ page.url }}"></a>
+        <time class="dt-published">{{ page.date | ISO_8601_Date }}</time>
+        <a rel="author" href="https://edjohnsonwilliams.co.uk">Ed Johnson-Williams</a>
+    </div>
+    <!-- End of h-entry things -->
 
-        <!-- h-entry things -->
-        <div class="d-none">
-            <a class="u-url" href="{{ page.url }}"></a>
-            <time class="dt-published">{{ page.date | ISO_8601_Date }}</time>
-            <a rel="author" class="p-author h-card" href="https://edjohnsonwilliams.co.uk">Ed Johnson-Williams</a>
-        </div>
-        <!-- End of h-entry things -->
+    <h2 class="p-name">{{ title }}</h2>
 
-                <h2 class="post-title p-name">{{ title }}</h2>
+    <p>{{ page.date | readableDate }}</p>
+    <p class="reading-time">Reading time:<span>
+            {{ content | readingTime }}</span></p>
 
+    <div class="e-content">
+        {{ content | safe }}
+    </div>
 
-                <div class="mt-1 border-bottom">
-                    <h5 class="post-date">{{ page.date | readableDate }}</h5>
-                    <p class="reading-time">Reading time:<span> {{ content | readingTime }}</span></p>
-                </div>
-
-                <div class="e-content post-content mt-4 pt-2">
-                    {{ content | safe }}
-                </div>
-
-    </article>
-</div>
-</div>
+</article>

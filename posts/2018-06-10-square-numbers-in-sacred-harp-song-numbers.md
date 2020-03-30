@@ -33,7 +33,7 @@ I went and made a list of those numbers.
 
 And the Python code I used to find this…
 
-<pre class="js-scrollable">
+<pre>
 
     import math
 

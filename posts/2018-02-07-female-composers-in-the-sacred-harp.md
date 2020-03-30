@@ -29,31 +29,31 @@ socialDescription: Data about female composers in the Sacred Harp
 
 <p>In many ways, this is the most interesting question. Here's a list of songs in the book by female composers. Note that the first song in the book is by a woman!</p>
 
-<p><span class="font-weight-bold">26</span> Samaria – Maggie Denson Cagle</p>
-<p><span class="font-weight-bold">77b</span> Holcombe – Charlene Wallace</p>
-<p><span class="font-weight-bold">112</span> The Last Words of Copernicus – Sarah Lancaster</p>
-<p><span class="font-weight-bold">128</span> The Promised Land – M. Durham</p>
-<p><span class="font-weight-bold">275b</span> Roll On – Cynthia Bass</p>
-<p><span class="font-weight-bold">345b</span> I'm On My Journey Home – Sarah Lancaster</p>
-<p><span class="font-weight-bold">348t</span> Ainslie – Judy Hauff</p>
-<p><span class="font-weight-bold">367</span> Consolation – Annie Denson Aaron</p>
-<p><span class="font-weight-bold">368</span> Stony Point – Judy Hauff</p>
-<p><span class="font-weight-bold">374</span> Oh, Sing With Me! – P. R. Lancaster</p>
-<p><span class="font-weight-bold">378b</span> Never Turn Back – F. E. Parkerson</p>
-<p><span class="font-weight-bold">406</span> New Harmony – M. L. A. Lancaster</p>
-<p><span class="font-weight-bold">426t</span> Kelley – Amanda Burdette Denson</p>
-<p><span class="font-weight-bold">438</span> The Marriage in the Skies – Sidney Burdette Denson</p>
-<p><span class="font-weight-bold">446</span> Infinite Day – Ruth Denson Edwards</p>
-<p><span class="font-weight-bold">448b</span> The Grieved Soul – M. A. Hendon</p>
-<p><span class="font-weight-bold">460</span> Sardis – Sarah Lancaster</p>
-<p><span class="font-weight-bold">466</span> Haynes Creek – Joyce Harrison</p>
-<p><span class="font-weight-bold">491</span> Oh, What Love – Eula Denson Johnson</p>
-<p><span class="font-weight-bold">504</span> Wood Street – Judy Hauff</p>
-<p><span class="font-weight-bold">534</span> New Georgia – Ruth Denson Edwards</p>
-<p><span class="font-weight-bold">543</span> Thou Art God – Ruth Denson Edwards</p>
-<p><span class="font-weight-bold">545</span> The Pilgrim's Way – Irene Parker Denson</p>
-<p><span class="font-weight-bold">547</span> Granville – Judy Hauff</p>
-<p><span class="font-weight-bold">551</span> Jacob's Vision – Margaret Wright</p>
+<p><span>26</span> Samaria – Maggie Denson Cagle</p>
+<p><span>77b</span> Holcombe – Charlene Wallace</p>
+<p><span>112</span> The Last Words of Copernicus – Sarah Lancaster</p>
+<p><span>128</span> The Promised Land – M. Durham</p>
+<p><span>275b</span> Roll On – Cynthia Bass</p>
+<p><span>345b</span> I'm On My Journey Home – Sarah Lancaster</p>
+<p><span>348t</span> Ainslie – Judy Hauff</p>
+<p><span>367</span> Consolation – Annie Denson Aaron</p>
+<p><span>368</span> Stony Point – Judy Hauff</p>
+<p><span>374</span> Oh, Sing With Me! – P. R. Lancaster</p>
+<p><span>378b</span> Never Turn Back – F. E. Parkerson</p>
+<p><span>406</span> New Harmony – M. L. A. Lancaster</p>
+<p><span>426t</span> Kelley – Amanda Burdette Denson</p>
+<p><span>438</span> The Marriage in the Skies – Sidney Burdette Denson</p>
+<p><span>446</span> Infinite Day – Ruth Denson Edwards</p>
+<p><span>448b</span> The Grieved Soul – M. A. Hendon</p>
+<p><span>460</span> Sardis – Sarah Lancaster</p>
+<p><span>466</span> Haynes Creek – Joyce Harrison</p>
+<p><span>491</span> Oh, What Love – Eula Denson Johnson</p>
+<p><span>504</span> Wood Street – Judy Hauff</p>
+<p><span>534</span> New Georgia – Ruth Denson Edwards</p>
+<p><span>543</span> Thou Art God – Ruth Denson Edwards</p>
+<p><span>545</span> The Pilgrim's Way – Irene Parker Denson</p>
+<p><span>547</span> Granville – Judy Hauff</p>
+<p><span>551</span> Jacob's Vision – Margaret Wright</p>
 
 <h2 id="toc_1">What proportion of songs in the book are by female composers?</h2>
 
@@ -84,71 +84,71 @@ socialDescription: Data about female composers in the Sacred Harp
 <p>If all 554 songs in the book were led equally, each song would be led 0.18% (1 in every 554) of the time. 9 of the 25 songs in the book by female composers are more popular than that.</p>
 
 <a href="/uploads/2018/02/08/pc_all_songs_by_song_number_.png">
-    <img src="/uploads/2018/02/08/pc_all_songs_by_song_number_.png" class="img-fluid" alt="">
+    <img src="/uploads/2018/02/08/pc_all_songs_by_song_number_.png" alt="">
 </a>
 
 <p>Here are the songs by female composers sorted by the percentage of all songs led in minuted singing 1995-2017 that that particular song has been led. The percentages are rounded to 2 decimal places. The 1 in N figure is from the unrounded percentage which is why there's a slight discrepancy sometimes.
 
 <p>By comparison, 146 Hallelujah – the song in the book that has been led most often – accounts for 0.8% (1 in every 125) of all songs led 1995-2017.</p>
 
-<p><span class="font-weight-bold">0.56% (1 in 177)</span> – <span class="font-weight-bold">112</span> The Last Words of Copernicus – Sarah Lancaster</p>
+<p><span>112</span> The Last Words of Copernicus – Sarah Lancaster</p>
 
-<p><span class="font-weight-bold">0.43% (1 in 235)</span> – <span class="font-weight-bold">460</span> Sardis – Sarah Lancaster</p>
+<p><span>460</span> Sardis – Sarah Lancaster</p>
 
-<p><span class="font-weight-bold">0.34% (1 in 290)</span> – <span class="font-weight-bold">128</span> The Promised Land – M. Durham</p>
+<p><span>128</span> The Promised Land – M. Durham</p>
 
-<p><span class="font-weight-bold">0.34% (1 in 291)</span> – <span class="font-weight-bold">504</span> Wood Street – Judy Hauff</p>
+<p><span>504</span> Wood Street – Judy Hauff</p>
 
-<p><span class="font-weight-bold">0.34% (1 in 298)</span> – <span class="font-weight-bold">448b</span> The Grieved Soul – M. A. Hendon</p>
+<p><span>448b</span> The Grieved Soul – M. A. Hendon</p>
 
-<p><span class="font-weight-bold">0.29% (1 in 341)</span> – <span class="font-weight-bold">547</span> Granville – Judy Hauff</p>
+<p><span>547</span> Granville – Judy Hauff</p>
 
-<p><span class="font-weight-bold">0.27% (1 in 374)</span> – <span class="font-weight-bold">551</span> Jacob's Vision – Margaret Wright</p>
+<p><span>551</span> Jacob's Vision – Margaret Wright</p>
 
-<p><span class="font-weight-bold">0.20% (1 in 489)</span> – <span class="font-weight-bold">426t</span> Kelley – Amanda Burdette Denson</p>
+<p><span>426t</span> Kelley – Amanda Burdette Denson</p>
 
-<p><span class="font-weight-bold">0.19% (1 in 522)</span> – <span class="font-weight-bold">378b</span> Never Turn Back – F. E. Parkerson</p>
+<p><span>378b</span> Never Turn Back – F. E. Parkerson</p>
 
-<p><span class="font-weight-bold">0.16% (1 in 627)</span> – <span class="font-weight-bold">77b</span> Holcombe – Charlene Wallace</p>
+<p><span>77b</span> Holcombe – Charlene Wallace</p>
 
-<p><span class="font-weight-bold">0.12% (1 in 811)</span> – <span class="font-weight-bold">345b</span> I'm On My Journey Home – Sarah Lancaster</p>
+<p><span>345b</span> I'm On My Journey Home – Sarah Lancaster</p>
 
-<p><span class="font-weight-bold">0.12% (1 in 813)</span> – <span class="font-weight-bold">406</span> New Harmony – M. L. A. Lancaster</p>
+<p><span>406</span> New Harmony – M. L. A. Lancaster</p>
 
-<p><span class="font-weight-bold">0.11% (1 in 909)</span> – <span class="font-weight-bold">275b</span> Roll On – Cynthia Bass</p>
+<p><span>275b</span> Roll On – Cynthia Bass</p>
 
-<p><span class="font-weight-bold">0.09% (1 in 1059)</span> – <span class="font-weight-bold">368</span> Stony Point – Judy Hauff</p>
+<p><span>368</span> Stony Point – Judy Hauff</p>
 
-<p><span class="font-weight-bold">0.09% (1 in 1059)</span> – <span class="font-weight-bold">446</span> Infinite Day – Ruth Denson Edwards</p>
+<p><span>446</span> Infinite Day – Ruth Denson Edwards</p>
 
-<p><span class="font-weight-bold">0.09% (1 in 1093)</span> – <span class="font-weight-bold">543</span> Thou Art God – Ruth Denson Edwards</p>
+<p><span>543</span> Thou Art God – Ruth Denson Edwards</p>
 
-<p><span class="font-weight-bold">0.08% (1 in 1259)</span> – <span class="font-weight-bold">438</span> The Marriage in the Skies – Sidney Burdette Denson</p>
+<p><span>438</span> The Marriage in the Skies – Sidney Burdette Denson</p>
 
-<p><span class="font-weight-bold">0.07% (1 in 1351)</span> – <span class="font-weight-bold">491</span> Oh, What Love – Eula Denson Johnson</p>
+<p><span>491</span> Oh, What Love – Eula Denson Johnson</p>
 
-<p><span class="font-weight-bold">0.07% (1 in 1413)</span> – <span class="font-weight-bold">534</span> New Georgia – Ruth Denson Edwards</p>
+<p><span>534</span> New Georgia – Ruth Denson Edwards</p>
 
-<p><span class="font-weight-bold">0.07% (1 in 1458)</span> – <span class="font-weight-bold">466</span> Haynes Creek – Joyce Harrison</p>
+<p><span>466</span> Haynes Creek – Joyce Harrison</p>
 
-<p><span class="font-weight-bold">0.07% (1 in 1530)</span> – <span class="font-weight-bold">348t</span> Ainslie – Judy Hauff</p>
+<p><span>348t</span> Ainslie – Judy Hauff</p>
 
-<p><span class="font-weight-bold">0.05% (1 in 1912)</span> – <span class="font-weight-bold">26</span> Samaria – Maggie Denson Cagle</p>
+<p><span>26</span> Samaria – Maggie Denson Cagle</p>
 
-<p><span class="font-weight-bold">0.04% (1 in 2685)</span> – <span class="font-weight-bold">367</span> Consolation – Annie Denson Aaron</p>
+<p><span>367</span> Consolation – Annie Denson Aaron</p>
 
-<p><span class="font-weight-bold">0.04% (1 in 2740)</span> – <span class="font-weight-bold">374</span> Oh, Sing With Me! – P. R. Lancaster</p>
+<p><span>374</span> Oh, Sing With Me! – P. R. Lancaster</p>
 
-<p><span class="font-weight-bold">0.03% (1 in 3095)</span> – <span class="font-weight-bold">545</span> The Pilgrim's Way – Irene Parker Denson</p>
+<p><span>545</span> The Pilgrim's Way – Irene Parker Denson</p>
 
 <h2 id="toc_5">Has the popularity of songs by female composers changed over time?</h2>
 
-<p>Songs by female composers <span class="font-italic">have</span> become more popular since 1995. </p>
+<p>Songs by female composers <span>have</span> become more popular since 1995. </p>
 
 <p>In 1995 – the year where songs by female composers were least popular – 1 in every 25 songs led at a minuted singing was by a female composer. By comparison, in 2017 – when female composers' songs were most popular – 1 in every 21 songs was by a female composer.</p>
 
 <a href="/uploads/2018/02/08/pc_all_songs_led_by_female_composer_.png">
-    <img src="/uploads/2018/02/08/pc_all_songs_led_by_female_composer_.png" class="img-fluid" alt="">
+    <img src="/uploads/2018/02/08/pc_all_songs_led_by_female_composer_.png" alt="">
 </a>
 
 <h2 id="toc_8">Which songs by female composers have changed the most in the popularity over time?</h2>
@@ -168,7 +168,7 @@ socialDescription: Data about female composers in the Sacred Harp
 <p><strong>+2.84%</strong> – <strong>466</strong> Haynes Creek – Joyce Harrison</p>
 
 <a href="/uploads/2018/02/12/biggest_increase_popularity.png">
-    <img src="/uploads/2018/02/12/biggest_increase_popularity.png" class="img-fluid" alt="">
+    <img src="/uploads/2018/02/12/biggest_increase_popularity.png" alt="">
 </a>
 
 <p>The four songs that have decreased the most in popularity in that timeframe are:</p>
@@ -182,7 +182,7 @@ socialDescription: Data about female composers in the Sacred Harp
 <p><strong>-2.74%</strong> – <strong>378b</strong> Never Turn Back – F. E. Parkerson</p>
 
 <a href="/uploads/2018/02/12/biggest_decrease_popularity.png">
-    <img src="/uploads/2018/02/12/biggest_decrease_popularity.png" class="img-fluid" alt="">
+    <img src="/uploads/2018/02/12/biggest_decrease_popularity.png" alt="">
 </a>
 
 <h2 id="toc_7">How I attributed gender to composers</h2>

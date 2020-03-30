@@ -5,6 +5,7 @@ socialDescription: My 'About me' page
 tags:
 layout: /layouts/page.njk
 ---
+
 I'm Ed Johnson-Williams. This is my personal website. I'm also [on Twitter at @_edjw](https://twitter.com/_edjw).
 
 I work at [Traidcraft Exchange](https://traidcraftexchange.org/) campaigning on trade, poverty, and human rights.

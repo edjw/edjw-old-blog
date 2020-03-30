@@ -72,7 +72,7 @@ vertical-align: top
 }
 </style>
 
-<table class="tg table-responsive js-scrollable">
+<table class="tg">
 <tr>
 <th class="tg-9hbo">PARTY</th>
 <th class="tg-9hbo">VOTES</th>

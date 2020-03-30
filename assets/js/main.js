@@ -1,4 +1,3 @@
-
 if (window.netlifyIdentity) {
 	window.netlifyIdentity.on("init", user => {
 		if (!user) {
@@ -9,15 +8,23 @@ if (window.netlifyIdentity) {
 	});
 }
 
-// Scroll Indicator across top of page
-function moveScrollIndicator() {
-	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-	var scrolled = (winScroll / height) * 100;
-	document.getElementById("scroll_indicator").style.width = scrolled + "%";
-}
-if (document.getElementById("scroll_indicator")) {
-	window.onscroll = function () {
-		moveScrollIndicator();
-	};
-}
+window.addEventListener("DOMContentLoaded", function () {
+	const navToggler = document.getElementById("nav_toggler");
+	const navList = document.getElementsByClassName("nav_list")[0];
+
+	navToggler.addEventListener("click", function () {
+		if (navToggler.innerText === "Menu") {
+
+			navList.classList.toggle("mobileShown");
+			navToggler.innerText = "Hide Menu";
+		}
+
+		else if (navToggler.innerText === "Hide Menu") {
+			navList.classList.toggle("mobileShown");
+			navToggler.innerText = "Menu";
+		}
+	})
+
+
+
+});

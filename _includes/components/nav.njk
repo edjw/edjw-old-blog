@@ -1,24 +1,16 @@
 {% if navigation.items %}
 
-  <div>
-    <nav>
-      <button type="button">Menu</button>
+  <nav>
+    <button id="nav_toggler" type="button">Menu</button>
 
-      <div>
+    <ul class="nav_list">
+      {% for nav in navigation.items %}
+        <li class="nav_item">
+          <a href="{{ nav.url | url }}">{{ nav.text }}</a>
+        </li>
+      {% endfor %}
 
-        <ul>
-          {% for nav in navigation.items %}
-          <li>
+    </ul>
+  </nav>
 
-            <a href="{{ nav.url | url }}"
-             ><img
-                src="/assets/internal_images/{{ nav.navicon }}"
-                width="15" alt="{{ nav.alt_text }}">{{ nav.text }}</a>
-          </li>
-          {% endfor %}
-
-        </ul>
-    </nav>
-  </div>
-
-{% endif%}
+  {% endif%}

@@ -1,20 +1,12 @@
 {% for post in postslist | reverse %}
-<article>
-<div>
-		<div>
-			<h5 class="post-date">{{ post.date | readableDate }}</h5>
-		</div>
-		<div>
-			<h2 class="post-title">
-				<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
-			</h2>
-		</div>
-	</div>
-
-
-</article>
-{% if loop.revindex > 1 %}
-<hr>
-{% endif %}
+	<section class="section">
+		<p class="post_date">{{ post.date | readableDate }}</p>
+		<h2 class="post_title">
+			<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
+		</h2>
+	</section>
+	{# {% if loop.revindex > 1 %}
+		<hr>
+	{% endif %} #}
 
 {% endfor %}

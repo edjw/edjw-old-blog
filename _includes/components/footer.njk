@@ -1,42 +1,45 @@
-<footer>
-  <div>
-    <div>
+<footer class="section">
+  <nav>
+
+    <ul class="nav_list">
 
       {% if site.author.twitterUsername %}
-      <a href="https://twitter.com/{{ site.author.twitterUsername }}" rel="me">Twitter</a>
-      <br>
+        <li class="nav_item">
+          <a href="https://twitter.com/{{ site.author.twitterUsername }}" rel="me">Twitter</a>
+        </li>
       {% endif %}
 
       {% if site.repository %}
-      <a href="https://github.com/{{ site.repository }}">Source</a>
-      <br>
+        <li class="nav_item">
+          <a href="https://github.com/{{ site.repository }}">Source</a>
+        </li>
       {% endif %}
 
       {% if site.RSSFeed %}
-      <a href="/feed.xml">RSS</a>
-      <br>
+        <li class="nav_item">
+          <a href="/feed.xml">RSS</a>
+        </li>
       {% endif %}
 
       {% if site.sitemap %}
-      <a href="/sitemap.xml">Sitemap</a>
+        <li class="nav_item">
+          <a href="/sitemap.xml">Sitemap</a>
+        </li>
       {% endif %}
+    </ul>
+  </nav>
 
-      {% if site.author.mastodonUsername %}
-      <link rel="me" href="https://mastodon.social/{{ site.author.mastodonUsername}}">
-      {% endif %}
+  {% if site.author.mastodonUsername %}
+    <link rel="me" href="https://mastodon.social/{{ site.author.mastodonUsername}}">
+  {% endif %}
 
-    </div>
+  {% if site.contentLicence %}
 
-    {% if site.contentLicence %}
-
-    <div>
-      <p>
+    <p>
         Content on this website is under a
         <a href="{{ site.contentLicence.link }}">{{ site.contentLicence.text }}</a>.
       </p>
-    </div>
 
-    {% endif %}
+  {% endif %}
 
-  </div>
 </footer>
