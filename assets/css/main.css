@@ -112,11 +112,14 @@ nav {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: var(--color-primary);
   color: var(--color-secondary-text);
   border: none;
   padding: 0.25rem 0;
-  margin: 0 4rem;
+  margin: 0 2rem;
 }
 
 .mobileShown {

@@ -10,10 +10,13 @@ function mobileMenu() {
 		if (navToggler.innerText === "Menu") {
 			navList.classList.toggle("mobileShown");
 			navToggler.innerText = "Hide Menu";
+			navToggler.setAttribute("aria-expanded", true)
 		}
 		else if (navToggler.innerText === "Hide Menu") {
 			navList.classList.toggle("mobileShown");
 			navToggler.innerText = "Menu";
+			navToggler.setAttribute("aria-expanded", false)
+
 		}
 	});
 }
