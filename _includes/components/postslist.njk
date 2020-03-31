@@ -1,9 +1,9 @@
 {% for post in postslist | reverse %}
 	<section class="section">
 		<p class="post_date">{{ post.date | readableDate }}</p>
-		<h2 class="post_title">
+		<h3 class="post_title">
 			<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
-		</h2>
+	</h3>
 	</section>
 	{# {% if loop.revindex > 1 %}
 		<hr>
