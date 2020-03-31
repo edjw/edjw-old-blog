@@ -52,16 +52,24 @@ a {
 /* Sticky footer */
 html {
   height: 100%;
-}  
+}
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
 footer {
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 /* End sticky footer */
@@ -76,18 +84,33 @@ nav {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .nav_list {
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 #nav_toggler {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: var(--color-primary);
   color: var(--color-secondary-text);
@@ -97,13 +120,22 @@ nav {
 }
 
 .mobileShown {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 @media (min-width: 650px) {
   .nav_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 
@@ -128,12 +160,18 @@ footer > nav {
   word-break: break-word;
 }
 
+.footnote-item {
+  list-style: decimal;
+  margin-left: 1rem;
+}
+
 button {
   cursor: pointer;
 }
 
 pre {
   padding: 1rem 0.5rem;
+  -webkit-box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   overflow: auto;
 }
@@ -154,9 +192,9 @@ pre {
   white-space: nowrap;
 }
 
- .footer_link {
+.footer_link {
   display: block;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .no_text_decoration {
@@ -187,5 +225,6 @@ pre {
 
 a {
   color: var(--color-primary);
+  -webkit-text-decoration-color: var(--color-primary);
   text-decoration-color: var(--color-primary);
 }
