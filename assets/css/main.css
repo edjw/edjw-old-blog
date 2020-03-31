@@ -143,9 +143,7 @@ nav {
 }
 
 #nav_toggler:focus,
-#nav_toggler:hover,
-.nav_item:focus,
-.nav_item:hover {
+.nav_item:focus {
   -webkit-box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
