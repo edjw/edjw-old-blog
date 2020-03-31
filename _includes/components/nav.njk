@@ -5,11 +5,11 @@
 
     <ul class="nav_list">
       {% for nav in navigation.items %}
-        <a href="{{ nav.url | url }}" class="nav_item">
-          <li>
+        <li class="nav_item">
+          <a href="{{ nav.url | url }}">
             {{ nav.text }}
-          </li>
-        </a>
+          </a>
+        </li>
       {% endfor %}
 
     </ul>
