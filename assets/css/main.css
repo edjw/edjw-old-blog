@@ -3,6 +3,15 @@
   --color-secondary-text: #ffffff;
 }
 
+::-moz-selection {
+  background-color: var(--color-primary);
+  color: var(--color-secondary-text);
+}
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-secondary-text);
+}
+
 html {
   font-size: 20px;
   -moz-osx-font-smoothing: grayscale;
@@ -230,4 +239,13 @@ a {
   color: var(--color-primary);
   -webkit-text-decoration-color: var(--color-primary);
   text-decoration-color: var(--color-primary);
+}
+
+.reading_time {
+  margin-top: 0.25rem;
+}
+
+.pocket_link {
+  display: block;
+  margin-top: 0.5rem;
 }
