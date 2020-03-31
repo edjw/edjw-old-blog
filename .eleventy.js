@@ -9,6 +9,9 @@ const htmlToAbsoluteUrls = require("@11ty/eleventy-plugin-rss/src/htmlToAbsolute
 // Minify CSS
 const CleanCSS = require("clean-css");
 
+// Minify JS
+const Terser = require("terser");
+
 // Reading time
 const readingTime = require("eleventy-plugin-reading-time");
 
@@ -40,11 +43,12 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(readingTime);
 
-	// Don't process folders with static assets e.g. images
+	// Copy over folders with static assets e.g. images
 	eleventyConfig.addPassthroughCopy("admin");
 	eleventyConfig.addPassthroughCopy("assets");
 	eleventyConfig.addPassthroughCopy("uploads");
 	eleventyConfig.addPassthroughCopy("_headers");
+	eleventyConfig.addPassthroughCopy({ "assets/internal_images/favicons": "/" });
 
 	// Date formatting (human readable)
 	eleventyConfig.addFilter("readableDate", dateObj => {
@@ -111,6 +115,16 @@ module.exports = function (eleventyConfig) {
 			return content;
 		});
 	}
+
+	eleventyConfig.addFilter("jsmin", function (code) {
+		let minified = Terser.minify(code);
+		if (minified.error) {
+			console.log("Terser error: ", minified.error);
+			return code;
+		}
+
+		return minified.code;
+	});
 
 	return {
 		passthroughFileCopy: true,
