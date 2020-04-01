@@ -13,19 +13,20 @@ I did it like this – roughly using the information in [this StackOverflow disc
 
 <pre>
 
-    from string import punctuation
+from string import punctuation
 
-    # making string lower case
-    working_string = working_string.lower()
+# making string lower case
+working_string = working_string.lower()
 
-    # removing punctuation
-    remove_punctuation = str.maketrans('', '', punctuation)
-    working_string = working_string.translate(remove_punctuation)
+# removing punctuation
+remove_punctuation = str.maketrans('', '', punctuation)
+working_string = working_string.translate(remove_punctuation)
 
-    # replacing spaces and double-spaces with an underscore
-    working_string = working_string.replace("  ", "_")
-    working_string = working_string.replace(" ", "_")
+# replacing spaces and double-spaces with an underscore
+working_string = working_string.replace("  ", "_")
+working_string = working_string.replace(" ", "_")
 </pre>
+
 I found a better, easier-to-use way of doing this earlier this morning on [a Reddit post](https://www.reddit.com/r/Python/comments/8wc2vi/5_rarely_mentioned_but_super_useful_packages_you/) in [/r/Python](https://www.reddit.com/r/Python).
 
 It uses [Inflection](https://inflection.readthedocs.io/en/latest/) – a "string transformation library". Inflection does all sorts of things including `inflection.parameterize().` [Parameterize](https://inflection.readthedocs.io/en/latest/index.html#inflection.parameterize) "replace\[s\] special characters in a string so that it may be used as part of a 'pretty' URL."
@@ -34,34 +35,34 @@ This means I can now do the following which is a much nicer-to-read and nicer-to
 
 <pre>
 
-    from inflection import parameterize
+from inflection import parameterize
 
-    # Example board game names with upper case, punctuation, and non-ASCII characters
-    board_game_names = [
-        "Dawn of the Zeds (Third edition)",
-        "Flash Point: Fire Rescue – Honor & Duty",
-        "Orléans",
-        "Mechs vs. Minions",
-        "Tzolk'in: The Mayan Calendar",
-        "T.I.M.E Stories",
-        "Aeon's End",
-    ]
+# Example board game names with upper case, punctuation, and non-ASCII characters
+board_game_names = [
+    "Dawn of the Zeds (Third edition)",
+    "Flash Point: Fire Rescue – Honor & Duty",
+    "Orléans",
+    "Mechs vs. Minions",
+    "Tzolk'in: The Mayan Calendar",
+    "T.I.M.E Stories",
+    "Aeon's End",
+]
 
-    for name in board_game_names:
-        parameterized_name = parameterize(name, separator="_") # Default is `separator='-'`
-        print(parameterized_name) # Or whatever I want to do with it
+for name in board_game_names:
+    parameterized_name = parameterize(name, separator="_") # Default is `separator='-'`
+    print(parameterized_name) # Or whatever I want to do with it
 
-    '''
-    Output
 
-    dawn_of_the_zeds_third_edition
-    flash_point_fire_rescue_honor_duty
-    orleans
-    mechs_vs_minions
-    tzolk_in_the_mayan_calendar
-    t_i_m_e_stories
-    aeon_s_end
-    '''
+Output
+
+dawn_of_the_zeds_third_edition
+flash_point_fire_rescue_honor_duty
+orleans
+mechs_vs_minions
+tzolk_in_the_mayan_calendar
+t_i_m_e_stories
+aeon_s_end
+
 </pre>
 
 Parameterize mostly just uses some regular expressions but it's very useful. It has the effect of:
