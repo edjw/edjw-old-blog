@@ -2,7 +2,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="google-site-verification" content="DAXhQi5iFH9IXoyrocu1dZIZklcbWwr87YUCwrOlPMM" />
 
   <title>{{ title }} - {{ site.title }}</title>
   <meta name="description" content="{{ socialDescription or site.description }}">
@@ -35,9 +34,9 @@
   <link href="https://github.com/{{ site.author.githubUsername }}" rel="me">
   {% endif %}
 
-  {% if site.author.microblogUsername %}
+  {# {% if site.author.microblogUsername %}
   <link href="https://micro.blog/{{ site.author.microblogUsername }}" rel="me">
-  {% endif %}
+  {% endif %} #}
 
   {% if site.author.mastodonUsername %}
   <link href="https://mastodon.social/{{ site.author.mastodonUsername }}" rel="me">
@@ -47,16 +46,16 @@
   {% if site.indieauth == true %}
   <link rel="authorization_endpoint" href="https://indieauth.com/auth">
   <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-  <link rel="microsub" href="https://aperture.p3k.io/microsub/134">
+  {# <link rel="microsub" href="https://aperture.p3k.io/microsub/134"> #}
   {% endif %}
 
-  {% if site.micropub == true %}
+  {# {% if site.micropub == true %}
   <link rel="micropub" href="{{ site.url }}/micropub">
-  {% endif %}
+  {% endif %} #}
 
-  {% if site.author.instagramUsername %}
+  {# {% if site.author.instagramUsername %}
   <link href="https://instagram.com/{{ site.author.instagramUsername }}" rel="me">
-  {% endif %}
+  {% endif %} #}
 
     {% set css %}
     {% include "../../node_modules/modern-css-reset/dist/reset.min.css" %}

@@ -99,7 +99,7 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
-	if (env === "prod") {
+	if (env === "production") {
 		// Minify HTML output
 		eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
 			if (outputPath.indexOf(".html") > -1) {
