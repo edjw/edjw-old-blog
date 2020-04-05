@@ -2,7 +2,6 @@
 title: About me
 permalink: /about/index.html
 socialDescription: My 'About me' page
-tags:
 layout: /layouts/page.njk
 ---
 

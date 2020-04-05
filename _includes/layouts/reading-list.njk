@@ -30,28 +30,29 @@ section: reading-list
                     </em>
                 {% endfor %}
             {% endif %}
-        </li>
 
-        <small class="pocket_link">
-            <a href="https://app.getpocket.com/read/{{ item.item_id }}">
+            <small class="pocket_link">
+                <a href="https://app.getpocket.com/read/{{ item.item_id }}">
                 Pocket article link
             </a>
-        </small>
-
-        {% if item.excerpt %}
-            <p class="word-wrap-break-word">
-                <em>Summary: </em>{{ item.excerpt }}</p>
-        {% endif %}
-
-        {% if item.tags %}
-            <small>
-                <i>Tags: </i>
-                {% for tag, tagHash in item.tags %}
-                    <a href="https://getpocket.com/explore/{{ tag }}">{{ tag }}</a>
-                    {% if loop.revindex > 1 %},{% endif %}
-                {% endfor %}
             </small>
-        {% endif %}
+
+            {% if item.excerpt %}
+                <p class="word-wrap-break-word">
+                    <em>Summary: </em>{{ item.excerpt }}</p>
+            {% endif %}
+
+            {% if item.tags %}
+                <small>
+                    <i>Tags: </i>
+                    {% for tag, tagHash in item.tags %}
+                        <a href="https://getpocket.com/explore/{{ tag }}">{{ tag }}</a>
+                        {% if loop.revindex > 1 %},{% endif %}
+                    {% endfor %}
+                </small>
+            {% endif %}
+
+        </li>
 
         {% if loop.revindex > 1 %}
             <hr>
