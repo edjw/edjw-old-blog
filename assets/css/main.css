@@ -23,6 +23,13 @@ html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -242,13 +249,17 @@ pre {
   text-align: center;
 }
 
-.post_title {
+.post_title, .e-content h2 {
   line-height: 1.2;
 }
 
 .section > .post_title,
 .section > .post_date {
   margin-top: 0;
+}
+
+.post_title > a {
+  text-decoration: none;
 }
 
 a {
