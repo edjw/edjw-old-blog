@@ -99,6 +99,10 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
+	eleventyConfig.addFilter("getDomain", function (url) {
+		return new URL(url).hostname;
+	});
+
 	if (env === "production") {
 		// Minify HTML output
 		eleventyConfig.addTransform("htmlmin", function (content, outputPath) {

@@ -31,7 +31,7 @@ section: reading-list
         {% endif %}
 
         <small class="pocket_link">
-            <a href="https://app.getpocket.com/read/{{ item.item_id }}" aria-label="Read {% if item.resolved_title %} {{ item.resolved_title }} {% else %}Link{% endif% } {% if item.authors %} by {% for authorID, authorDetails in item.authors %} {{ authorDetails.name | title }}{% endfor %}{% endif %} on Pocket">
+            <a href="https://app.getpocket.com/read/{{ item.item_id }}" aria-label="Read {% if item.resolved_title %} {{ item.resolved_title }} {% else %}article from {{ item.resolved_url | getDomain }}{% endif %} {% if item.authors %} by {% for authorID, authorDetails in item.authors %} {{ authorDetails.name | title }}{% endfor %}{% endif %} on Pocket">
                 Pocket article link
             </a>
         </small>
