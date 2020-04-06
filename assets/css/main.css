@@ -100,6 +100,8 @@ nav {
   margin-top: 1rem;
 }
 
+/* Mobile nav */
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,6 +183,8 @@ nav {
     display: none;
   }
 }
+
+/* End Mobile nav */
 
 footer > nav {
   margin-top: 0;
