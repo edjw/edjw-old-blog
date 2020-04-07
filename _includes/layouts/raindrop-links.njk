@@ -5,7 +5,7 @@ section: rss-likes
 <p>
  These are the {{ raindropLinks | length }} links that I've saved on <a href="https://raindrop.io">Raindrop, my bookmarking service</a>.
 </p>
-<hr
+<hr>
 
 <div class="reading_list">
 
@@ -16,10 +16,10 @@ section: rss-likes
         </a>
         <p>{{ item.excerpt }}</p>
 
-{% if loop.revindex > 1 %}
-    <hr>
-{% endif %}
+        {% if loop.revindex > 1 %}
+            <hr>
+        {% endif %}
 
-{% endfor %}
+    {% endfor %}
 
 </div>
