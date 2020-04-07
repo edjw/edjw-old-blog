@@ -1,37 +1,53 @@
 const axios = require("axios");
-const has = require("lodash.has");
 require("dotenv").config();
 
-module.exports = async function () {
+module.exports = async () => {
 
-	const url = "https://getpocket.com/v3/get";
-
-	return axios.get(url, {
-		params: {
-			consumer_key: process.env.POCKET_API_KEY,
-			access_token: process.env.POCKET_ACCESS_TOKEN,
-			sort: "newest",
-			detailType: "complete",
-		}
-	})
-		.then(function (response) {
-
-			// // This works and roughly returns order of original publication date
-			const responseData = response.data["list"];
-			const reversedResponseKeys = Object.keys(responseData).reverse();
-			const reversedResponseData = [];
-
-
-			reversedResponseKeys.forEach(function (key) {
-				if (has(responseData[key].tags, "private") == false) {
-					reversedResponseData.push(responseData[key]);
-				}
-			});
-
-			return reversedResponseData;
-			// // End of working version that returns order of original publication date
-		})
-		.catch(function (error) {
-			console.log(error);
+	function pushWantedItemsFromObject(response, object, key) {
+		response.push({
+			// storedNameforTemplatesEtc: object[key]["value_from_response"]
+			resolved_title: object[key]["resolved_title"],
+			resolved_url: object[key]["resolved_url"],
+			excerpt: object[key]["excerpt"],
+			tags: object[key]["tags"],
+			item_id: object[key]["item_id"],
+			authors: object[key]["authors"]
 		});
-};
+	}
+
+	const instance = axios.create({
+		baseURL: "https://getpocket.com/v3/",
+		timeout: 1000
+	});
+
+	try {
+		const { data } = await instance.get("get", {
+			params: {
+				consumer_key: process.env.POCKET_API_KEY,
+				access_token: process.env.POCKET_ACCESS_TOKEN,
+				sort: "newest",
+				detailType: "complete"
+			}
+		});
+		const items = data.list;
+
+		let response = [];
+
+		Object.keys(items).forEach(item => {
+			if (!("tags" in items[item])) {
+				pushWantedItemsFromObject(response, items, item);
+			}
+
+			else if (!("private" in items[item]["tags"]))
+			pushWantedItemsFromObject(response, items, item);
+		});
+
+		return response.reverse();
+
+	} catch (error) {
+		console.log(error);
+		return [];
+	}
+}
+
+

@@ -45,7 +45,7 @@ section: reading-list
             <small>
                 <i>Tags: </i>
                 {% for tag, tagHash in item.tags %}
-                    <a href="https://getpocket.com/explore/{{ tag }}">{{ tag }}</a>
+                    {{ tag }}
                     {% if loop.revindex > 1 %},{% endif %}
                 {% endfor %}
             </small>

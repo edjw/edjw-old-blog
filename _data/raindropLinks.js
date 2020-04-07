@@ -11,8 +11,7 @@ module.exports = async () => {
     try {
         const { data } = await instance.get("raindrops/0");
         const items = data.items;
-        console.log(items)
-
+        
         let response = [];
 
         if (items.length) {
