@@ -31,10 +31,27 @@ Wipe the database nightly for anything over 90 days old
 
 Does this have to be a fauna db? Why not just a big json file?
 
+https://jsonbin.org
+
 ```json
 
 {
-    "home": {
+   "edjohnsonwilliams.co.uk": { 
+       "home": {
+        "1": {
+            "time": "1586113556"
+        },
+        "2": {
+            "time": "1586113556"
+        },
+        "3": {
+            "time": "1586113556"
+        },
+        "4": {
+            "time": "1586113556"
+        }
+   },
+    "about": {
         "1": {
             "time": "1586113556"
         },
@@ -48,7 +65,7 @@ Does this have to be a fauna db? Why not just a big json file?
             "time": "1586113556"
         }
     },
-    "about": {
+     "2017-06-15-a-simplistic-post-on-liberalism-and-christianity": {
         "1": {
             "time": "1586113556"
         },

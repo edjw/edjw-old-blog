@@ -258,7 +258,8 @@ pre {
 }
 
 .section > .post_title,
-.section > .post_date {
+.section > .post_date,
+.section > .page_title {
   margin-top: 0;
 }
 
