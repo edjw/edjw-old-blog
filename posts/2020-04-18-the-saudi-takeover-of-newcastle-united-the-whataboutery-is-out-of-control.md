@@ -14,7 +14,9 @@ But the reasons, the whataboutery, some people are using to make it seem like it
 
 Ultimately, countries should not buy football clubs. Especially countries who abuse people like Saudi Arabia does.
 
-But until we get to the (unlikely) point that football's authorities deal with this properly, let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United by pointing out other bad things. Other things being bad does not stop the incredibly bad things Saudi Arabia does being worse.
+We're unlikely to get to the point that football's authorities deal with this properly.
+
+But let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United by pointing out other bad things. Other things being bad does not stop the incredibly bad things Saudi Arabia does being worse.
 
 Here are some whataboutery I've seen people engaging in over the last few days.
 
