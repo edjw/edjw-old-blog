@@ -38,7 +38,7 @@ And while we're here…Yes, it is also bad that Saudi Arabia paid social media i
 
 Some people seem to think that anyone who criticises the Saudi takeover is holding Newcastle to a higher moral standard than other clubs. I don't fully understand why some people think this.
 
-[Journalists have covered Saudi Arabia investing](https://www.theguardian.com/football/2019/feb/15/sportswashing-europes-biggest-clubs-champions-league-owners-sponsors-uefa) or being interested in buying other clubs in the past. How else would any of us have heard about it happening if journalists had not covered it?
+[Journalists have covered Saudi Arabia investing in](https://www.theguardian.com/football/2019/feb/15/sportswashing-europes-biggest-clubs-champions-league-owners-sponsors-uefa) or being interested in buying other clubs in the past. How else would any of us have heard about it happening if journalists had not covered it?
 
 ## 3. Whatabout the UK's arms sales to Saudi Arabia?
 
