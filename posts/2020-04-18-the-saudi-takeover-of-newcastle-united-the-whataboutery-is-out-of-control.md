@@ -24,10 +24,10 @@ Here are some whataboutery I've seen people engaging in over the last few days.
 
 Yes. Mike Ashley is a bad boss. His company Sports Direct treats its workers terribly. Mike Ashley has treated the club terribly. But, unlike Saudi Arabia, Mike Ashley does not:
 
-* murder journalists [^]: https://www.bbc.co.uk/news/world-middle-east-49826905
-* behead people [^]: https://www.theguardian.com/world/2018/apr/26/saudi-arabia-criticised-over-executions-for-drug-offences
-* lead wars that kill civilians [^]: https://www.amnesty.org.uk/exposed-british-made-bombs-used-civilian-targets-yemen
-* put people in prison for saying that men and women are equal [^]: https://www.bbc.co.uk/news/world-middle-east-47553416
+* murder journalists ^[https://www.bbc.co.uk/news/world-middle-east-49826905]
+* behead people ^[https://www.theguardian.com/world/2018/apr/26/saudi-arabia-criticised-over-executions-for-drug-offences]
+* lead wars that kill civilians ^[https://www.amnesty.org.uk/exposed-british-made-bombs-used-civilian-targets-yemen]
+* put people in prison for saying that men and women are equal ^[https://www.bbc.co.uk/news/world-middle-east-47553416]
 
 ## 2. Whatabout Saudi Arabia investing in other clubs?
 
