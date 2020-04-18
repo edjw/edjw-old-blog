@@ -11,7 +11,7 @@ People are understandably desperate to get rid of Mike Ashley and move on to a d
 
 But the reasons, the whataboutery, some people are using to make it seem like it's fine for Saudi Arabia to own the club are getting ridiculous.
 
-Ultimately, countries should not buy football clubs. Especially countries who abuse people like Saudi Arabia does.
+Ultimately, countries should not buy football clubs. Especially countries that abuse people like Saudi Arabia does.
 
 We're unlikely to get to the point that football's authorities deal with this properly.
 
