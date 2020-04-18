@@ -17,7 +17,7 @@ We're unlikely to get to the point that football's authorities deal with this pr
 
 But let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United by pointing out other bad things. Other things being bad does not stop the incredibly bad things Saudi Arabia does being worse.
 
-Here are some whataboutery I've seen people engaging in over the last few days.
+Here is some of the whataboutery I've seen people engaging in over the last few days.
 
 ## 1. Whatabout Mike Ashley?
 
