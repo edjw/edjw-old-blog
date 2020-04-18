@@ -14,7 +14,7 @@ But the reasons, the whataboutery, some people are using to make it seem like it
 
 Ultimately, countries should not buy football clubs. Especially countries who abuse people like Saudi Arabia does.
 
-But until we get to the (unlikely) point that football's authorities deal with this properly, let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United by pointing out other bad things.
+But until we get to the (unlikely) point that football's authorities deal with this properly, let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United by pointing out other bad things. Other things being bad does not stop the incredibly bad things Saudi Arabia does being worse.
 
 Here are some whataboutery I've seen people engaging in over the last few days.
 
@@ -31,11 +31,13 @@ Yes. Mike Ashley is a bad boss. His company Sports Direct treats its workers ter
 
 This one is often followed up with something about how the media didn't cover Saudi Arabia having interest in other clubs.
 
-Yes. It is bad that Saudi Arabia has invested indirectly in other clubs.
+Yes. It is bad that Saudi Arabia has invested indirectly in other clubs to try to improve its image.
 
 And while we're here…Yes, it is also bad that Saudi Arabia paid social media influencers to go to a music festival in Saudi Arabia and [post about a 'cultural revolution'](https://www.theguardian.com/world/2019/dec/23/shameless-influencers-face-backlash-for-promoting-saudi-arabia-music-festival).
 
-Some people seem to believe anyone who criticises the Saudi takeover is holding Newcastle to a higher moral standard than other clubs. I don't fully understand why some people think this. [Journalists have covered Saudi Arabia investing](https://www.theguardian.com/football/2019/feb/15/sportswashing-europes-biggest-clubs-champions-league-owners-sponsors-uefa) or being interested in buying other clubs in the past. How else would any of us have heard about it happening if journalists had not covered it?
+Some people seem to think that anyone who criticises the Saudi takeover is holding Newcastle to a higher moral standard than other clubs. I don't fully understand why some people think this.
+
+[Journalists have covered Saudi Arabia investing](https://www.theguardian.com/football/2019/feb/15/sportswashing-europes-biggest-clubs-champions-league-owners-sponsors-uefa) or being interested in buying other clubs in the past. How else would any of us have heard about it happening if journalists had not covered it?
 
 ## 3. Whatabout the UK's arms sales to Saudi Arabia?
 
@@ -43,6 +45,6 @@ Yes. This is also very bad. The UK should not sell arms to Saudi Arabia. That Sa
 
 ## 4. Whatabout the fans? Don’t they deserve some success?
 
-It would be great for Newcastle to have success. Supporting Newcastle under Mike Ashley has been rubbish. If Newcastle does have success using Saudi Arabia's money, it will be hollow.
+It would be great for Newcastle to have success. Supporting Newcastle under Mike Ashley has often been rubbish. But if Newcastle does have success using Saudi Arabia's money, it will be hollow.
 
 Sidenote: Does any team actually *deserve* success more or less than other teams?
