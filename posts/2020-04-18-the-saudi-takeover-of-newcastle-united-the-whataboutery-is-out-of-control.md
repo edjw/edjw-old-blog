@@ -1,8 +1,7 @@
 ---
-title: "The Saudi takeover of Newcastle United: The whataboutery is out of control"
+title: "The whataboutery around the Saudi takeover of Newcastle United is out of control"
 date: 2020-04-18T21:15:15.958Z
-socialDescription: Let's not try to make ourselves feel better about Saudi
-  Arabia buying Newcastle United by pointing out other bad things.
+socialDescription: "Let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United by pointing out other bad things."
 ---
 Saudi Arabia wants to buy 80% of Newcastle United Football Club. Buying Newcastle is part of its plan to make itself look good despite its disgraceful human rights record and leading role in the world's addiction to oil.
 
