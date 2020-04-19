@@ -56,13 +56,17 @@ This is the worst one.
 
 The thinking goes like this. If you use oil to drive or pay money to a company like Uber (another Saudi investment), then it’s hypocritical to criticise the Saudi takeover of Newcastle.
 
-I had to write it down to work that one out because the logic is so weird.
+I suspect some people find this argument effective. The sort of person who criticises a country for committing torture probably also feels a bit guilty about using oil for transport. But any guilt we feel for that should not stop us criticising the Saudi state.
 
-Another way of making this argument is,
+Another way of making this odd argument is,
 	
 <blockquote>“Hey! How dare you condemn that person for murdering their kids? Yesterday you parked with half a wheel in the next parking space along!”</blockquote>
 
-It’d be quite dangerous if everyone stopped criticising extremely unethical things (like torture) just because they also made individual choices that might be unethical but are incredibly difficult to avoid in the modern world. We can still criticise unspeakable actions by a country even if we make (much less consequential) unethical actions in our day-to-day lives.
+It’s clearly ridiculous.
+
+It’d be quite dangerous if everyone stopped criticising extremely unethical things (like torture) just because they also made individual choices that might be unethical but are incredibly difficult to avoid in the modern world.
+
+We can still criticise unspeakable actions by a country even if we make (much less consequential) unethical actions in our day-to-day lives.
 
 When I used an Uber to take my baby to the hospital at 3am, did it immediately become hypocritical to criticise Uber or their Saudi investors? Obviously not.
 
