@@ -66,6 +66,6 @@ It’d be quite dangerous if everyone stopped criticising extremely unethical th
 
 When I used an Uber to take my baby to the hospital at 3am, did it immediately become hypocritical to criticise Uber or their Saudi investors? Obviously not.
 
-Ethical purity is impossible. No one meets that test. No-one is asking for ethical purity. Torture is wrong. It’s on a whole other level to taking an Uber. 
+Ethical purity is impossible. No-one meets that test. No-one is asking for ethical purity. Torture is wrong. It is infinitely worse than taking an Uber. 
 
 Newcastle should not be involved with a prospective owner who commits torture.
