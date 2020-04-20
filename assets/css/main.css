@@ -253,7 +253,8 @@ pre {
   text-align: center;
 }
 
-.post_title, .e-content h2 {
+.post_title,
+.e-content h2 {
   line-height: 1.2;
 }
 
@@ -271,6 +272,12 @@ a {
   color: var(--color-primary);
   -webkit-text-decoration-color: var(--color-primary);
   text-decoration-color: var(--color-primary);
+}
+
+.date_reading {
+  border-top: 1px solid var(--color-primary-text);
+  border-bottom: 1px solid var(--color-primary-text);
+  padding-bottom: 1rem;
 }
 
 .reading_time {

@@ -14,14 +14,14 @@ section: post
     <!-- End of h-entry things -->
 
     <h2 class="p-name post_title">{{ title }}</h2>
-    <hr>
-    <p class="published_date">
-        <em>Published:</em>
-        {{ page.date | readableDate }}</p>
-    <p class="reading_time">
-        <em>Reading time:</em>
-        {{ content | readingTime }}</p>
-    <hr>
+    <section class="date_reading">
+        <p class="published_date">
+            <em>Published:</em>
+            {{ page.date | readableDate }}</p>
+        <p class="reading_time">
+            <em>Reading time:</em>
+            {{ content | readingTime }}</p>
+    </section>
     <div class="e-content">
         {{ content | safe }}
     </div>
