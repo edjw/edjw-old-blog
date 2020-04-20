@@ -20,6 +20,7 @@ But let's not try to make ourselves feel better about Saudi Arabia buying Newcas
 Here is some of the whataboutery I've seen people engaging in over the last few days.
 
 <div class="toc">
+
 - [1. Whatabout Mike Ashley?](#1-whatabout-mike-ashley)
 - [2. Whatabout Saudi Arabia investing in other clubs?](#2-whatabout-saudi-arabia-investing-in-other-clubs)
 - [3. Whatabout the UK's arms sales to Saudi Arabia?](#3-whatabout-the-uks-arms-sales-to-saudi-arabia)
@@ -27,6 +28,7 @@ Here is some of the whataboutery I've seen people engaging in over the last few 
 - [5. Whatabout you? Don’t criticise the deal if you do unethical things too](#5-whatabout-you-dont-criticise-the-deal-if-you-do-unethical-things-too)
 - [6. Whatabout the Queen/Prince William/Prince Charles/Donald Trump/Boris Johnson?](#6-whatabout-the-queenprince-williamprince-charlesdonald-trumpboris-johnson)
 - [7. Whatabout other owners?](#7-whatabout-other-owners)
+  
 </div>
 
 ## 1. Whatabout Mike Ashley?
