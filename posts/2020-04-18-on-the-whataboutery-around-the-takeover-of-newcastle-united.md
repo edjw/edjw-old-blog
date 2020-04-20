@@ -73,3 +73,13 @@ When I used an Uber to take my baby to the hospital at 3am, did it immediately b
 Ethical purity is impossible. No-one meets that test. No-one is asking for ethical purity. Torture is wrong. It is infinitely worse than taking an Uber. 
 
 Newcastle should not be involved with a prospective owner who commits torture.
+
+## 6. Whatabout the Queen/Prince William/Prince Charles/Donald Trump/Boris Johnson?
+
+If Mohammad bin Salman is good enough for them to meet him, he’s good enough for Newcastle 
+
+Maybe they should not have met him. Maybe they took him to task on human rights? A photo of someone meeting someone is not a good reason why it’s ok for a club to accept someone like that as their owner.
+
+## 7. Whatabout other owners?
+
+All owners are bad men with a bad past (apparently). Hardly any (no?) other owner has abused people in the way Saudi Arabia has.
