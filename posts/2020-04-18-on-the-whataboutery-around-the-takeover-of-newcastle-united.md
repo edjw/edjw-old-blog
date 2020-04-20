@@ -28,7 +28,8 @@ Here is some of the whataboutery I've seen people engaging in over the last few 
 - [5. Whatabout you? Don’t criticise the deal if you do unethical things too](#5-whatabout-you-dont-criticise-the-deal-if-you-do-unethical-things-too)
 - [6. Whatabout the Queen/Prince William/Prince Charles/Donald Trump/Boris Johnson?](#6-whatabout-the-queenprince-williamprince-charlesdonald-trumpboris-johnson)
 - [7. Whatabout other owners?](#7-whatabout-other-owners)
-  
+- [8. Whatabout what journalists did/did not say in the past?](#8-whatabout-what-journalists-diddid-not-say-in-the-past)
+
 </div>
 
 ## 1. Whatabout Mike Ashley?
@@ -95,3 +96,9 @@ Maybe they should not have met him. Maybe they took him to task on human rights?
 ## 7. Whatabout other owners?
 
 All owners are bad men with a bad past (apparently). Hardly any (no?) other owner has abused people in the way Saudi Arabia has.
+
+## 8. Whatabout what journalists did/did not say in the past?
+
+A whole thread of this whataboutery is finding previous articles or tweets by journalists who criticise the Saudi takeover of Newcastle. It then tries to say that these journalists were less critical of potential Saudi investment in other clubs and that it's hypocritical for journalists to criticise this deal.
+
+It does not matter what journalists did or did not say in the past. We are either happy for Saudi Arabia to use Newcastle United to persuade more people to look favourably on it or not. What a journalist said or did not say in the past has no effect on how horrific beheading people is.
