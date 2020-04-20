@@ -19,6 +19,14 @@ But let's not try to make ourselves feel better about Saudi Arabia buying Newcas
 
 Here is some of the whataboutery I've seen people engaging in over the last few days.
 
+- [1. Whatabout Mike Ashley?](#1-whatabout-mike-ashley)
+- [2. Whatabout Saudi Arabia investing in other clubs?](#2-whatabout-saudi-arabia-investing-in-other-clubs)
+- [3. Whatabout the UK's arms sales to Saudi Arabia?](#3-whatabout-the-uks-arms-sales-to-saudi-arabia)
+- [4. Whatabout the fans? Don’t they deserve some success?](#4-whatabout-the-fans-dont-they-deserve-some-success)
+- [5. Whatabout you? Don’t criticise the deal if you do unethical things too](#5-whatabout-you-dont-criticise-the-deal-if-you-do-unethical-things-too)
+- [6. Whatabout the Queen/Prince William/Prince Charles/Donald Trump/Boris Johnson?](#6-whatabout-the-queenprince-williamprince-charlesdonald-trumpboris-johnson)
+- [7. Whatabout other owners?](#7-whatabout-other-owners)
+
 ## 1. Whatabout Mike Ashley?
 
 Yes. Mike Ashley is a bad boss. His company Sports Direct treats its workers terribly. Mike Ashley has treated the club terribly. But, unlike Saudi Arabia, Mike Ashley does not:
