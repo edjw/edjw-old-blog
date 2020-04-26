@@ -56,7 +56,9 @@ This is the worst one.
 
 The thinking goes like this. If you use oil to drive or pay money to a company like Uber (another Saudi investment), then it’s hypocritical to criticise the Saudi takeover of Newcastle.
 
-I suspect some people find this argument effective. The sort of person who criticises a country for committing torture probably also feels a bit guilty about using oil for transport. But any guilt we feel for that should not stop us criticising the Saudi state.
+You’ve got to wonder whether people saying this have been criticising Mike Ashley over the last few years while paying money to Newcastle United, Sports Direct, House of Fraser or any of his other businesses.
+
+I suspect some people find this argument effective though. The sort of person who criticises a country for committing torture probably also feels a bit guilty about using oil for transport. But any guilt we feel for that should not stop us criticising the Saudi state.
 
 Another way of making this odd argument is,
 	
