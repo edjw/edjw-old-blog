@@ -5,7 +5,7 @@ socialDescription: "Let's not try to make ourselves feel better about Saudi Arab
 ---
 Saudi Arabia wants to buy 80% of Newcastle United Football Club. Buying Newcastle is part of its plan to make itself look good despite its disgraceful human rights record and leading role in the world's addiction to oil.
 
-I'm a Newcastle fan. I'm appalled by the idea of Saudi Arabia buying the club.
+I'm a Newcastle fan. I'm appalled by the idea of Saudi Arabia buying the club. They are using the club to improve their terrible and well-deserved image.
 
 People are understandably desperate to get rid of Mike Ashley and move on to a different owner. I am too.
 
