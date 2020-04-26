@@ -51,7 +51,7 @@ body {
 }
 
 .section {
-  padding: 1rem;
+  padding: 0.75rem 1rem 1rem 1rem;
   margin: 1rem 0 0 0;
   border-radius: 0.25rem;
   -webkit-box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -253,7 +253,8 @@ pre {
   text-align: center;
 }
 
-.post_title, .e-content h2 {
+.post_title,
+.e-content h2 {
   line-height: 1.2;
 }
 
@@ -273,6 +274,12 @@ a {
   text-decoration-color: var(--color-primary);
 }
 
+.date_reading {
+  border-top: 1px solid var(--color-primary-text);
+  border-bottom: 1px solid var(--color-primary-text);
+  padding-bottom: 1rem;
+}
+
 .reading_time {
   margin-top: 0.25rem;
 }
@@ -280,4 +287,12 @@ a {
 .pocket_link {
   display: block;
   margin-top: 0.5rem;
+}
+
+.toc > ul {
+  padding-left: 0;
+}
+
+.toc > ul > li {
+  list-style-type: none;
 }
