@@ -11,18 +11,18 @@
 
       {% if site.repository %}
         <li class="footer_nav_item">
-          <a href="https://github.com/{{ site.repository }}">Source</a>
+          <a href="https://github.com/{{ site.repository }}">See the code for this site</a>
         </li>
       {% endif %}
 
       {% if site.RSSFeed %}
         <li class="footer_nav_item">
-          <a href="/feed.xml">RSS</a>
+          <a href="/feed.xml">See the RSS feed for this site</a>
         </li>
       {% endif %}
 
       {% if site.sitemap %}
-        <li class="footer_nav_item">
+        <li class="footer_nav_item hidden">
           <a href="/sitemap.xml">Sitemap</a>
         </li>
 
@@ -37,7 +37,7 @@
   {% if site.contentLicence %}
 
     <p>
-        Content on this website is under a
+        Content on this website is licenced under a
         <a href="{{ site.contentLicence.link }}">{{ site.contentLicence.text }}</a>.
       </p>
 
