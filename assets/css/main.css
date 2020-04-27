@@ -1,7 +1,7 @@
 :root {
   --color-primary: #2341c1;
   --color-primary-text: #212121;
-  --color-secondary-text: #ffffff;
+  --color-secondary-text: #fdfdfd;
 }
 
 ::-moz-selection {
@@ -60,10 +60,10 @@ body {
 }
 
 a {
-  color: #212121;
+  color: var(--color-primary-text);
   text-decoration: underline;
-  -webkit-text-decoration-color: #2341c1;
-  text-decoration-color: #2341c1;
+  -webkit-text-decoration-color: var(--color-primary);
+  text-decoration-color: var(--color-primary);
 }
 
 /* Sticky footer */
