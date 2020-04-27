@@ -5,7 +5,7 @@ socialDescription: "Let's not try to make ourselves feel better about Saudi Arab
 ---
 Saudi Arabia wants to buy 80% of Newcastle United Football Club. Buying Newcastle is part of its plan to make itself look good despite its disgraceful human rights record and leading role in the world's addiction to oil.
 
-I'm a Newcastle fan. I'm appalled by the idea of Saudi Arabia buying the club.
+I'm a Newcastle fan. I'm appalled by the idea of Saudi Arabia buying the club. They are using the club to improve their terrible and well-deserved image.
 
 People are understandably desperate to get rid of Mike Ashley and move on to a different owner. I am too.
 
@@ -13,9 +13,9 @@ But the reasons, the whataboutery, some people are using to make it seem like it
 
 Ultimately, countries should not buy football clubs. Especially countries that abuse people like Saudi Arabia does.
 
-We're unlikely to get to the point that football's authorities deal with this properly.
+We're unlikely to get to the point that football's authorities deal with this properly. They should. It’s their responsibility.
 
-But let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United by pointing out other bad things. Other things being bad does not stop the incredibly bad things Saudi Arabia does being worse.
+But as fans, let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United by pointing out other bad things. Other things being bad does not stop the incredibly bad things Saudi Arabia does being worse.
 
 Here is some of the whataboutery I've seen people engaging in over the last few days.
 
@@ -74,7 +74,9 @@ This is the worst one.
 
 The thinking goes like this. If you use oil to drive or pay money to a company like Uber (another Saudi investment), then it’s hypocritical to criticise the Saudi takeover of Newcastle.
 
-I suspect some people find this argument effective. The sort of person who criticises a country for committing torture probably also feels a bit guilty about using oil for transport. But any guilt we feel for that should not stop us criticising the Saudi state.
+You’ve got to wonder whether people saying this have been criticising Mike Ashley over the last few years while paying money to Newcastle United, Sports Direct, House of Fraser or any of his other businesses.
+
+I suspect some people find this argument effective though. The sort of person who criticises a country for committing torture probably also feels a bit guilty about using oil for transport. But any guilt we feel for that should not stop us criticising the Saudi state.
 
 Another way of making this odd argument is,
 	
