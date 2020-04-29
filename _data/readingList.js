@@ -1,4 +1,5 @@
-const axios = require("axios");
+// const axios = require("axios");
+const Cache = require("@11ty/eleventy-cache-assets");
 require("dotenv").config();
 
 module.exports = async () => {
@@ -15,20 +16,20 @@ module.exports = async () => {
 		});
 	}
 
-	const instance = axios.create({
-		baseURL: "https://getpocket.com/v3/",
-		timeout: 1000
-	});
+	// const instance = axios.create({
+	// 	baseURL: "https://getpocket.com/v3/",
+	// 	timeout: 1000
+	// });
+
+	const url = `https://getpocket.com/v3/get?consumer_key=${process.env.POCKET_API_KEY}&access_token=${process.env.POCKET_ACCESS_TOKEN}&sort=newest&detailType=complete`;
 
 	try {
-		const { data } = await instance.get("get", {
-			params: {
-				consumer_key: process.env.POCKET_API_KEY,
-				access_token: process.env.POCKET_ACCESS_TOKEN,
-				sort: "newest",
-				detailType: "complete"
-			}
+
+		const data = await Cache(url, {
+			duration: "1d",
+			type: "json",
 		});
+
 		const items = data.list;
 
 		let response = [];
@@ -39,15 +40,14 @@ module.exports = async () => {
 			}
 
 			else if (!("private" in items[item]["tags"]))
-			pushWantedItemsFromObject(response, items, item);
+				pushWantedItemsFromObject(response, items, item);
 		});
 
 		return response.reverse();
 
 	} catch (error) {
-		console.log(error);
+		console.log(`\n${error}\n`);
 		return [];
 	}
+
 }
-
-

@@ -1,17 +1,23 @@
-const axios = require("axios");
+const Cache = require("@11ty/eleventy-cache-assets");
 require("dotenv").config();
 
 module.exports = async () => {
-    const instance = axios.create({
-        baseURL: "https://api.raindrop.io/rest/v1/",
-        timeout: 1000,
-        headers: { "Authorization": `Bearer ${process.env.RAINDROP_ACCESS_TOKEN}` }
-    });
+
+    const url = "https://api.raindrop.io/rest/v1/raindrops/0";
 
     try {
-        const { data } = await instance.get("raindrops/0");
+        const data = await Cache(url, {
+            duration: "1d",
+            type: "json",
+            fetchOptions: {
+                headers: {
+                    "Authorization": `Bearer ${process.env.RAINDROP_ACCESS_TOKEN}`
+                }
+            }
+        });
+
         const items = data.items;
-        
+
         let response = [];
 
         if (items.length) {
@@ -29,7 +35,7 @@ module.exports = async () => {
             return response;
         }
     } catch (error) {
-        console.log(error);
+        console.log(`\n${error}\n`);
         return [];
     }
 }
