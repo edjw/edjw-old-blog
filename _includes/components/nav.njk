@@ -1,9 +1,9 @@
 {% if navigation.items %}
 
-  <nav aria-label="primary">
-    <button id="nav_toggler" type="button" aria-expanded="false" aria-label="open navigation">Menu</button>
+  <nav aria-label="primary" x-data="{ open: false }">
+    <button id="nav_toggler" type="button" aria-expanded="false" aria-label="open navigation"  @click="open = true">Menu</button>
 
-    <ul class="nav_list">
+    <ul class="nav_list" x-show="open" @click.away="open = false">
       {% for nav in navigation.items %}
         <li class="nav_item">
           <a href="{{ nav.url | url }}">

@@ -9,29 +9,28 @@
   {# Twitter metadata #}
   <meta name="twitter:card" content="summary">
   {% if site.author.twitterUsername %}
-  <meta name="twitter:site" content="{{ site.author.twitterUsername }}">
+    <meta name="twitter:site" content="{{ site.author.twitterUsername }}">
   {% endif %}
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ socialDescription or site.description }}">
   {% if site.author.twitterUsername %}
-  <meta name="twitter:creator" content="{{ site.author.twitterUsername }}">
+    <meta name="twitter:creator" content="{{ site.author.twitterUsername }}">
   {% endif %}
   {# <meta name="twitter:image" content="http://www.example.com/image.jpg"> #}
   {# End of Twitter metadata #}
 
   {# Facebook / Open Graph metadata #}
-  <meta property="og:title" content="{{ title }}" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="{{ site.url}}{{ page.url }}" />
+  <meta property="og:title" content="{{ title }}"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="{{ site.url}}{{ page.url }}"/>
   {# <meta property="og:image" content="http://example.com/image.jpg" /> #}
-  <meta property="og:description" content="{{ socialDescription or site.description }}" />
-  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:description" content="{{ socialDescription or site.description }}"/>
+  <meta property="og:site_name" content="{{ site.title }}"/>
   {# End of Facebook / Open Graph metadata #}
-
 
   {# Rel links #}
   {% if site.author.githubUsername %}
-  <link href="https://github.com/{{ site.author.githubUsername }}" rel="me">
+    <link href="https://github.com/{{ site.author.githubUsername }}" rel="me">
   {% endif %}
 
   {# {% if site.author.microblogUsername %}
@@ -39,14 +38,14 @@
   {% endif %} #}
 
   {% if site.author.mastodonUsername %}
-  <link href="https://mastodon.social/{{ site.author.mastodonUsername }}" rel="me">
+    <link href="https://mastodon.social/{{ site.author.mastodonUsername }}" rel="me">
   {% endif %}
   {# End of Rel links #}
 
   {% if site.indieauth == true %}
-  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-  {# <link rel="microsub" href="https://aperture.p3k.io/microsub/134"> #}
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    {# <link rel="microsub" href="https://aperture.p3k.io/microsub/134"> #}
   {% endif %}
 
   {# {% if site.micropub == true %}
@@ -57,12 +56,12 @@
   <link href="https://instagram.com/{{ site.author.instagramUsername }}" rel="me">
   {% endif %} #}
 
-    {% set css %}
-    {% include "../../node_modules/modern-css-reset/dist/reset.min.css" %}
-    {% include "../../assets/css/main.css" %}
-    {% endset %}
-    <style>
-      {{ css | cssmin | safe }}
-    </style>
-
+  {% set css %}
+  {% include "../../node_modules/modern-css-reset/dist/reset.min.css" %}
+  {% include "../../assets/css/main.css" %}
+  {% endset %}
+  <style>
+    {{css | cssmin | safe}}
+  </style>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
