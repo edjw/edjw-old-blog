@@ -1,4 +1,3 @@
-// const axios = require("axios");
 const Cache = require("@11ty/eleventy-cache-assets");
 require("dotenv").config();
 
@@ -15,11 +14,6 @@ module.exports = async () => {
 			authors: object[key]["authors"]
 		});
 	}
-
-	// const instance = axios.create({
-	// 	baseURL: "https://getpocket.com/v3/",
-	// 	timeout: 1000
-	// });
 
 	const url = `https://getpocket.com/v3/get?consumer_key=${process.env.POCKET_API_KEY}&access_token=${process.env.POCKET_ACCESS_TOKEN}&sort=newest&detailType=complete`;
 
