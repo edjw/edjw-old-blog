@@ -3,7 +3,7 @@
 <nav aria-label="primary" x-data="{ navOpen: false }">
   <button id="nav_toggler" type="button" aria-expanded="false" aria-label="open navigation" @click="navOpen = true" :aria-expanded='navOpen ? true : false' x-text='navOpen ? "Hide menu" : "Menu"'>Menu</button>
 
-  <ul class="nav_list" x-show="navOpen" @click.away="navOpen = false">
+  <ul class="nav_list zoom" x-show="navOpen" @click.away="navOpen = false">
     {% for nav in navigation.items %}
     <li class="nav_item">
       <a href="{{ nav.url | url }}">

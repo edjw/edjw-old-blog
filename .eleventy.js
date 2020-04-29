@@ -60,6 +60,10 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
 	});
 
+	eleventyConfig.addFilter("getYear", dateObj => {
+		return DateTime.fromJSDate(dateObj).toFormat("yyyy");
+	});
+
 	eleventyConfig.addNunjucksFilter("ISO_8601_Date", dateObj => dateObj.toISOString());
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {

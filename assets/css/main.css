@@ -279,6 +279,15 @@ pre {
   margin-top: 0;
 }
 
+.new_year {
+  background-color: var(--color-primary);
+  color: var(--color-secondary-text);
+  text-align: center;
+  border-radius: 0.25rem;
+  width: 6ch;
+  margin: 2rem auto 1rem auto;
+}
+
 .post_title > a {
   text-decoration: none;
 }
@@ -310,4 +319,12 @@ a {
 
 .toc > ul > li {
   list-style-type: none;
+}
+
+.zoom {
+  transition: transform 0.05s ease;
+}
+
+.zoom:hover {
+  transform: scale(1.025);
 }
