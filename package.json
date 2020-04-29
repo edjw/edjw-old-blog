@@ -13,7 +13,8 @@
     "clean-css": "^4.2.3",
     "cross-env": "^7.0.2",
     "terser": "^4.6.12",
-    "xml2json": "^0.12.0"
+    "xml2json": "^0.12.0",
+    "acorn": "^5.7.4"
   },
   "dependencies": {
     "@11ty/eleventy-cache-assets": "^2.0.2",
