@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% include "components/head.njk" %}
+	{% include "components/head.njk" %}
 
-<body class="container">
-	<header>
-		<h1 class="site_title">
-			<a class="h-card" rel="me" href="/">{{ site.title }}</a>
-		</h1>
+	<body class="container">
+		<header>
+			<h1 class="site_title">
+				<a class="h-card" rel="me" href="/">{{ site.title }}</a>
+			</h1>
 
-		{% include "components/nav.njk" %}
+			{% include "components/nav.njk" %}
 
-	</header>
+		</header>
 
-	<main class="word-wrap-break-word">
-		{{ content | safe }}
-	</main>
+		<main class="word-wrap-break-word">
+			{{ content | safe }}
+		</main>
 
-	{% include "components/footer.njk" %}
+		{% include "components/footer.njk" %}
 
-	{% set js %}
-	{% include "../../assets/js/main.js" %}
-	{# {% include "../../assets/js/matomo.js" %} #}
-	{% endset %}
-	<script src="../../assets/js/alpine.js"></script>
-	<script>
-		{{ js | jsmin | safe }}
-	</script>
-</body>
+		<script src="/assets/js/alpine.js"></script>
+
+		{% set js %}
+		{# {% include "../../assets/js/alpine.js" %} #}
+		{% include "../../assets/js/main.js" %}
+		{% endset %}
+		<script>
+			{{ js | jsmin | safe }}
+		</script>
+	</body>
 
 </html>
