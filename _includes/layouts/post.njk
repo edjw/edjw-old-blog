@@ -16,10 +16,9 @@ section: post
     <h2 class="p-name post_title">{{ title }}</h2>
     <section class="date_reading">
         <p class="published_date">
-            <em>Published:</em>
-            {{ page.date | readableDate }}</p>
-        <p class="reading_time">
-            <em>Reading time:</em>
+            <span>Published:</span> {{ page.date | readableDate }}</p>
+        <p>
+            <span>Reading time:</span>
             {{ content | readingTime }}</p>
     </section>
     <div class="e-content">
