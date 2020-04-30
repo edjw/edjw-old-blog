@@ -3,19 +3,19 @@ title: "On the whataboutery around the Saudi takeover of Newcastle United"
 date: 2020-04-18T21:15:15.958Z
 socialDescription: "Let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United by pointing out other bad things."
 ---
-Saudi Arabia wants to buy 80% of Newcastle United Football Club. Buying Newcastle is part of its plan to make itself look good despite its disgraceful human rights record and leading role in the world's addiction to oil.
+Saudi Arabia wants to buy 80% of Newcastle United Football Club to make itself look good.
 
-I'm a Newcastle fan. I'm appalled by the idea of Saudi Arabia buying the club. They are using the club to improve their terrible and well-deserved image.
+I'm a Newcastle fan. I'm appalled by the idea of Saudi Arabia buying the club. Saudi Arabia is using the club to improve its terrible and well-deserved image. Saudi Arabia has a disgraceful human rights record. It also plays a leading role in the world's addiction to oil.
+
+Countries should not buy football clubs. Especially countries that abuse people like Saudi Arabia does.
+
+We're unlikely to get to the point that football's authorities deal with this properly. They should. It’s their responsibility.
+
+But as fans, let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United. Pointing out other bad things does not stop Saudi Arabia's actions being worse.
 
 People are understandably desperate to get rid of Mike Ashley and move on to a different owner. I am too.
 
 But the reasons, the whataboutery, some people are using to make it seem like it's fine for Saudi Arabia to own the club are getting ridiculous.
-
-Ultimately, countries should not buy football clubs. Especially countries that abuse people like Saudi Arabia does.
-
-We're unlikely to get to the point that football's authorities deal with this properly. They should. It’s their responsibility.
-
-But as fans, let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United by pointing out other bad things. Other things being bad does not stop the incredibly bad things Saudi Arabia does being worse.
 
 Here is some of the whataboutery I've seen people engaging in over the last few days.
 
