@@ -1,4 +1,4 @@
-# Ed Johnson-Williams's blog
+# Ed Johnson-Williams' blog
 
 [https://edjohnsonwilliams.co.uk](https://edjohnsonwilliams.co.uk/)
 
