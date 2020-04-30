@@ -15,6 +15,8 @@ So I can see trains.
 
 It's done when my son can press any key on a keyboard and see a new train.
 
-### Result
+### Resulting website
 
-[Hammer keys. Get trains.](https://hammer-keys-get-trains.netlify.app)
+**[Hammer keys. Get trains.](https://hammer-keys-get-trains.netlify.app)**
+
+[See the code for the site on Github](https://github.com/edjw/hammer-keys-get-trains). I used [Alpine.js](https://github.com/alpinejs/alpine/) to learn a bit about that and declarative approaches Javascript.
