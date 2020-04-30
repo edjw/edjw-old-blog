@@ -25,7 +25,7 @@
 	{% endset %}
 	<script src="../../assets/js/alpine.js"></script>
 	<script>
-		{ { js | jsmin | safe } }
+		{{ js | jsmin | safe }}
 	</script>
 </body>
 
