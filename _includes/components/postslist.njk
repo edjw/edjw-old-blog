@@ -7,8 +7,8 @@
 	{% endif %}
 	<section class="section zoom">
 		<p class="post_date">{{ post.date | readableDate }}</p>
-		<h3 class="post_title">
+		<h2 class="post_title">
 			<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
-		</h3>
+		</h2>
 	</section>
 {% endfor %}

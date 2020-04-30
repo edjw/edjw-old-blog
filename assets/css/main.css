@@ -276,9 +276,10 @@ pre {
   text-align: center;
 }
 
-.post_title,
-.e-content h2 {
-  line-height: 1.2;
+.post_title, .page_title {
+  line-height: 1.2; 
+  font-size: 1.25rem;
+  color: var(--color-primary);
 }
 
 .section > .post_title,
