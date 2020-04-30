@@ -15,7 +15,7 @@ So I can see trains.
 
 It's done when my son can press any key on a keyboard and see a new train.
 
-### Result
+### Resulting website
 
 **[Hammer keys. Get trains.](https://hammer-keys-get-trains.netlify.app)**
 
