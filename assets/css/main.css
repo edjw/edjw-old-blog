@@ -2,6 +2,7 @@
   --color-primary: #2341c1;
   --color-primary-text: #212121;
   --color-secondary-text: #fdfdfd;
+  --color-grey: #4f5a65;
   --color-box-shadow: hsla(0, 0%, 0%, 0.2);
   --box-shadow-size: 0 4px 6px 0;
 }
@@ -31,6 +32,12 @@ html {
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  [x-cloak="mobile"] {
+    display: none;
   }
 }
 
@@ -180,6 +187,7 @@ nav {
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+    -webkit-box-shadow: var(--box-shadow-size) var(--color-box-shadow);
     box-shadow: var(--box-shadow-size) var(--color-box-shadow);
     border-radius: 0.25rem;
     border: 2px solid var(--color-primary);
@@ -286,10 +294,17 @@ pre {
   border-radius: 0.25rem;
   width: 6ch;
   margin: 2rem auto 1rem auto;
+  -webkit-box-shadow: var(--box-shadow-size) var(--color-box-shadow);
+  box-shadow: var(--box-shadow-size) var(--color-box-shadow);
 }
 
 .post_title > a {
   text-decoration: none;
+}
+
+.post_date {
+  color: var(--color-grey);
+  font-size: 0.8rem;
 }
 
 a {
@@ -322,9 +337,15 @@ a {
 }
 
 .zoom {
+  -webkit-transition: -webkit-transform 0.05s ease;
+  transition: -webkit-transform 0.05s ease;
+  -o-transition: transform 0.05s ease;
   transition: transform 0.05s ease;
+  transition: transform 0.05s ease, -webkit-transform 0.05s ease;
 }
 
 .zoom:hover {
+  -webkit-transform: scale(1.025);
+  -ms-transform: scale(1.025);
   transform: scale(1.025);
 }
