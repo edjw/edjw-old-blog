@@ -289,6 +289,12 @@ pre {
   margin-top: 0;
 }
 
+.post h2 + *,
+.post h3 + *,
+.post h4 + * {
+  margin-top: 0.25rem;
+}
+
 .new_year {
   background-color: var(--color-primary);
   color: var(--color-secondary-text);
