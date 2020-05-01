@@ -3,7 +3,7 @@ layout: layouts/base.njk
 section: post
 ---
 
-<article class="h-entry {{ section }}">
+<article class="h-entry">
 
     <!-- h-entry things -->
     <div class="hidden">
@@ -21,7 +21,7 @@ section: post
             <span>Reading time:</span>
             {{ content | readingTime }}</p>
     </section>
-    <div class="e-content">
+    <div class="e-content {{ section }}">
         {{ content | safe }}
     </div>
 
