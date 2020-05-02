@@ -72,7 +72,7 @@ module.exports = function (eleventyConfig) {
 
 	// Clean slugs
 	eleventyConfig.addFilter("removeColonsApostrophes", slugObj => {
-		return slugObj.replace(":", "").replace("'", "-").replace("--", "-").replace("(", "").replace(")", "").replace('"', "").replace("'", "");
+		return slugObj.replace(":", "").replace("'", "-").replace("--", "-").replace("(", "").replace(")", "").replace('"', "").replace("'", "").replace(".", "");
 	});
 
 	eleventyConfig.addFilter("cssmin", function (code) {
