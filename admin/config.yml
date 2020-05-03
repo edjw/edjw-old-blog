@@ -21,13 +21,18 @@ collections:
     label: "Post" # Used in the UI
     folder: "posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}/{{month}}/{{day}}/{{slug}}"
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Social Description", name: "socialDescription", widget: "string", pattern: [".{0,155}", "Maximum of 155 characters"], default: "Ed Johnson-Williams' blog" }
+      - {
+          label: "Social Description",
+          name: "socialDescription",
+          widget: "string",
+          pattern: [".{0,155}", "Maximum of 155 characters"],
+          default: "Ed Johnson-Williams' blog",
+        }
       - { label: "Body", name: "body", widget: "markdown" }
-
 
   # Pages e.g. About
   - name: "pages"
@@ -40,5 +45,11 @@ collections:
       - { label: "Layout", name: "layout", widget: "string" }
       # - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Permalink", name: "permalink", widget: "string" }
-      - { label: "Social Description", name: "socialDescription", widget: "string", pattern: [".{0,155}", "Maximum of 155 characters"], default: "Ed Johnson-Williams' blog" }
+      - {
+          label: "Social Description",
+          name: "socialDescription",
+          widget: "string",
+          pattern: [".{0,155}", "Maximum of 155 characters"],
+          default: "Ed Johnson-Williams' blog",
+        }
       - { label: "Body", name: "body", widget: "markdown" }
