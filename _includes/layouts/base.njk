@@ -17,10 +17,9 @@
 			{{ content | safe }}
 		</main>
 
-		{% include "components/footer.njk" 
+		{% include "components/footer.njk" %}
 
 		{% set js %}
-		{# {% include "../../assets/js/alpine.js" %} #}
 		{% include "../../assets/js/main.js" %}
 		{% endset %}
 		<script>

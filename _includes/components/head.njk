@@ -55,16 +55,15 @@
   {# {% if site.author.instagramUsername %}
   <link href="https://instagram.com/{{ site.author.instagramUsername }}" rel="me">
   {% endif %} #}
-  
-  <script src=“/assets/js/alpine.js” defer></script>
+
+  <script src="/assets/js/alpine.js" defer></script>
 
   {% set css %}
   {% include "../../node_modules/modern-css-reset/dist/reset.min.css" %}
   {% include "../../assets/css/main.css" %}
   {% endset %}
   <style>
-    {{ css | cssmin | safe }}
+    {{css | cssmin | safe}}
   </style>
-  
 
 </head>
