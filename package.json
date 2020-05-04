@@ -11,7 +11,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "acorn": "^7.1.1",
-    "alpinejs": "^2.3.1",
+    "alpinejs": "^2.3.2",
     "clean-css": "^4.2.3",
     "cross-env": "^7.0.2",
     "terser": "^4.6.12",
