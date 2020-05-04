@@ -24,7 +24,7 @@
     "dotenv": "^8.1.0",
     "eleventy-plugin-reading-time": "^0.0.1",
     "html-minifier": "^4.0.0",
-    "luxon": "^1.23.0",
+    "luxon": "^1.24.0",
     "markdown-it-footnote": "^3.0.2",
     "modern-css-reset": "^1.1.0"
   }
