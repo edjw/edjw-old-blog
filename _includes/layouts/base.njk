@@ -18,16 +18,16 @@
 		</main>
 
 		{% include "components/footer.njk" %}
-		{% set alpine %}
+		{# {% set alpine %}
 		{% include "../../node_modules/alpinejs/dist/alpine.js" %}
-		{% endset%}
+		{% endset%} #}
 
 		{% set js %}
 		{% include "../../assets/js/main.js" %}
 		{% endset %}
 
 		<script>
-			{{ alpine | jsmin | safe}}
+
 			{{ js | jsmin | safe }}
 		</script>
 	</body>

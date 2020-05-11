@@ -5,21 +5,17 @@ section: rss-likes
 <p>
  These are the {{ raindropLinks | length }} links that I've saved on <a href="https://raindrop.io">Raindrop, my bookmarking service</a>.
 </p>
-<hr>
 
 <div class="reading_list">
 
     {% for item in raindropLinks %}
+        <section {% if loop.first ==false %}class="reading_list_item"{% endif %}>
 
-        <a href="{{ item.url }}" class="word-wrap-break-word">
-            {{ item.title }}
-        </a>
-        <p>{{ item.excerpt }}</p>
-
-        {% if loop.revindex > 1 %}
-            <hr>
-        {% endif %}
-
+            <a href="{{ item.url }}" class="reading_item_title word-wrap-break-word">
+                {{ item.title }}
+            </a>
+            <p>{{ item.excerpt }}</p>
+        </section>
     {% endfor %}
 
 </div>

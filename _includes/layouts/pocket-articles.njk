@@ -1,0 +1,60 @@
+---
+layout: layouts/page.njk
+section: reading-list
+---
+<p>
+    This is a list of the {{ readingList | length }}
+    {% if readingList | length > 50 %}
+        <a href="https://github.com/edjw/edjw-blog/blob/a528443b33ce24de27097d6f1e9ac74ed817e851/_includes/layouts/reading-list.njk#L7-L11"
+        class="no_text_decoration">(🤦‍♂️‍‍‍‍)</a>
+    {% endif %}
+    links that are currently saved in <a href="https://getpocket.com">my Pocket account</a>. I have excluded links that I have tagged as
+    'private'. The Pocket article links only work if you've got a Pocket account.
+</p>
+
+<p>
+    I've written up how this website pulls in that data in <a
+        href="/2019/04/26/publishing-my-pocket-reading-list-on-this-website">a blogpost here</a>.
+</p>
+
+<div class="reading_list">
+
+    {% for item in readingList %}
+
+        <section {% if loop.first == false %}class="reading_list_item"{% endif %}>
+
+            <a href="{{ item.resolved_url }}"
+            class="word-wrap-break-word reading_item_title">{{ item.resolved_title if item.resolved_title else item.resolved_url }}</a>
+            {% if item.authors %}
+        by {% for authorID, authorDetails in item.authors %}
+                    <em>{{ authorDetails.name | title }}
+                    </em>
+                {% endfor %}
+            {% endif %}
+
+            <small class="pocket_link">
+                <a href="https://app.getpocket.com/read/{{ item.item_id }}"
+                aria-label="Read {% if item.resolved_title %} {{ item.resolved_title }} {% else %}article from {{ item.resolved_url | getDomain }}{% endif %} {% if item.authors %} by {% for authorID, authorDetails in item.authors %} {{ authorDetails.name | title }}{% endfor %}{% endif %} on Pocket">
+                Pocket article link
+            </a>
+            </small>
+
+            {% if item.excerpt %}
+                <p class="word-wrap-break-word">
+                    <em>Summary: </em>{{ item.excerpt }}</p>
+            {% endif %}
+
+            {% if item.tags %}
+                <small>
+                    <i>Tags: </i>
+                    {% for tag, tagHash in item.tags %}
+                        {{ tag }}
+                        {% if loop.revindex > 1 %},{% endif %}
+                    {% endfor %}
+                </small>
+            {% endif %}
+
+        </section>
+    {% endfor %}
+
+</div>
