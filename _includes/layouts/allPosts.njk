@@ -1,0 +1,7 @@
+---
+layout: layouts/base.njk
+section: home
+---
+{% set postslist = collections.posts | reverse %}
+
+{% include "components/allPosts.njk" %}

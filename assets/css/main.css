@@ -311,6 +311,7 @@ a {
   padding: 0.25rem 1rem;
   font-size: 80%;
   margin: 1rem 0 2rem 0;
+  text-decoration: underline;
 }
 
 .toc > ul {
@@ -319,12 +320,4 @@ a {
 
 .toc > ul > li {
   list-style-type: none;
-}
-
-.zoom {
-  transition: transform 0.05s ease;
-}
-
-.zoom:hover {
-  transform: scale(1.025);
 }

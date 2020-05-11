@@ -1,11 +1,11 @@
 {% set year = "" %}
-{% for post in postslist | reverse %}
+{% for post in postslist %}
 	{% set postYear = post.date | getYear %}
 	{% if year != postYear %}
 		<p class="new_year">{{ postYear }}</p>
 		{% set year = postYear %}
 	{% endif %}
-	<section class="section zoom">
+	<section class="section">
 		<p class="post_date">{{ post.date | readableDate }}</p>
 		<h2 class="post_title">
 			<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
