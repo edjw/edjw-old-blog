@@ -1,8 +1,8 @@
 {
     "items": [
         {
-            "text": "Home",
-            "url": "/"
+            "text": "Blog",
+            "url": "/all-posts"
         },
         {
             "text": "Reading List",
