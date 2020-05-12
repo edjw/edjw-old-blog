@@ -234,7 +234,7 @@ pre {
 .section > .post_title,
 .section > .post_date,
 .section > .page_title {
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
 .post h2 + *,
@@ -249,7 +249,7 @@ pre {
   text-align: center;
   border-radius: 0.25rem;
   width: 6ch;
-  margin: 2rem auto 1rem auto;
+  margin: 1rem auto 1rem auto;
   box-shadow: var(--box-shadow-size) var(--color-box-shadow);
 }
 
