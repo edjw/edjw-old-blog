@@ -231,10 +231,8 @@ pre {
   color: var(--color-primary);
 }
 
-.section > .post_title,
-.section > .post_date,
-.section > .page_title {
-  margin-top: 1rem;
+.section > .post_date {
+  margin-top: 0;
 }
 
 .post h2 + *,
