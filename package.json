@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^0.11.0",
     "acorn": "^7.2.0",
     "alpinejs": "^2.3.3",
     "clean-css": "^4.2.3",
