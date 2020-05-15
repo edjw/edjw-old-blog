@@ -50,7 +50,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("uploads");
   eleventyConfig.addPassthroughCopy("_headers");
-  eleventyConfig.addPassthroughCopy({ "assets/internal_images/favicons": "/" });
+  eleventyConfig.addPassthroughCopy({
+    "assets/internal_images/favicons": "/",
+  });
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", (dateObj) => {
