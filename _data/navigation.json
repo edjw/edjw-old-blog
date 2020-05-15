@@ -1,24 +1,28 @@
 {
-    "items": [
-        {
-            "text": "Blog",
-            "url": "/all-posts"
-        },
-        {
-            "text": "Reading List",
-            "url": "/reading-list"
-        },
-        {
-            "text": "About me",
-            "url": "/about"
-        },
-        {
-            "text": "Twitter",
-            "url": "https://twitter.com/_edjw"
-        },
-        {
-            "text": "Github",
-            "url": "https://github.com/edjw"
-        }
-    ]
+  "items": [
+    {
+      "text": "Blog",
+      "url": "/all-posts"
+    },
+    {
+      "text": "Reading List",
+      "url": "/reading-list"
+    },
+    {
+      "text": "About me",
+      "url": "/about"
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/_edjw"
+    },
+    {
+      "text": "Github",
+      "url": "https://github.com/edjw"
+    },
+    {
+      "text": "RSS",
+      "url": "/feed.xml"
+    }
+  ]
 }

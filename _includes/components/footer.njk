@@ -1,34 +1,32 @@
-<footer class="section">
-  <nav aria-label="footer links">
+<footer>
 
-    <ul class="footer_nav_list">
+  <ul class="footer_nav_list">
 
-      {# {% if site.author.twitterUsername %}
+    {# {% if site.author.twitterUsername %}
         <li class="footer_nav_item">
           <a href="https://twitter.com/{{ site.author.twitterUsername }}" rel="me">Twitter</a>
         </li>
       {% endif %} #}
 
-      {% if site.repository %}
-        <li class="footer_nav_item">
-          <a href="https://github.com/{{ site.repository }}">See the code for this site</a>
-        </li>
-      {% endif %}
+    {% if site.repository %}
+      <li class="footer_nav_item">
+        <a href="https://github.com/{{ site.repository }}">See the code for this site</a>
+      </li>
+    {% endif %}
 
-      {% if site.RSSFeed %}
-        <li class="footer_nav_item">
-          <a href="/feed.xml">See the RSS feed for this site</a>
-        </li>
-      {% endif %}
+    {% if site.RSSFeed %}
+      <li class="footer_nav_item">
+        <a href="/feed.xml">See the RSS feed for this site</a>
+      </li>
+    {% endif %}
 
-      {% if site.sitemap %}
-        <li class="footer_nav_item hidden">
-          <a href="/sitemap.xml">Sitemap</a>
-        </li>
+    {% if site.sitemap %}
+      <li class="footer_nav_item hidden">
+        <a href="/sitemap.xml">Sitemap</a>
+      </li>
 
-      {% endif %}
-    </ul>
-  </nav>
+    {% endif %}
+  </ul>
 
   {% if site.author.mastodonUsername %}
     <link rel="me" href="https://mastodon.social/{{ site.author.mastodonUsername}}">
