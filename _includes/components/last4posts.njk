@@ -1,9 +1,14 @@
-{% set year = "" %}
-{% for i in range(0, 4) %}
-	<section class="section">
-		<p class="post_date">{{ postslist[i].date | readableDate }}</p>
-		<h2 class="post_title">
-			<a href="{{ postslist[i].url | url }}" title="{{ postslist[i].data.title }}">{{ postslist[i].data.title }}</a>
-		</h2>
-	</section>
-{% endfor %}
+<div class="postsList">
+	<h2 class="page_title">Latest posts</h2>
+
+	{% set year = "" %}
+	{% for i in range(0, 4) %}
+		<section class="post">
+			<p class="post_date">{{ postslist[i].date | readableDate }}</p>
+			<h3 class="post_title">
+				<a href="{{ postslist[i].url | url }}" title="{{ postslist[i].data.title }}">{{ postslist[i].data.title }}</a>
+			</h3>
+		</section>
+	{% endfor %}
+	<a href="/all-posts" class="see_all">See all posts</a>
+</div>

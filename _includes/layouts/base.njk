@@ -4,32 +4,22 @@
 	{% include "components/head.njk" %}
 
 	<body class="container">
-		<header>
-			<h1 class="site_title">
-				<a class="h-card" rel="me" href="/">{{ site.title }}</a>
-			</h1>
-
-			{% include "components/nav.njk" %}
-
-		</header>
+		{% include "components/header.njk" %}
 
 		<main class="word-wrap-break-word">
 			{{ content | safe }}
 		</main>
 
 		{% include "components/footer.njk" %}
-		{# {% set alpine %}
-		{% include "../../node_modules/alpinejs/dist/alpine.js" %}
-		{% endset%} #}
 
-		{% set js %}
+		{# {% set js %}
 		{% include "../../assets/js/main.js" %}
 		{% endset %}
 
 		<script>
 
 			{{ js | jsmin | safe }}
-		</script>
+		</script> #}
 	</body>
 
 </html>

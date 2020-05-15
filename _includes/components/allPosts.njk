@@ -1,14 +1,17 @@
-{% set year = "" %}
-{% for post in postslist %}
-	{% set postYear = post.date | getYear %}
-	{% if year != postYear %}
-		<p class="new_year">{{ postYear }}</p>
-		{% set year = postYear %}
-	{% endif %}
-	<section class="section">
-		<p class="post_date">{{ post.date | readableDate }}</p>
-		<h2 class="post_title">
-			<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
-		</h2>
-	</section>
-{% endfor %}
+<div class="postsList">
+	<h2 class="page_title">All blogposts</h2>
+	{% set year = "" %}
+	{% for post in postslist %}
+		{% set postYear = post.date | getYear %}
+		{% if year != postYear %}
+			<p class="new_year">{{ postYear }}</p>
+			{% set year = postYear %}
+		{% endif %}
+		<section class="post">
+			<p class="post_date">{{ post.date | readableDate }}</p>
+			<h3 class="post_title">
+				<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
+			</h3>
+		</section>
+	{% endfor %}
+</div>

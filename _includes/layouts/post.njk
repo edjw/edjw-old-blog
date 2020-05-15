@@ -3,7 +3,7 @@ layout: layouts/base.njk
 section: post
 ---
 
-<article class="h-entry section">
+<article class="h-entry blogpost">
 
     <!-- h-entry things -->
     <div class="hidden">
@@ -16,7 +16,8 @@ section: post
     <h2 class="p-name post_title">{{ title }}</h2>
     <section class="date_reading">
         <p class="published_date">
-            <span>Published:</span> {{ page.date | readableDate }}</p>
+            <span>Published:</span>
+            {{ page.date | readableDate }}</p>
         <p>
             <span>Reading time:</span>
             {{ content | readingTime }}</p>

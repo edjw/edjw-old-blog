@@ -2,8 +2,14 @@
 layout: layouts/base.njk
 section: home
 ---
-{% set postslist = collections.posts | reverse %}
+<section class="siteIntro">
+    <p>
+        My personal site
+    </p>
+    <p>
+        Some tech, some politics, some shapenote music
+    </p>
+</section>
 
-<h2 class="page_title">Latest posts</h2>
+{% set postslist = collections.posts | reverse %}
 {% include "components/last4posts.njk" %}
-<a href="/all-posts" class="see_all">See all posts</a>
