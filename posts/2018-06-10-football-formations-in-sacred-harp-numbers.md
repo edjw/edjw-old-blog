@@ -1,7 +1,10 @@
 ---
 title: Football formations in Sacred Harp numbers
-date: 2018-06-10 00:00:00Z
+date: 2018-06-10T00:00:00.000Z
 socialDescription: Sacred Harp song numbers that are also football/soccer formations
+tags:
+  - data
+  - shapenote
 ---
 This is a very silly post.
 

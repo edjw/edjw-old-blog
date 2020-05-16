@@ -1,12 +1,14 @@
 ---
-title: >-
-  New website: I made a test site to learn about fetching data from APIs and
-  turning it into HTML using vanilla JS and accidentally made my main Hacker
-  News reader
+title: "New website: I made a test site to learn about fetching data from APIs
+  and turning it into HTML using vanilla JS and accidentally made my main Hacker
+  News reader"
 date: 2019-10-01T19:00:58.169Z
-socialDescription: >-
-  New website: I made a test site to fetch data from APIs and turn it into HTML
-  using vanilla JS and accidentally made my main Hacker News reader
+socialDescription: "New website: I made a test site to fetch data from APIs and
+  turn it into HTML using vanilla JS and accidentally made my main Hacker News
+  reader"
+tags:
+  - new website
+  - javascript
 ---
 Title says it all. [Doughnut Reader is my main Hacker News reader](https://doughnut-reader.netlify.com) now. It's got a dark theme, works nicely on mobile, and is really fast. No tracking.
 
