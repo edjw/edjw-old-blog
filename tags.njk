@@ -5,13 +5,12 @@ pagination:
   alias: tag
   filter:
     - all
-    - nav
     - post
     - posts
-    - tagList
 permalink: /tags/{{ tag }}/
-layout: "layouts/page.njk"
+layout: layouts/page.njk
 ---
+
 <h2 class="page_title">
     Posts about <em>{{ tag | title }}</em>
 </h2>

@@ -199,7 +199,6 @@ footer a {
   border-bottom: 1px solid var(--red);
   padding-bottom: 0.5rem;
   color: var(--grey);
-  margin-top: 0.5rem;
 }
 
 .postMetadata p {

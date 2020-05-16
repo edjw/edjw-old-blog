@@ -9,7 +9,7 @@ backend:
     deleteMedia: Delete "{{path}}"
 
 # Uncomment below to enable drafts
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
 # site_url: https://edjohnsonwilliams.co.uk
 
@@ -32,6 +32,7 @@ collections:
           pattern: [".{0,155}", "Maximum of 155 characters"],
           default: "Ed Johnson-Williams' blog",
         }
+      - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   # Pages e.g. About
@@ -43,7 +44,6 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Layout", name: "layout", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Permalink", name: "permalink", widget: "string" }
       - {
           label: "Social Description",

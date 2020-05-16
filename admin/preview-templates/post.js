@@ -1,5 +1,5 @@
 import htm from "https://unpkg.com/htm?module";
-import format from "https://unpkg.com/date-fns@2.0.0-alpha.2/esm/format/index.js?module";
+import format from "https://unpkg.com/date-fns@2.13.0/esm/format/index.js?module";
 
 const html = htm.bind(h);
 
@@ -15,12 +15,10 @@ const Post = createClass({
           <p>
             <small>
               <time
-                >${
-      format(
-        entry.getIn(["data", "date"], new Date()),
-        "DD MMM YYYY"
-      )
-      }</time
+                >${format(
+                  entry.getIn(["data", "date"], new Date()),
+                  "DD MMM YYYY"
+                )}</time
               >
             </small>
           </p>
@@ -29,19 +27,14 @@ const Post = createClass({
 
           ${this.props.widgetFor("body")}
           <p>
-            ${
-      entry.getIn(["data", "tags"], []).map(
-        tag =>
-          html`
-                    <a href="#" rel="tag">${tag}</a>
-                  `
-      )
-      }
+            ${entry
+              .getIn(["data", "tags"], [])
+              .map((tag) => html` <a href="#" rel="tag">${tag}</a> `)}
           </p>
         </article>
       </main>
     `;
-  }
+  },
 });
 
 export default Post;
