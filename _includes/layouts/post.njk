@@ -20,8 +20,10 @@ section: post
             {{ page.date | readableDate }}</p>
         <p>
             <span>Reading time:</span>
-            {{ content | readingTime }}</p>
-        {% if tags.length > 0 && tags[0] != "post" %}
+            {{ content | readingTime }}
+        </p>
+        {% if tags.length > 0 and tags[0] != "post" %}
+
             <p class="postTags">
                 <span>Tagged as:</span>
                 {% for tag in tags %}
@@ -31,12 +33,11 @@ section: post
                     {% endif %}
                 {% endfor %}
             </p>
+            {% endif%}
 
-        {% endif %}
+        </section>
+        <div class="e-content {{ section }}">
+            {{ content | safe }}
+        </div>
 
-    </section>
-    <div class="e-content {{ section }}">
-        {{ content | safe }}
-    </div>
-
-</article>
+    </article>
