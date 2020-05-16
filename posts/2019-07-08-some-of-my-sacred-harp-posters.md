@@ -2,6 +2,9 @@
 title: Some of my Sacred Harp poster designs
 date: 2019-07-08T09:00:00.000Z
 socialDescription: Some of my Sacred Harp poster designs
+tags:
+  - shapenote
+  - design
 ---
 
 Over the last year, I've been designing posters for the [Durham Sacred Harp](https://durhamsacredharp.co.uk) singing. These are a few that I've made.
