@@ -1,7 +1,11 @@
 ---
-title: "On the whataboutery around the Saudi takeover of Newcastle United"
+title: On the whataboutery around the Saudi takeover of Newcastle United
 date: 2020-04-18T21:15:15.958Z
-socialDescription: "Let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United by pointing out other bad things."
+socialDescription: Let's not try to make ourselves feel better about Saudi
+  Arabia buying Newcastle United by pointing out other bad things.
+tags:
+  - politics
+  - sport
 ---
 Saudi Arabia wants to buy 80% of Newcastle United Football Club to make itself look good.
 
