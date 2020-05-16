@@ -1,7 +1,10 @@
 ---
 title: Winners and Losers in the City of Durham Parish Council Election
-date: 2018-05-04 00:00:00Z
+date: 2018-05-04T00:00:00.000Z
 socialDescription: Analysing the results of the City of Durham Parish Council Election 2018
+tags:
+  - politics
+  - data
 ---
 Yesterday saw the first [City of Durham Parish Council Election](https://www.durham.gov.uk/durhamcityelection). Considering it was the first election of its type, it would have been handy if [the council had told people](https://twitter.com/_edjw/status/991946855562076160) how the electoral system would work.
 
