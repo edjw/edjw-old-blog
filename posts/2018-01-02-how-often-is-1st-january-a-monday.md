@@ -1,7 +1,10 @@
 ---
 title: How often is 1st January a Monday?
-date: 2018-01-02 00:00:00Z
+date: 2018-01-02T00:00:00.000Z
 socialDescription: How often has the first day of the week been the first day of the year?
+tags:
+  - python
+  - data
 ---
 **Answer...less often than every other day except Saturday. I have no idea why.**
 
