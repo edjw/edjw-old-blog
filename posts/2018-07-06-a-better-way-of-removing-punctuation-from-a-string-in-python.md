@@ -1,7 +1,9 @@
 ---
 title: A better way of removing punctuation from a string in Python
-date: 2018-07-06 00:00:00Z
+date: 2018-07-06T00:00:00.000Z
 socialDescription: An easier way to remove punctuation from strings in Python
+tags:
+  - python
 ---
 This post is as a future reminder for me as much as anything.
 
