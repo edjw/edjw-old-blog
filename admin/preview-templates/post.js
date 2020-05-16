@@ -17,7 +17,7 @@ const Post = createClass({
               <time
                 >${format(
                   entry.getIn(["data", "date"], new Date()),
-                  "DD MMM YYYY"
+                  "dd MMM YYYY"
                 )}</time
               >
             </small>
