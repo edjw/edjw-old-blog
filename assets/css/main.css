@@ -2,7 +2,7 @@
   --black: #212121;
   --white: #fdfdfd;
   --grey: #4f5a65;
-  --red: #b10a2c;
+  --red: #a72146;
   --blue: #004777;
   --box-shadow-color: hsla(0, 0%, 0%, 0.2);
   --box-shadow-size: 0 4px 6px 0;
@@ -155,8 +155,10 @@ footer * + * {
   margin-top: 0.25rem;
   font-size: 22px;
 }
+
 .post_title > a {
   color: var(--blue);
+  text-decoration: none;
 }
 
 .see_all {
@@ -173,7 +175,7 @@ footer * + * {
 footer {
   background-color: var(--red);
   padding: 1rem;
-  margin-top: 0;
+  margin-top: 2rem;
   color: var(--white);
 }
 
@@ -192,7 +194,7 @@ footer a {
   box-shadow: var(--box-shadow-size) var(--box-shadow-color);
 }
 
-.date_reading {
+.postMetadata {
   border-top: 1px solid var(--red);
   border-bottom: 1px solid var(--red);
   padding-bottom: 0.5rem;
@@ -200,7 +202,7 @@ footer a {
   margin-top: 0.5rem;
 }
 
-.date_reading p {
+.postMetadata p {
   font-size: 0.8rem;
 }
 
@@ -208,7 +210,7 @@ footer a {
   margin-top: 0.5rem;
 }
 
-.date_reading span {
+.postMetadata span {
   background-color: var(--red);
   color: var(--white);
   border-radius: 5px;

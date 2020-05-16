@@ -2,6 +2,10 @@
 title: A simplistic post on liberalism and Christianity
 date: 2017-06-14T23:00:00.000Z
 socialDescription: A simplistic post on liberalism and Christianity
+tags:
+  - politics
+  - liberalism
+  - christianity
 ---
 1. I'm a straight, Christian man who is liberal - both politically and theologically.
 

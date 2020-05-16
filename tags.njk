@@ -1,0 +1,24 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+layout: "layouts/page.njk"
+---
+<h2 class="page_title">
+    Posts about <em>{{ tag | title }}</em>
+</h2>
+<div class="postsList">
+
+    {% set taglist = collections[tag] %}
+    {% for post in taglist | reverse %}
+
+        <section class="post">
+            <p class="post_date">{{ post.date | readableDate }}</p>
+            <h3 class="post_title">
+                <a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
+            </h3>
+        </section>
+    {% endfor %}
+</div>

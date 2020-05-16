@@ -14,13 +14,26 @@ section: post
     <!-- End of h-entry things -->
 
     <h2 class="p-name post_title">{{ title }}</h2>
-    <section class="date_reading">
+    <section class="postMetadata">
         <p class="published_date">
             <span>Published:</span>
             {{ page.date | readableDate }}</p>
         <p>
             <span>Reading time:</span>
             {{ content | readingTime }}</p>
+        {% if tags %}
+            <p class="postTags">
+                <span>Tagged as:</span>
+                {% for tag in tags %}
+                    <a href="/tags/{{ tag }}">{{ tag | title }}</a>
+                    {% if loop.last == false %}
+                        /
+                    {% endif %}
+                {% endfor %}
+
+            </p>
+        {% endif %}
+
     </section>
     <div class="e-content {{ section }}">
         {{ content | safe }}
