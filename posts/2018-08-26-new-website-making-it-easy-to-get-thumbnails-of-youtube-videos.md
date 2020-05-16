@@ -1,8 +1,11 @@
 ---
-date: 2018-08-26 14:00:00Z
-title: 'New website: Making it easy to get thumbnails of YouTube videos'
+title: "New website: Making it easy to get thumbnails of YouTube videos"
+date: 2018-08-26T14:00:00.000Z
 permalink: /2018/08/26/making-it-easy-to-get-thumbnails-of-youtube-videos.html
 socialDescription: I made a web app that makes it easy to download thumbnails for YouTube videos
+tags:
+  - new website
+  - python
 ---
 I made a web app that makes it easy to download thumbnails for YouTube videos. It’s called [Get YouTube Thumbnails](https://youtubethumbnails.pythonanywhere.com).
 
