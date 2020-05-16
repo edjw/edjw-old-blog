@@ -27,7 +27,7 @@ section: post
             <p class="postTags">
                 <span>Tagged as:</span>
                 {% for tag in tags %}
-                    <a href="/tags/{{ tag }}">{{ tag | title }}</a>
+                    <a href="/tags/{{ tag | slug }}">{{ tag | title }}</a>
                     {% if loop.last == false %}
                         /
                     {% endif %}
