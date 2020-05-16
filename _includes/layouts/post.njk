@@ -21,7 +21,7 @@ section: post
         <p>
             <span>Reading time:</span>
             {{ content | readingTime }}</p>
-        {% if tags.length > 0 %}
+        {% if tags.length > 0 && tags[0] != "post" %}
             <p class="postTags">
                 <span>Tagged as:</span>
                 {% for tag in tags %}
