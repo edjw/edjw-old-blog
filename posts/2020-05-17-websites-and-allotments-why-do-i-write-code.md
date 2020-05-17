@@ -34,4 +34,4 @@ Most people with an allotment don't need to grow fruit and vegetables for surviv
 
 But like me and my website, people with allotments enjoy tending to the plot, making it look nice, deciding what to plant, borrowing ideas from other people, and trying new things.
 
-Farmers and professional web developers have different priorities and pressures to people who keep and allotment or a personal website as a hobby. And that's ok.
+Farmers and professional web developers have different priorities and pressures to people who keep an allotment or a personal website as a hobby. And that's ok.
