@@ -20,13 +20,13 @@ As with most hobbies, having the free time to put a website together is a privil
 
 Writing blogposts is a great way to work out what you think. Sometimes people read what you write and thank you for it. Sometimes, it's just [a good way of getting something out of your system](/2020/04/18/on-the-whataboutery-around-the-saudi-takeover-of-newcastle-united).
 
-But if all I wanted was a place to publish writing that wasn't Facebook, I could use a blogging platform like Wordpress.com. If I didn't mind using a social media platform, I could publish writing on Facebook Posts or do threads on Twitter. I would spend much less time fitting the pieces of a website together, adjusting the layout, and adding new pages.
+But if all I wanted was a place to publish writing that wasn't Facebook, I could use a blogging platform like <span>Wordpress.com</span>. If I didn't mind using a social media platform, I could publish writing on Facebook Posts or do threads on Twitter. I would spend much less time fitting the pieces of a website together, adjusting the layout, and adding new pages.
 
 I could write blogposts without writing code. It is not necessary to build a personal website with [Eleventy](https://11ty.dev), host it on [Netlify](https://www.netlify.com), and keep the code on [Github](https://github.com) to have an online place to put my stuff.
 
 Clearly, I enjoy making the platform as much as the content.
 
-When you make your own website, you can also try out new things like publishing the articles I've got in [my reading list](/reading-list). Wordpress.com or Facebook Posts aren't flexible enough to let you do that.
+When you make your own website, you can also try out new things like publishing the articles I've got in [my reading list](/reading-list). <span>Wordpress.com</span> or Facebook Posts aren't flexible enough to let you do that.
 
 Making your own personal website in this way is a bit like keeping [an allotment](https://en.wikipedia.org/wiki/Allotment_(gardening)).
 
