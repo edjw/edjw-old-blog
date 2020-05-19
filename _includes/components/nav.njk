@@ -4,8 +4,9 @@
 
     <ul class="nav_list">
       {% for nav in navigation.items %}
-        <li class="nav_item">
-          <a href="{{ nav.url | url }}">
+        <li class="nav_item {% if section == nav.section %} currentPage
+           {% endif %}">
+          <a href="{{ nav.url | url }}" {% if section == nav.section %} aria-current="page"{% endif %}>
             {{ nav.text }}
           </a>
         </li>

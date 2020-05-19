@@ -97,9 +97,15 @@ nav {
 
 .nav_item {
   font-size: 22px;
+  padding: 0.25rem;
+  margin-right: 0.25rem;
 }
 .nav_item a {
   color: var(--white);
+}
+
+.nav_item.currentPage {
+  background-color: var(--red);
 }
 
 .nav_item:nth-child(2) {

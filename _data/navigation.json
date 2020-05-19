@@ -2,27 +2,30 @@
   "items": [
     {
       "text": "Blog",
-      "url": "/all-posts"
+      "url": "/all-posts/",
+      "section": "blog"
     },
     {
       "text": "Reading List",
-      "url": "/reading-list"
+      "section": "reading-list",
+      "url": "/reading-list/"
     },
     {
       "text": "About me",
-      "url": "/about"
+      "url": "/about/",
+      "section": "about"
     },
     {
       "text": "Twitter",
-      "url": "https://twitter.com/_edjw"
+      "url": "https://twitter.com/_edjw/"
     },
     {
       "text": "Github",
-      "url": "https://github.com/edjw"
+      "url": "https://github.com/edjw/"
     },
     {
       "text": "RSS",
-      "url": "/feed.xml"
+      "url": "/feed.xml/"
     }
   ]
 }
