@@ -10,6 +10,8 @@ I am not a professional web developer. Why do I write code?
 
 My answer is, farmers don't have allotments. Let me explain.
 
+Aside (20-5-20): Since I published this, I've come across people talking about digital gardening. This seems to be publishing iterations of their learning on a website. It's not really what I mean here despite the allotment as website metaphor being similar.
+
 Making my personal website and [my sideprojects](/tags/new-website) are a hobby.
 
 It's taken me a long time to understand this. My wife was very surprised when I said the other day that I had only just realised this.
