@@ -11,7 +11,7 @@ I am not a professional web developer. Why do I write code?
 My answer is, farmers don't have allotments. Let me explain.
 
 <blockquote>
-  Aside (20-5-20): Since I published this, I've come across people talking about digital gardening. This seems to be publishing iterations of their learning on a website. It's not really what I mean here despite the allotment as website metaphor being similar.
+  Aside (21-5-20): Since I published this, I've come across people talking about digital gardening. This seems to mean publishing open iterations of your learning on your website and not worrying about being judged. It's not quite what I mean here despite the metaphor of allotment as website being similar.
 </blockquote>
 
 Making my personal website and [my sideprojects](/tags/new-website) are a hobby.
