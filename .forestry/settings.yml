@@ -5,11 +5,15 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: pages
+  label: Pages
+  create: documents
+  match: "**/*.md"
+- type: directory
   path: posts
   label: Posts
-  create: all
-  match: "**/*"
-  exclude: "**.json"
+  create: documents
+  match: "**/*.md"
 upload_dir: assets/images
 public_path: assets/images
 front_matter_path: ''
