@@ -11,6 +11,17 @@ fields:
 - type: text
   name: socialDescription
   label: socialDescription
+  config:
+    max: 155
+    required: false
+  default: Ed Johnson-Williams' blog
 - type: list
   name: tags
   label: tags
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: posts
+      file: posts/2018-07-06-a-better-way-of-removing-punctuation-from-a-string-in-python.md
+      path: tags
