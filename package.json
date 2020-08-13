@@ -10,7 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "acorn": "^7.2.0",
+    "acorn": "^8.0.1",
     "clean-css": "^4.2.3",
     "cross-env": "^7.0.2",
     "terser": "^4.6.13",
