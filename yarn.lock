@@ -144,10 +144,10 @@ acorn@^4.0.4, acorn@~4.0.2:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.13.tgz#105495ae5361d697bd195c825192e1ad7f253787"
   integrity sha1-EFSVrlNh1pe9GVyCUZLhrX8lN4c=
 
-acorn@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.2.0.tgz#17ea7e40d7c8640ff54a694c889c26f31704effe"
-  integrity sha512-apwXVmYVpQ34m/i71vrApRrRKCWQnZZF1+npOD0WV5xZFfwWOmKGQ2RWlfdy9vWITsenisM8M0Qeq8agcFHNiQ==
+acorn@^8.0.3:
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.0.3.tgz#68e78e53da020414420282428f1a4afd2075c2dc"
+  integrity sha512-uRMbCU3bM1L697KISxvkd9TA2zASoGFDODzFFdQR4qNpPffj6ZMdp5J4ffXUXR9G0PVPsN0enEkCrvssCkoPsw==
 
 after@0.8.2:
   version "0.8.2"
