@@ -13,7 +13,7 @@
     "acorn": "^7.2.0",
     "clean-css": "^4.2.3",
     "cross-env": "^7.0.2",
-    "terser": "^4.6.13",
+    "terser": "^5.5.0",
     "xml2json": "^0.12.0"
   },
   "dependencies": {
