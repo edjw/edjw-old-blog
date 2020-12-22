@@ -23,14 +23,17 @@ section: reading-list
 
         <section class="readingListItem">
 
-            <a href="{{ item.resolved_url }}"
-                class="">{{ item.resolved_title if item.resolved_title else item.resolved_url }}</a>
-            {% if item.authors %}
+            <p class="mb-0 leading-tight">
+                <a href="{{ item.resolved_url }}"
+                    class="">{{ item.resolved_title if item.resolved_title else item.resolved_url }}</a>
+
+                {% if item.authors %}
             by {% for authorID, authorDetails in item.authors %}
-                    <em>{{ authorDetails.name | title }}
-                    </em>
-                {% endfor %}
-            {% endif %}
+                        <em>{{ authorDetails.name | title }}
+                        </em>
+                    {% endfor %}
+                {% endif %}
+            </p>
 
             <small class="">
                 <a href="https://app.getpocket.com/read/{{ item.item_id }}"
