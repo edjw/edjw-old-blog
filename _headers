@@ -3,4 +3,4 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Referrer-Policy: same-origin
-  Content-Security-Policy: default-src 'none'; connect-src 'self'; img-src 'self' https://*.cloudfront.net; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.cloudfront.net https://identity.netlify.com https://unpkg.com https://cdn.jsdelivr.net; style-src 'unsafe-inline' https://*.cloudfront.net;
+  Content-Security-Policy: default-src 'none'; connect-src 'self'; img-src 'self' https://*.cloudfront.net; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.cloudfront.net https://identity.netlify.com https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://*.cloudfront.net;
