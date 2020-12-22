@@ -1,4 +1,4 @@
-let env = process.env.ELEVENTY_ENV;
+// let env = process.env.ELEVENTY_ENV;
 
 // RSS imports
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -10,10 +10,10 @@ const htmlToAbsoluteUrls = require("@11ty/eleventy-plugin-rss/src/htmlToAbsolute
 const slugify = require("slugify");
 
 // Minify CSS
-const CleanCSS = require("clean-css");
+// const CleanCSS = require("clean-css");
 
 // Minify JS
-const Terser = require("terser");
+// const Terser = require("terser");
 
 // Reading time
 const readingTime = require("eleventy-plugin-reading-time");
@@ -22,9 +22,10 @@ const readingTime = require("eleventy-plugin-reading-time");
 const { DateTime } = require("luxon");
 
 // Minify HTML
-const htmlmin = require("html-minifier");
-
+// const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
+
+
   let markdownIt = require("markdown-it");
   let markdownItFootnote = require("markdown-it-footnote");
   let options = {
@@ -36,22 +37,26 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary("md", markdownLib);
 
+  eleventyConfig.addNunjucksFilter("markdownify", markdownString => markdownLib.render(markdownString));
+
   // Collections
+
   eleventyConfig.addCollection("posts", (collection) => {
-    return collection.getFilteredByGlob("posts/*.md");
+    return collection.getFilteredByGlob("./src/posts/*.md");
   });
 
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(readingTime);
-
+  // Static assets to pass through
+  eleventyConfig.addPassthroughCopy('./src/assets');
   // Copy over folders with static assets e.g. images
-  eleventyConfig.addPassthroughCopy("admin");
-  eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy("uploads");
+  eleventyConfig.addPassthroughCopy("./src/admin");
+  eleventyConfig.addPassthroughCopy("./src/assets");
+  eleventyConfig.addPassthroughCopy("./src/uploads");
   eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy({
-    "assets/internal_images/favicons": "/",
+    "./src/assets/internal_images/favicons": "/",
   });
 
   // Date formatting (human readable)
@@ -85,9 +90,9 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  eleventyConfig.addFilter("cssmin", function (code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
+  // eleventyConfig.addFilter("cssmin", function (code) {
+  //   return new CleanCSS({}).minify(code).styles;
+  // });
 
   // RSS/Atom feed filters
   eleventyConfig.addNunjucksFilter("rssLastUpdatedDate", (collection) => {
@@ -122,42 +127,40 @@ module.exports = function (eleventyConfig) {
     return new URL(url).hostname;
   });
 
-  if (env === "production") {
-    // Minify HTML output
-    eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-      if (outputPath.indexOf(".html") > -1) {
-        let minified = htmlmin.minify(content, {
-          useShortDoctype: true,
-          removeComments: true,
-          collapseWhitespace: true,
-          // minifyCSS: true,
-          // minifyJS: true,
-        });
-        return minified;
-      }
-      return content;
-    });
-  }
+  // if (env === "production") {
+  //   // Minify HTML output
+  //   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+  //     if (outputPath.indexOf(".html") > -1) {
+  //       let minified = htmlmin.minify(content, {
+  //         useShortDoctype: true,
+  //         removeComments: true,
+  //         collapseWhitespace: true,
+  //         // minifyCSS: true,
+  //         // minifyJS: true,
+  //       });
+  //       return minified;
+  //     }
+  //     return content;
+  //   });
+  // }
 
-  eleventyConfig.addFilter("jsmin", function (code) {
-    let minified = Terser.minify(code);
-    if (minified.error) {
-      console.log("Terser error: ", minified.error);
-      return code;
-    }
+  // eleventyConfig.addFilter("jsmin", function (code) {
+  //   let minified = Terser.minify(code);
+  //   if (minified.error) {
+  //     console.log("Terser error: ", minified.error);
+  //     return code;
+  //   }
 
-    return minified.code;
-  });
+  //   return minified.code;
+  // });
 
   return {
-    passthroughFileCopy: true,
     dir: {
-      input: ".",
-      includes: "_includes",
-      data: "_data",
-      output: "_site",
+      input: 'src',
+      output: 'src/_site',
     },
-    templateFormats: ["njk", "md"],
-    htmlTemplateEngine: "njk",
+    passthroughFileCopy: true,
+    templateFormats: ['njk', 'md'],
+    htmlTemplateEngine: 'njk',
   };
 };

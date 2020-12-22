@@ -1,7 +1,7 @@
-_site
-node_modules/
-package-lock.json
-.netlify
+node_modules
+web_modules
+src/_site
+dist
 .env
+.netlify
 .cache
-yarn-error.log
