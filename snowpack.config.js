@@ -4,7 +4,8 @@ module.exports = {
     "src/assets/css": { url: "/styles" }
   },
   plugins: [
-    '@snowpack/plugin-postcss', 'snowpack-plugin-optimize',
+    '@snowpack/plugin-postcss',
+    'snowpack-plugin-optimize',
     [
       '@snowpack/plugin-run-script',
       {
