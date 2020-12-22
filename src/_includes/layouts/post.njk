@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+section: post
+---
+
+<article class="prose h-entry">
+
+    <!-- h-entry things -->
+    <div class="hidden">
+        <a href="{{ page.url }}"></a>
+        <time class="dt-published">{{ page.date | ISO_8601_Date }}</time>
+        <a rel="author" href="https://edjohnsonwilliams.co.uk">Ed Johnson-Williams</a>
+    </div>
+    <!-- End of h-entry things -->
+
+    <h2 class="p-name">{{ title }}</h2>
+    <section class="">
+        <p class="my-1">
+            <span>Published:</span>
+            {{ page.date | readableDate }}</p>
+        <p class="my-1">
+            <span>Reading time:</span>
+            {{ content | readingTime }}
+        </p>
+        {% if tags.length > 0 and tags[0] != "post" %}
+
+            <p class="my-1">
+                <span>Tagged as:</span>
+                {% for tag in tags %}
+                    <a href="/tags/{{ tag | slug }}">{{ tag | title }}</a>
+                    {% if loop.last == false %}
+                        /
+                    {% endif %}
+                {% endfor %}
+            </p>
+            {% endif%}
+
+        </section>
+        <div class="e-content {{ section }}">
+            {{ content | safe }}
+        </div>
+
+    </article>

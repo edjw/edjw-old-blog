@@ -1,0 +1,21 @@
+---
+layout: layouts/page.njk
+section: rss-likes
+---
+<p>
+     These are the {{ raindropLinks | length }} links that I've saved on <a href="https://raindrop.io">Raindrop, my bookmarking service</a>.
+    </p>
+
+<div class="">
+
+    {% for item in raindropLinks %}
+        <section {% if loop.first ==false %}class=""{% endif %}>
+
+            <a href="{{ item.url }}" class="">
+                {{ item.title }}
+            </a>
+            <p>{{ item.excerpt }}</p>
+        </section>
+    {% endfor %}
+
+</div>
