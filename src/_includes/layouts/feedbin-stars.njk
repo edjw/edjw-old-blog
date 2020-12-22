@@ -2,22 +2,22 @@
 layout: layouts/page.njk
 section: feedbin-stars
 ---
+{% from "../macro_components/readingListItem.njk" import readingListItem %}
+
 <p>
      These are the {{ feedbinLikes | length }} articles that I've starred on <a href="https://feedbin.com">Feedbin, my RSS reader</a>.
     </p>
 
-<div class="">
+<div>
 
     {% for item in feedbinLikes %}
-        <section {% if loop.first == false %}class=""{% endif %}>
 
-            <p>
-                <a href="{{ item.url }}" class="">
-                    {{ item.title }}
-                </a>
-            </p>
-            <p>{{ item.publication }}</p>
-        </section>
+        {% set itemURL = item.url %}
+        {% set itemTitle = item.title %}
+        {% set itemPublication = item.publication %}
+
+        {{ readingListItem(url=itemURL, title=itemTitle, publication=itemPublication) }}
+
     {% endfor %}
 
 </div>

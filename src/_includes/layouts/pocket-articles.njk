@@ -5,10 +5,8 @@ section: reading-list
 <p>
         This is a list of the {{ readingList | length }}
     {% if readingList | length > 50 %}
-        <p>
-            <a href="https://github.com/edjw/edjw-blog/blob/a528443b33ce24de27097d6f1e9ac74ed817e851/_includes/layouts/reading-list.njk#L7-L11"
-                class="">(🤦‍♂️‍‍‍‍)</a>
-        </p>
+        <a href="https://github.com/edjw/edjw-blog/blob/a528443b33ce24de27097d6f1e9ac74ed817e851/_includes/layouts/reading-list.njk#L7-L11"
+            class="">(🤦‍♂️‍‍‍‍)</a>
     {% endif %}
         links that are currently saved in <a href="https://getpocket.com">my Pocket account</a>. I have excluded links that I have tagged as
         'private'. The Pocket article links only work if you've got a Pocket account.
@@ -23,7 +21,7 @@ section: reading-list
 
     {% for item in readingList %}
 
-        <section {% if loop.first == false %}class=""{% endif %}>
+        <section class="readingListItem">
 
             <a href="{{ item.resolved_url }}"
                 class="">{{ item.resolved_title if item.resolved_title else item.resolved_url }}</a>

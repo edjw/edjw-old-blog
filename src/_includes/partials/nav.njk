@@ -2,14 +2,19 @@
 
     <nav class="">
 
-        <ul class="grid grid-cols-3 my-8 list-none gap-y-4 sm:w-2/4">
+        <ul class="grid grid-cols-3 my-8 list-none gap-y-4 gap-x-2 sm:w-2/4">
             {% for nav in navigation.items %}
-                <li class="{% if section == nav.section %} currentPage
-           {% endif %}">
-                    <a href="{{ nav.url | url }}" {% if section == nav.section %} aria-current="page"{% endif %}>
+                <a href="{{ nav.url | url }}" {% if section == nav.section %} aria-current="page"{% endif %} class="no-underline border-b-2 border-transparent hover:border-yellow-200 hover:bg-yellow-100 hover:bg-opacity-20">
+                    <li class="{% if section == nav.section %} currentPage
+           {% endif %} text-lg p-1">
                         {{ nav.text }}
-                    </a>
-                </li>
+
+                        {% if nav.svgB64 %}
+                            {{nav.svgB64 | decodeBase64 | safe }}
+                        {% endif %}
+
+                    </li>
+                </a>
             {% endfor %}
 
         </ul>

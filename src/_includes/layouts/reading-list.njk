@@ -10,7 +10,7 @@ section: reading-list
 
 {% for i in range(0, 3) %}
 
-    <section class="">
+    <section class="readingListItem">
 
         <p>
             <a href="{{ readingList[i].resolved_url }}"
@@ -25,48 +25,50 @@ section: reading-list
             {% endfor %}
         {% endif %}
     </p>
+</section>
 
 {% endfor %}
 
-<p>
-    <a href="/pocket-articles" class="font-semibold">See all Pocket links</a>
+<p class="-mt-4">
+<a href="/pocket-articles" class="font-semibold">See all Pocket links</a>
 </p>
 
-<h3 class="mt-8">
+<h3 class="mt-12">
         Latest 3 Raindrop links
     </h3>
 
 {% for i in range(0, 3) %}
-    <section class="">
+<section class="readingListItem">
 
-        <p>
-            <a href="{{ raindropLinks[i].url }}" class="">
-                {{ raindropLinks[i].title }}
-            </a>
-        </p>
+    <p>
+        <a href="{{ raindropLinks[i].url }}" class="">
+            {{ raindropLinks[i].title }}
+        </a>
+    </p>
 
-        <p>{{ raindropLinks[i].excerpt | truncate(150)}}</p>
+    <p>{{ raindropLinks[i].excerpt | truncate(150)}}</p>
 
-    </section>
+</section>
 {% endfor %}
-<p>
-    <a href="/raindrop-links" class="font-semibold">See all Raindrop links</a>
+
+<p class="-mt-4">
+<a href="/raindrop-links" class="font-semibold">See all Raindrop links</a>
 </p>
 
-<h3 class="mt-8">
+<h3 class="mt-12">
         Latest 3 Feedbin stars
     </h3>
 
 {% for i in range(0, 3) %}
-    <section class="">
-        <p>
-            <a href="{{ feedbinLikes[i].url }}" class="">
-                {{ feedbinLikes[i].title }}
-            </a>
-        </p>
-        {# <p>{{ feedbinLikes[i].publication }}</p> #}
-    </section>
+<section class="readingListItem">
+    <p>
+        <a href="{{ feedbinLikes[i].url }}" class="">
+            {{ feedbinLikes[i].title }}
+        </a>
+    </p>
+    {# <p>{{ feedbinLikes[i].publication }}</p> #}
+</section>
 {% endfor %}
-<p>
-    <a href="/feedbin-stars" class="font-semibold">See all Feedbin stars</a>
+<p class="-mt-4">
+<a href="/feedbin-stars" class="font-semibold">See all Feedbin stars</a>
 </p>

@@ -83,6 +83,14 @@ module.exports = function (eleventyConfig) {
       strict: true,
     });
   });
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
+  eleventyConfig.addNunjucksFilter("decodeBase64", (b64string) => {
+    return Buffer.from(b64string, 'base64').toString('utf-8');
+  });
+
 
 
   // RSS/Atom feed filters

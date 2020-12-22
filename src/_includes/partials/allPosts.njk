@@ -1,3 +1,5 @@
+{% from "../macro_components/postEntry.njk" import postEntry %}
+
 <div class="mt-8 prose">
 	<h2 class="-mb-4">All blogposts</h2>
 	{% set year = "" %}
@@ -7,11 +9,14 @@
 			<p class="mt-10 -mb-6 text-lg font-bold">{{ postYear }}</p>
 			{% set year = postYear %}
 		{% endif %}
-		<section class="my-10">
-			<p class="m-0">{{ post.date | readableDate }}</p>
-			<h3 class="mt-1">
-				<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
-			</h3>
-		</section>
+
+		{% set postDate = post.date | readableDate %}
+
+		{% set postURL = post.url | url %}
+
+		{% set postTitle = post.data.title %}
+
+		{{ postEntry(date=postDate, url=postURL, title=postTitle) }}
+
 	{% endfor %}
 </div>

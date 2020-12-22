@@ -3,29 +3,35 @@
     {
       "text": "Blog",
       "url": "/all-posts/",
-      "section": "blog"
+      "section": "blog",
+      "svgB64": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iaW5saW5lIGgtNCB3LTQiPg0KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMC40OTYgMi4xMzJhMSAxIDAgMDAtLjk5MiAwbC03IDRBMSAxIDAgMDAzIDh2N2ExIDEgMCAxMDAgMmgxNGExIDEgMCAxMDAtMlY4YTEgMSAwIDAwLjQ5Ni0xLjg2OGwtNy00ek02IDlhMSAxIDAgMDAtMSAxdjNhMSAxIDAgMTAyIDB2LTNhMSAxIDAgMDAtMS0xem0zIDFhMSAxIDAgMDEyIDB2M2ExIDEgMCAxMS0yIDB2LTN6bTUtMWExIDEgMCAwMC0xIDF2M2ExIDEgMCAxMDIgMHYtM2ExIDEgMCAwMC0xLTF6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIC8+DQo8L3N2Zz4="
     },
     {
       "text": "Reading",
       "section": "reading-list",
-      "url": "/reading-list/"
+      "url": "/reading-list/",
+      "svgB64": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJpbmxpbmUgaC00IHctNCI+DQogIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTIgNi4yNTN2MTNtMC0xM0MxMC44MzIgNS40NzcgOS4yNDYgNSA3LjUgNVM0LjE2OCA1LjQ3NyAzIDYuMjUzdjEzQzQuMTY4IDE4LjQ3NyA1Ljc1NCAxOCA3LjUgMThzMy4zMzIuNDc3IDQuNSAxLjI1M20wLTEzQzEzLjE2OCA1LjQ3NyAxNC43NTQgNSAxNi41IDVjMS43NDcgMCAzLjMzMi40NzcgNC41IDEuMjUzdjEzQzE5LjgzMiAxOC40NzcgMTguMjQ3IDE4IDE2LjUgMThjLTEuNzQ2IDAtMy4zMzIuNDc3LTQuNSAxLjI1MyIvPg0KPC9zdmc+DQo="
     },
     {
-      "text": "About me",
+      "text": "About ",
       "url": "/about/",
-      "section": "about"
+      "section": "about",
+      "svgB64": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iaW5saW5lIGgtNCB3LTQiPg0KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMCA5YTMgMyAwIDEwMC02IDMgMyAwIDAwMCA2em0tNyA5YTcgNyAwIDExMTQgMEgzeiIgY2xpcC1ydWxlPSJldmVub2RkIiAvPg0KPC9zdmc+"
     },
     {
       "text": "Twitter",
-      "url": "https://twitter.com/_edjw/"
+      "url": "https://twitter.com/_edjw/",
+      "svgB64": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iaW5saW5lIGgtNCB3LTQiPg0KICA8cGF0aCBkPSJNMiA1YTIgMiAwIDAxMi0yaDdhMiAyIDAgMDEyIDJ2NGEyIDIgMCAwMS0yIDJIOWwtMyAzdi0zSDRhMiAyIDAgMDEtMi0yVjV6IiAvPg0KICA8cGF0aCBkPSJNMTUgN3YyYTQgNCAwIDAxLTQgNEg5LjgyOGwtMS43NjYgMS43NjdjLjI4LjE0OS41OTkuMjMzLjkzOC4yMzNoMmwzIDN2LTNoMmEyIDIgMCAwMDItMlY5YTIgMiAwIDAwLTItMmgtMXoiIC8+DQo8L3N2Zz4="
     },
     {
       "text": "Github",
-      "url": "https://github.com/edjw/"
+      "url": "https://github.com/edjw/",
+      "svgB64": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iaW5saW5lIGgtNCB3LTQiPg0KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4zMTYgMy4wNTFhMSAxIDAgMDEuNjMzIDEuMjY1bC00IDEyYTEgMSAwIDExLTEuODk4LS42MzJsNC0xMmExIDEgMCAwMTEuMjY1LS42MzN6TTUuNzA3IDYuMjkzYTEgMSAwIDAxMCAxLjQxNEwzLjQxNCAxMGwyLjI5MyAyLjI5M2ExIDEgMCAxMS0xLjQxNCAxLjQxNGwtMy0zYTEgMSAwIDAxMC0xLjQxNGwzLTNhMSAxIDAgMDExLjQxNCAwem04LjU4NiAwYTEgMSAwIDAxMS40MTQgMGwzIDNhMSAxIDAgMDEwIDEuNDE0bC0zIDNhMSAxIDAgMTEtMS40MTQtMS40MTRMMTYuNTg2IDEwbC0yLjI5My0yLjI5M2ExIDEgMCAwMTAtMS40MTR6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIC8+DQo8L3N2Zz4="
     },
     {
       "text": "RSS",
-      "url": "/feed.xml/"
+      "url": "/feed.xml/",
+      "svgB64": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJpbmxpbmUgaC00IHctNCI+DQogIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNNiA1YzcuMTggMCAxMyA1LjgyIDEzIDEzTTYgMTFhNyA3IDAgMDE3IDdtLTYgMGExIDEgMCAxMS0yIDAgMSAxIDAgMDEyIDB6Ii8+DQo8L3N2Zz4NCg=="
     }
   ]
 }

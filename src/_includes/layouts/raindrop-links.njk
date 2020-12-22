@@ -2,6 +2,8 @@
 layout: layouts/page.njk
 section: rss-likes
 ---
+{% from "../macro_components/readingListItem.njk" import readingListItem %}
+
 <p>
      These are the {{ raindropLinks | length }} links that I've saved on <a href="https://raindrop.io">Raindrop, my bookmarking service</a>.
     </p>
@@ -9,15 +11,13 @@ section: rss-likes
 <div class="">
 
     {% for item in raindropLinks %}
-        <section {% if loop.first ==false %}class=""{% endif %}>
 
-            <p>
-                <a href="{{ item.url }}" class="">
-                    {{ item.title }}
-                </a>
-            </p>
-            <p>{{ item.excerpt }}</p>
-        </section>
+        {% set itemURL = item.url %}
+        {% set itemTitle = item.title %}
+        {% set itemExcerpt = item.excerpt %}
+
+        {{ readingListItem(url=itemURL, title=itemTitle, excerpt=itemExcerpt) }}
+
     {% endfor %}
 
 </div>

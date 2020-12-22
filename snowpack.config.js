@@ -23,7 +23,7 @@ module.exports = {
   },
   devOptions: {
     open: 'none',
-    hmrDelay: 1000,
+    hmrDelay: 2000,
     hmr: true
   },
   experiments: {

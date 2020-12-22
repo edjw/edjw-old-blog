@@ -3,6 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      // scale: ['hover', 'focus', 'active', 'group-hover'],
       gridTemplateColumns: {
         "full": "100%"
       },

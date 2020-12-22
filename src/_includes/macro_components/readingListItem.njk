@@ -1,0 +1,17 @@
+{% macro readingListItem(url, title, excerpt, publication) %}
+    <section class="readingListItem">
+        <p class="">
+            <a href="{{ url }}">
+                {{ title }}
+            </a>
+
+        </p>
+        {% if excerpt %}
+            <p class="-mt-4">{{ excerpt }}</p>
+        {% endif %}
+
+        {% if publication %}
+            <p class="-mt-4">{{ publication }}</p>
+        {% endif %}
+    </section>
+{% endmacro %}
