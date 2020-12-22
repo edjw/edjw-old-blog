@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "snowpack-plugin-optimize": "^0.5.0"
+    "html-minifier": "^4.0.0"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
@@ -27,7 +27,7 @@
     "markdown-it-footnote": "^3.0.2",
     "postcss": "^8.2.1",
     "postcss-cli": "^8.3.1",
-    "snowpack": "^2.18.5",
+    "snowpack": "^3.0.0-rc.2",
     "tailwindcss": "^2.0.2",
     "xml2json": "^0.12.0"
   }

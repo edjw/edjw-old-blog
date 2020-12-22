@@ -5,11 +5,11 @@ module.exports = {
   },
   plugins: [
     '@snowpack/plugin-postcss',
-    'snowpack-plugin-optimize',
+
     [
       '@snowpack/plugin-run-script',
       {
-        cmd: 'eleventy',
+        cmd: 'ELEVENTY_PRODUCTION=true eleventy',
         watch: '$1 --watch',
       },
     ],

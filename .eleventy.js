@@ -7,6 +7,9 @@ const htmlToAbsoluteUrls = require("@11ty/eleventy-plugin-rss/src/htmlToAbsolute
 // Clean Slugs
 const slugify = require("slugify");
 
+// Minify HTML
+const htmlmin = require("html-minifier");
+
 
 // Reading time
 const readingTime = require("eleventy-plugin-reading-time");
@@ -113,6 +116,23 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("getDomain", function (url) {
     return new URL(url).hostname;
+  });
+
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+    if (
+      process.env.ELEVENTY_PRODUCTION &&
+      outputPath &&
+      outputPath.endsWith(".html")
+    ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      });
+      return minified;
+    }
+
+    return content;
   });
 
   return {
