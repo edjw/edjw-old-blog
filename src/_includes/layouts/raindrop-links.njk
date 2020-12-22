@@ -11,9 +11,11 @@ section: rss-likes
     {% for item in raindropLinks %}
         <section {% if loop.first ==false %}class=""{% endif %}>
 
-            <a href="{{ item.url }}" class="">
-                {{ item.title }}
-            </a>
+            <p>
+                <a href="{{ item.url }}" class="">
+                    {{ item.title }}
+                </a>
+            </p>
             <p>{{ item.excerpt }}</p>
         </section>
     {% endfor %}

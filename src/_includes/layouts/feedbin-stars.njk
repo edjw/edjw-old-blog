@@ -2,20 +2,22 @@
 layout: layouts/page.njk
 section: feedbin-stars
 ---
-    <p>
+<p>
      These are the {{ feedbinLikes | length }} articles that I've starred on <a href="https://feedbin.com">Feedbin, my RSS reader</a>.
     </p>
 
-    <div class="">
+<div class="">
 
-        {% for item in feedbinLikes %}
-            <section {% if loop.first == false %}class=""{% endif %}>
+    {% for item in feedbinLikes %}
+        <section {% if loop.first == false %}class=""{% endif %}>
 
+            <p>
                 <a href="{{ item.url }}" class="">
                     {{ item.title }}
                 </a>
-                <p>{{ item.publication }}</p>
-            </section>
-        {% endfor %}
+            </p>
+            <p>{{ item.publication }}</p>
+        </section>
+    {% endfor %}
 
-    </div>
+</div>
