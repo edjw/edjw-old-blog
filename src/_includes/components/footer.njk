@@ -1,44 +1,44 @@
-<footer class="mt-16 text-base border-t-8">
+<footer class="mt-16  border-t-8">
 
-  <ul class="leading-loose list-none">
+    <ul class="leading-loose list-none">
 
-    {# {% if site.author.twitterUsername %}
+        {# {% if site.author.twitterUsername %}
         <li class="">
           <a href="https://twitter.com/{{ site.author.twitterUsername }}" rel="me">Twitter</a>
         </li>
       {% endif %} #}
 
-    {% if site.repository %}
-      <li class="my-2">
-        <a href="https://github.com/{{ site.repository }}">See the code for this site</a>
-      </li>
-    {% endif %}
+        {% if site.repository %}
+            <li class="my-2">
+                <a href="https://github.com/{{ site.repository }}">See the code for this site</a>
+            </li>
+        {% endif %}
 
-    {% if site.RSSFeed %}
-      <li class="my-2">
-        <a href="/feed.xml">See the RSS feed for this site</a>
-      </li>
-    {% endif %}
+        {% if site.RSSFeed %}
+            <li class="my-2">
+                <a href="/feed.xml">See the RSS feed for this site</a>
+            </li>
+        {% endif %}
 
-    {% if site.sitemap %}
-      <li class="hidden">
-        <a href="/sitemap.xml">Sitemap</a>
-      </li>
+        {% if site.sitemap %}
+            <li class="hidden">
+                <a href="/sitemap.xml">Sitemap</a>
+            </li>
 
-    {% endif %}
-  </ul>
+        {% endif %}
+    </ul>
 
-  {# {% if site.author.mastodonUsername %}
+    {# {% if site.author.mastodonUsername %}
     <link rel="me" href="https://mastodon.social/{{ site.author.mastodonUsername}}">
   {% endif %} #}
 
-  {% if site.contentLicence %}
+    {% if site.contentLicence %}
 
-    <p class="mt-6 prose">
+        <p class="mt-6 prose">
         You can copy, adapt, and redistribute any content on this site for any purpose. If you do, please give credit, provide a link to the licence, and indicate if you made changes. Content on this website is licenced under a
         <a href="{{ site.contentLicence.link }}">{{ site.contentLicence.text }}</a>.
     </p>
 
-  {% endif %}
+    {% endif %}
 
 </footer>

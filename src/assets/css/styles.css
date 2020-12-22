@@ -6,4 +6,9 @@
   a {
     text-decoration: underline;
   }
+
+  a,
+  p {
+    @apply text-lg;
+  }
 }
