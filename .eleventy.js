@@ -1,5 +1,3 @@
-// let env = process.env.ELEVENTY_ENV;
-
 // RSS imports
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const dateToISO = require("@11ty/eleventy-plugin-rss/src/dateToISO");
@@ -9,11 +7,6 @@ const htmlToAbsoluteUrls = require("@11ty/eleventy-plugin-rss/src/htmlToAbsolute
 // Clean Slugs
 const slugify = require("slugify");
 
-// Minify CSS
-// const CleanCSS = require("clean-css");
-
-// Minify JS
-// const Terser = require("terser");
 
 // Reading time
 const readingTime = require("eleventy-plugin-reading-time");
@@ -21,8 +14,6 @@ const readingTime = require("eleventy-plugin-reading-time");
 // Date and time
 const { DateTime } = require("luxon");
 
-// Minify HTML
-// const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
 
 
@@ -90,9 +81,6 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  // eleventyConfig.addFilter("cssmin", function (code) {
-  //   return new CleanCSS({}).minify(code).styles;
-  // });
 
   // RSS/Atom feed filters
   eleventyConfig.addNunjucksFilter("rssLastUpdatedDate", (collection) => {
@@ -126,33 +114,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("getDomain", function (url) {
     return new URL(url).hostname;
   });
-
-  // if (env === "production") {
-  //   // Minify HTML output
-  //   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-  //     if (outputPath.indexOf(".html") > -1) {
-  //       let minified = htmlmin.minify(content, {
-  //         useShortDoctype: true,
-  //         removeComments: true,
-  //         collapseWhitespace: true,
-  //         // minifyCSS: true,
-  //         // minifyJS: true,
-  //       });
-  //       return minified;
-  //     }
-  //     return content;
-  //   });
-  // }
-
-  // eleventyConfig.addFilter("jsmin", function (code) {
-  //   let minified = Terser.minify(code);
-  //   if (minified.error) {
-  //     console.log("Terser error: ", minified.error);
-  //     return code;
-  //   }
-
-  //   return minified.code;
-  // });
 
   return {
     dir: {
