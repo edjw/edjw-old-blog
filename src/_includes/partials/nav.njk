@@ -2,7 +2,7 @@
 
     <nav class="flex flex-wrap my-8 list-none gap-y-4 sm:w-2/4">
         {% for nav in navigation.items %}
-            <a href="{{ nav.url | url }}" {% if section == nav.section %} aria-current="page"{% endif %} class="w-1/3 min-w-min p-1 text-lg no-underline border-b-2 border-transparent hover:border-yellow-200 hover:bg-yellow-100 hover:bg-opacity-20 {% if section == nav.section %} currentPage
+            <a href="{{ nav.url | url }}" {% if section == nav.section %} aria-current="page"{% endif %} class="transition ease-in-out duration-300 w-1/3 min-w-min p-1 text-lg no-underline border-b-2 border-transparent hover:border-yellow-200 hover:bg-yellow-100 hover:bg-opacity-20 {% if section == nav.section %} currentPage
            {% endif %}">
                 {{ nav.text }}
 
