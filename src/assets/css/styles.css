@@ -11,7 +11,10 @@
     @apply bg-yellow-100 border-b-2 border-yellow-200;
   }
 
-  p {
+  p,
+  li,
+  blockquote,
+  p > code {
     @apply text-lg;
   }
 }
@@ -19,5 +22,11 @@
 @layer components {
   .readingListItem {
     @apply p-4 my-10 border-t-8 border-yellow-200 shadow-lg;
+  }
+}
+
+@layer utilities {
+  .prose a {
+    @apply break-words;
   }
 }
