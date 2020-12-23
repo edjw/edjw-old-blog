@@ -1,16 +1,16 @@
 module.exports = {
   mount: {
-    'src/_site': { url: '/', static: true },
-    "src/assets/css": { url: "/styles" }
+    "src/_site": { url: "/", static: true },
+    "src/assets/css": { url: "/styles" },
   },
   plugins: [
-    '@snowpack/plugin-postcss',
+    "@snowpack/plugin-postcss",
 
     [
-      '@snowpack/plugin-run-script',
+      "@snowpack/plugin-run-script",
       {
-        cmd: 'ELEVENTY_PRODUCTION=true eleventy',
-        watch: '$1 --watch',
+        cmd: "ELEVENTY_PRODUCTION=true eleventy",
+        watch: "$1 --watch",
       },
     ],
   ],
@@ -19,19 +19,20 @@ module.exports = {
   },
   buildOptions: {
     clean: true,
-    out: 'dist',
+    out: "dist",
   },
   devOptions: {
-    open: 'none',
+    open: "none",
     hmrDelay: 2000,
-    hmr: true
+    bundle: false,
+    hmr: true,
   },
   experiments: {
     optimize: {
       bundle: true,
       minify: true,
-      target: 'es2020',
+      target: "es2020",
     },
-    source: 'skypack',
+    source: "skypack",
   },
 };
