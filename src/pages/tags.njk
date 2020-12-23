@@ -9,21 +9,24 @@ pagination:
     - posts
 permalink: /tags/{{ tag | slug }}/
 layout: layouts/page.njk
+tagPage: true
+title: Tag
 ---
+{% from "../_includes/macro_components/postEntry.njk" import postEntry %}
 
-<h2 class="">
+<h2 class="-mb-2">
     Posts about <em>{{ tag | title }}</em>
 </h2>
-<div class="">
 
-    {% set taglist = collections[tag] %}
-    {% for post in taglist | reverse %}
+{% set taglist = collections[tag] %}
+{% for post in taglist | reverse %}
 
-        <section class="my-10">
-            <p class="m-0">{{ post.date | readableDate }}</p>
-            <h3 class="mt-1">
-                <a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
-            </h3>
-        </section>
-    {% endfor %}
-</div>
+    {% set postDate = post.date | readableDate %}
+
+    {% set postURL = post.url | url %}
+
+    {% set postTitle = post.data.title %}
+
+    {{ postEntry(date=postDate, url=postURL, title=postTitle) }}
+
+{% endfor %}

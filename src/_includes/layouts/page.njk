@@ -3,8 +3,11 @@ layout: layouts/base.njk
 section: page
 ---
 <article class="prose">
-    <h2 class="">{{ title }}</h2>
-    <div class="">
-        {{ content | safe }}
-    </div>
+
+    {% if tagPage != true %}
+        <h2 class="">{{ title }}</h2>
+    {% endif %}
+
+    {{ content | safe }}
+
 </article>
