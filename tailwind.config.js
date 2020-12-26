@@ -1,6 +1,11 @@
 module.exports = {
-  purge: ["./src/**/*.html", "./src/**/*.md", "./src/**/**/*.njk"],
-  darkMode: "media", // or 'media' or 'class'
+  purge: [
+    "./src/**/*.html",
+    "./src/**/*.md",
+    "./src/**/*.njk",
+    "./src/**/**/*.njk",
+  ],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       // scale: ['hover', 'focus', 'active', 'group-hover'],
