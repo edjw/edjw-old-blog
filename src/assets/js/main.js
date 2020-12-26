@@ -1,6 +1,8 @@
+// import "alpinejs";
+
 window.addEventListener("DOMContentLoaded", function () {
-	netlifyInit();
-	// mobileMenu();
+  netlifyInit();
+  // mobileMenu();
 });
 
 // function mobileMenu() {
@@ -22,13 +24,13 @@ window.addEventListener("DOMContentLoaded", function () {
 // }
 
 function netlifyInit() {
-	if (window.netlifyIdentity) {
-		window.netlifyIdentity.on("init", user => {
-			if (!user) {
-				window.netlifyIdentity.on("login", () => {
-					document.location.href = "/admin/";
-				});
-			}
-		});
-	}
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
 }

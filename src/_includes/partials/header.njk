@@ -1,11 +1,9 @@
-<header class="">
-    <h1 class="text-4xl">
-        <a class="text-4xl leading-relaxed no-underline border-b-8 border-yellow-200 hover:border-transparent h-card" rel="me" href="/"
+<h1 class="text-4xl">
+    <a class="text-4xl leading-relaxed no-underline border-b-8 border-yellow-200 hover:border-transparent h-card" rel="me" href="/"
         {% if page.url == "/" %}
             aria-current="page"
         {% endif %}>
-            {{ site.title }}
-        </a>
-    </h1>
-    {% include "partials/nav.njk" %}
-</header>
+        {{ site.title }}
+    </a>
+</h1>
+{% include "partials/nav.njk" %}
