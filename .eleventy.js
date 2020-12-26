@@ -10,7 +10,6 @@ const slugify = require("slugify");
 // Minify HTML
 const htmlmin = require("html-minifier");
 
-
 // Reading time
 const readingTime = require("eleventy-plugin-reading-time");
 
@@ -18,8 +17,6 @@ const readingTime = require("eleventy-plugin-reading-time");
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
-
-
   let markdownIt = require("markdown-it");
   let markdownItFootnote = require("markdown-it-footnote");
   let options = {
@@ -31,7 +28,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary("md", markdownLib);
 
-  eleventyConfig.addNunjucksFilter("markdownify", markdownString => markdownLib.render(markdownString));
+  eleventyConfig.addNunjucksFilter("markdownify", (markdownString) =>
+    markdownLib.render(markdownString)
+  );
 
   // Collections
 
@@ -43,7 +42,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(readingTime);
   // Static assets to pass through
-  eleventyConfig.addPassthroughCopy('./src/assets');
+  eleventyConfig.addPassthroughCopy("./src/assets/images");
+  eleventyConfig.addPassthroughCopy("./src/assets/internal_images");
   // Copy over folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("./src/admin");
   eleventyConfig.addPassthroughCopy("./src/assets");
@@ -88,10 +88,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addNunjucksFilter("decodeBase64", (b64string) => {
-    return Buffer.from(b64string, 'base64').toString('utf-8');
+    return Buffer.from(b64string, "base64").toString("utf-8");
   });
-
-
 
   // RSS/Atom feed filters
   eleventyConfig.addNunjucksFilter("rssLastUpdatedDate", (collection) => {
@@ -145,11 +143,11 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input: 'src',
-      output: 'src/_site',
+      input: "src",
+      output: "src/_site",
     },
     passthroughFileCopy: true,
-    templateFormats: ['njk', 'md'],
-    htmlTemplateEngine: 'njk',
+    templateFormats: ["njk", "md"],
+    htmlTemplateEngine: "njk",
   };
 };

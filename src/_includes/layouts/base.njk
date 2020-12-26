@@ -13,13 +13,24 @@
         {% include "partials/footer.njk" %}
 
         {# {% set js %}
-		{% include "../../assets/js/main.js" %}
-		{% endset %}
+        {% include "../../assets/js/main.js" %}
+        {% endset %}
 
-		<script>
+        <script>
 
-			{{ js | jsmin | safe }}
-		</script> #}
+            {{ js | safe }}
+        </script> #}
+
+        <script src="/scripts/main.js"></script>
+
+        {# {% set js %}
+        {% include "/scripts/main.js" %}
+        {% endset %}
+
+        <script>
+
+            {{ js | safe }}
+        </script> #}
     </body>
 
 </html>

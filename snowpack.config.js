@@ -2,10 +2,9 @@ module.exports = {
   mount: {
     "src/_site": { url: "/", static: true },
     "src/assets/css": { url: "/styles" },
+    "src/assets/js": { url: "/scripts" },
   },
   plugins: [
-    "@snowpack/plugin-postcss",
-
     [
       "@snowpack/plugin-run-script",
       {
@@ -13,6 +12,7 @@ module.exports = {
         watch: "$1 --watch",
       },
     ],
+    "@snowpack/plugin-postcss",
   ],
   installOptions: {
     NODE_ENV: true,
@@ -23,7 +23,7 @@ module.exports = {
   },
   devOptions: {
     open: "none",
-    hmrDelay: 2000,
+    hmrDelay: 300,
     bundle: false,
     hmr: true,
   },
