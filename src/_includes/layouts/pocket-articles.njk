@@ -6,15 +6,15 @@ section: reading-list
         This is a list of the {{ readingList | length }}
     {% if readingList | length > 50 %}
         <a href="https://github.com/edjw/edjw-blog/blob/a528443b33ce24de27097d6f1e9ac74ed817e851/_includes/layouts/reading-list.njk#L7-L11"
-            class="">(🤦‍♂️‍‍‍‍)</a>
+            class="dark:text-trueGray-50 dark:hover:text-gray-800">(🤦‍♂️‍‍‍‍)</a>
     {% endif %}
-        links that are currently saved in <a href="https://getpocket.com">my Pocket account</a>. I have excluded links that I have tagged as
+        links that are currently saved in <a href="https://getpocket.com" class="dark:text-trueGray-50 dark:hover:text-gray-800">my Pocket account</a>. I have excluded links that I have tagged as
         'private'. The Pocket article links only work if you've got a Pocket account.
     </p>
 
 <p>
         I've written up how this website pulls in that data in <a
-            href="/2019/04/26/publishing-my-pocket-reading-list-on-this-website">a blogpost here</a>.
+            href="/2019/04/26/publishing-my-pocket-reading-list-on-this-website" class=" dark:text-trueGray-50 dark:hover:text-gray-800">a blogpost here</a>.
     </p>
 
 <div class="">
@@ -23,9 +23,9 @@ section: reading-list
 
         <section class="readingListItem">
 
-            <p class="mb-0 leading-tight">
+            <p class="mb-0 leading-tight dark:text-trueGray-50">
                 <a href="{{ item.resolved_url }}"
-                    class="">{{ item.resolved_title if item.resolved_title else item.resolved_url }}</a>
+                    class=" dark:text-trueGray-50 dark:hover:text-gray-800">{{ item.resolved_title if item.resolved_title else item.resolved_url }}</a>
 
                 {% if item.authors %}
             by {% for authorID, authorDetails in item.authors %}
@@ -37,7 +37,7 @@ section: reading-list
 
             <small class="">
                 <a href="https://app.getpocket.com/read/{{ item.item_id }}"
-                    aria-label="Read {% if item.resolved_title %} {{ item.resolved_title }} {% else %}article from {{ item.resolved_url | getDomain }}{% endif %} {% if item.authors %} by {% for authorID, authorDetails in item.authors %} {{ authorDetails.name | title }}{% endfor %}{% endif %} on Pocket">
+                    aria-label="Read {% if item.resolved_title %} {{ item.resolved_title }} {% else %}article from {{ item.resolved_url | getDomain }}{% endif %} {% if item.authors %} by {% for authorID, authorDetails in item.authors %} {{ authorDetails.name | title }}{% endfor %}{% endif %} on Pocket" class=" dark:text-trueGray-50 dark:hover:text-gray-800">
                     Pocket article link
                 </a>
             </small>

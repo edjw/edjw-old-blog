@@ -1,4 +1,4 @@
-<footer class="mt-16 border-t-8 border-yellow-200">
+<footer class="mt-16 border-t-8 border-yellow-200 dark:text-trueGray-50">
 
     <ul class="leading-loose list-none">
 
@@ -10,13 +10,13 @@
 
         {% if site.repository %}
             <li class="my-2">
-                <a href="https://github.com/{{ site.repository }}">See the code for this site</a>
+                <a href="https://github.com/{{ site.repository }}" class="underline">See the code for this site</a>
             </li>
         {% endif %}
 
         {% if site.RSSFeed %}
             <li class="my-2">
-                <a href="/feed.xml">See the RSS feed for this site</a>
+                <a href="/feed.xml" class="underline">See the RSS feed for this site</a>
             </li>
         {% endif %}
 
@@ -34,9 +34,9 @@
 
     {% if site.contentLicence %}
 
-        <p class="mt-6 text-sm prose">
+        <p class="mt-6 text-sm prose dark:text-trueGray-300">
         Content on this website is licenced as
-        <a href="{{ site.contentLicence.link }}" class="text-sm">{{ site.contentLicence.text }}</a>. That means you can copy, adapt, and redistribute any content on this site for any purpose providing you give credit, provide a link to the licence, and indicate if you made changes.
+        <a href="{{ site.contentLicence.link }}" class="dark:text-trueGray-300 dark:hover:text-gray-800">{{ site.contentLicence.text }}</a>. That means you can copy, adapt, and redistribute any content on this site for any purpose providing you give credit, provide a link to the licence, and indicate if you made changes.
     </p>
 
     {% endif %}

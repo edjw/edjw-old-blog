@@ -4,11 +4,26 @@
 
 @layer base {
   a {
-    @apply border-b-2 border-transparent no-underline;
+    @apply border-b-2 border-transparent no-underline dark:text-trueGray-50;
   }
 
   a:hover {
-    @apply bg-yellow-100 border-b-2 border-yellow-200;
+    @apply bg-yellow-100 border-b-2 border-yellow-200 dark:text-gray-800;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  li,
+  blockquote,
+  p > code,
+  pre > code {
+    @apply dark:text-trueGray-50;
   }
 
   p,
@@ -21,12 +36,15 @@
 
 @layer components {
   .readingListItem {
-    @apply p-4 my-10 border-t-8 border-yellow-200 shadow-lg;
+    @apply p-4 my-10 border-t-8 border-yellow-200 shadow-lg dark:bg-gray-800;
   }
 }
 
 @layer utilities {
   .prose a {
-    @apply break-words;
+    @apply break-words dark:text-trueGray-50;
+  }
+  .prose a:hover {
+    @apply dark:text-gray-800;
   }
 }

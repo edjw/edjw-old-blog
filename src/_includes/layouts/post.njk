@@ -3,7 +3,7 @@ layout: layouts/base.njk
 section: post
 ---
 
-<article class="prose h-entry">
+<article class="prose h-entry dark:text-trueGray-50">
 
     <!-- h-entry things -->
     <div class="hidden">
@@ -13,18 +13,18 @@ section: post
     </div>
     <!-- End of h-entry things -->
 
-    <h2 class="-mt-0 p-name">{{ title }}</h2>
+    <h2 class="-mt-0 p-name dark:text-trueGray-50">{{ title }}</h2>
     <section class="">
-        <p class="my-1">
+        <p class="my-1 dark:text-trueGray-300">
             <span>Published:</span>
             {{ page.date | readableDate }}</p>
-        <p class="my-1">
+        <p class="my-1 dark:text-trueGray-300">
             <span>Reading time:</span>
             {{ content | readingTime }}
         </p>
         {% if tags.length > 0 and tags[0] != "post" %}
 
-            <p class="my-1">
+            <p class="my-1 dark:text-trueGray-300">
                 <span>Tagged as:</span>
                 {% for tag in tags %}
                     <a href="/tags/{{ tag | slug }}">{{ tag | title }}</a>
@@ -36,7 +36,7 @@ section: post
             {% endif%}
 
         </section>
-        <div class=" e-content">
+        <div class="e-content dark:bg-trueGray-800 dark:text-trueGray-50">
             {{ content | safe }}
         </div>
 

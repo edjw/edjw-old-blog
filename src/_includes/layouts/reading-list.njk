@@ -3,8 +3,8 @@ layout: layouts/page.njk
 section: reading-list
 ---
 
-<p>See what I've saved in Pocket, Raindrop, and Feedbin.</p>
-<h3 class="">
+<p class="">See what I've saved in Pocket, Raindrop, and Feedbin.</p>
+<h3 class="dark:text-trueGray-50">
         Latest 3 Pocket articles
     </h3>
 
@@ -12,9 +12,9 @@ section: reading-list
 
     <section class="readingListItem">
 
-        <p>
+        <p class="dark:text-trueGray-50">
             <a href="{{ readingList[i].resolved_url }}"
-                class="">{{ readingList[i].resolved_title if readingList[i].resolved_title else readingList[i].resolved_url }}</a>
+                class="dark:text-trueGray-50 dark:hover:text-gray-800">{{ readingList[i].resolved_title if readingList[i].resolved_title else readingList[i].resolved_url }}</a>
             {% if readingList
             [i].authors %}
             by {% for authorID, authorDetails in readingList
@@ -30,10 +30,10 @@ section: reading-list
 {% endfor %}
 
 <p class="-mt-4">
-<a href="/pocket-articles" class="font-semibold">See all Pocket links</a>
+<a href="/pocket-articles" class="font-semibold dark:text-trueGray-50 dark:hover:text-gray-800">See all Pocket links</a>
 </p>
 
-<h3 class="mt-12">
+<h3 class="mt-12 dark:text-trueGray-50">
         Latest 3 Raindrop links
     </h3>
 
@@ -41,7 +41,7 @@ section: reading-list
 <section class="readingListItem">
 
     <p>
-        <a href="{{ raindropLinks[i].url }}" class="">
+        <a href="{{ raindropLinks[i].url }}" class=" dark:text-trueGray-50 dark:hover:text-gray-800">
             {{ raindropLinks[i].title }}
         </a>
     </p>
@@ -52,17 +52,17 @@ section: reading-list
 {% endfor %}
 
 <p class="-mt-4">
-<a href="/raindrop-links" class="font-semibold">See all Raindrop links</a>
+<a href="/raindrop-links" class="font-semibold dark:text-trueGray-50 dark:hover:text-gray-800">See all Raindrop links</a>
 </p>
 
-<h3 class="mt-12">
+<h3 class="mt-12 dark:text-trueGray-50">
         Latest 3 Feedbin stars
     </h3>
 
 {% for i in range(0, 3) %}
 <section class="readingListItem">
     <p>
-        <a href="{{ feedbinLikes[i].url }}" class="">
+        <a href="{{ feedbinLikes[i].url }}" class="dark:text-trueGray-50 dark:hover:text-gray-800">
             {{ feedbinLikes[i].title }}
         </a>
     </p>
@@ -70,5 +70,5 @@ section: reading-list
 </section>
 {% endfor %}
 <p class="-mt-4">
-<a href="/feedbin-stars" class="font-semibold">See all Feedbin stars</a>
+<a href="/feedbin-stars" class="font-semibold dark:hover:text-gray-800">See all Feedbin stars</a>
 </p>
