@@ -3,7 +3,7 @@ title: "New website: Find the nearest Tailwind Colour"
 date: 2021-01-02T10:01:55.600Z
 socialDescription: A tool to find the nearest colour from the Tailwind colour palette
 tags:
-  - new-website
+  - new website
   - tailwind
   - svelte
 ---
