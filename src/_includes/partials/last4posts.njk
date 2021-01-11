@@ -1,21 +1,21 @@
 {% from "../macro_components/postEntry.njk" import postEntry %}
 
-<div class="mt-8 prose dark:text-trueGray-50">
-    <h2 class="-mb-4 dark:text-trueGray-50">Latest posts</h2>
+<div class="mt-8 prose ">
+  <h2 class="-mb-4 ">Latest posts</h2>
 
-    {% set year = "" %}
-    {% for i in range(0, 4) %}
+  {% set year = "" %}
+  {% for i in range(0, 4) %}
 
-        {% set postDate = postslist[i].date | readableDate %}
+    {% set postDate = postslist[i].date | readableDate %}
 
-        {% set postURL = postslist[i].url | url %}
+    {% set postURL = postslist[i].url | url %}
 
-        {% set postTitle = postslist[i].data.title %}
+    {% set postTitle = postslist[i].data.title %}
 
-        {{ postEntry(date=postDate, url=postURL, title=postTitle) }}
+    {{ postEntry(date=postDate, url=postURL, title=postTitle) }}
 
-    {% endfor %}
-    <p>
-        <a href="/all-posts" class="font-semibold dark:text-trueGray-50 dark:hover:text-gray-800">See all posts</a>
-    </p>
+  {% endfor %}
+  <p>
+    <a href="/all-posts" class="font-semibold  ">See all posts</a>
+  </p>
 </div>

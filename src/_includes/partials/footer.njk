@@ -1,42 +1,42 @@
-<footer class="mt-16 border-t-8 border-yellow-200 dark:text-trueGray-50">
+<footer class="mt-16 border-t-8 border-yellow-200 ">
 
-    <ul class="leading-loose list-none">
+  <ul class="leading-loose list-none">
 
-        {# {% if site.author.twitterUsername %}
+    {# {% if site.author.twitterUsername %}
         <li class="">
           <a href="https://twitter.com/{{ site.author.twitterUsername }}" rel="me">Twitter</a>
         </li>
       {% endif %} #}
 
-        {% if site.repository %}
-            <li class="my-2">
-                <a href="https://github.com/{{ site.repository }}" class="underline">See the code for this site</a>
-            </li>
-        {% endif %}
+    {% if site.repository %}
+      <li class="my-2">
+        <a href="https://github.com/{{ site.repository }}" class="underline">See the code for this site</a>
+      </li>
+    {% endif %}
 
-        {% if site.RSSFeed %}
-            <li class="my-2">
-                <a href="/feed.xml" class="underline">See the RSS feed for this site</a>
-            </li>
-        {% endif %}
+    {% if site.RSSFeed %}
+      <li class="my-2">
+        <a href="/feed.xml" class="underline">See the RSS feed for this site</a>
+      </li>
+    {% endif %}
 
-        {% if site.sitemap %}
-            <li class="hidden">
-                <a href="/sitemap.xml">Sitemap</a>
-            </li>
+    {% if site.sitemap %}
+      <li class="hidden">
+        <a href="/sitemap.xml">Sitemap</a>
+      </li>
 
-        {% endif %}
-    </ul>
+    {% endif %}
+  </ul>
 
-    {# {% if site.author.mastodonUsername %}
+  {# {% if site.author.mastodonUsername %}
     <link rel="me" href="https://mastodon.social/{{ site.author.mastodonUsername}}">
   {% endif %} #}
 
-    {% if site.contentLicence %}
+  {% if site.contentLicence %}
 
-        <p class="mt-6 text-sm prose dark:text-trueGray-300">
+    <p class="mt-6 text-sm prose ">
         Content on this website is licenced as
-        <a href="{{ site.contentLicence.link }}" class="dark:text-trueGray-300 dark:hover:text-gray-800">{{ site.contentLicence.text }}</a>. That means you can copy, adapt, and redistribute any content on this site for any purpose providing you give credit, provide a link to the licence, and indicate if you made changes.
+        <a href="{{ site.contentLicence.link }}" class=" ">{{ site.contentLicence.text }}</a>. That means you can copy, adapt, and redistribute any content on this site for any purpose providing you give credit, provide a link to the licence, and indicate if you made changes.
     </p>
 
     {% endif %}

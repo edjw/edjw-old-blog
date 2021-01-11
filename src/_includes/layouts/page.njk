@@ -4,10 +4,10 @@ section: page
 ---
 <article class="prose">
 
-    {% if tagPage != true %}
-        <h2 class="dark:text-trueGray-50">{{ title }}</h2>
-    {% endif %}
+  {% if tagPage != true %}
+    <h2 class="">{{ title }}</h2>
+  {% endif %}
 
-    {{ content | safe }}
+  {{ content | safe }}
 
 </article>

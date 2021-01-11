@@ -4,20 +4,20 @@ section: feedbin-stars
 ---
 {% from "../macro_components/readingListItem.njk" import readingListItem %}
 
-<p class=" dark:text-trueGray-50">
-     These are the {{ feedbinLikes | length }} articles that I've starred on <a href="https://feedbin.com" class=" dark:text-trueGray-50 dark:hover:text-gray-800">Feedbin, my RSS reader</a>.
+<p class=" ">
+     These are the {{ feedbinLikes | length }} articles that I've starred on <a href="https://feedbin.com" class="  ">Feedbin, my RSS reader</a>.
     </p>
 
 <div>
 
-    {% for item in feedbinLikes %}
+{% for item in feedbinLikes %}
 
-        {% set itemURL = item.url %}
-        {% set itemTitle = item.title %}
-        {% set itemPublication = item.publication %}
+  {% set itemURL = item.url %}
+  {% set itemTitle = item.title %}
+  {% set itemPublication = item.publication %}
 
-        {{ readingListItem(url=itemURL, title=itemTitle, publication=itemPublication) }}
+  {{ readingListItem(url=itemURL, title=itemTitle, publication=itemPublication) }}
 
-    {% endfor %}
+{% endfor %}
 
 </div>

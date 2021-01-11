@@ -4,20 +4,20 @@ section: rss-likes
 ---
 {% from "../macro_components/readingListItem.njk" import readingListItem %}
 
-<p class=" dark:text-trueGray-50">
-     These are the {{ raindropLinks | length }} links that I've saved on <a href="https://raindrop.io" class="dark:text-trueGray-50 dark:hover:text-gray-800">Raindrop, my bookmarking service</a>.
+<p class=" ">
+     These are the {{ raindropLinks | length }} links that I've saved on <a href="https://raindrop.io" class=" ">Raindrop, my bookmarking service</a>.
     </p>
 
 <div class="">
 
-    {% for item in raindropLinks %}
+{% for item in raindropLinks %}
 
-        {% set itemURL = item.url %}
-        {% set itemTitle = item.title %}
-        {% set itemExcerpt = item.excerpt %}
+  {% set itemURL = item.url %}
+  {% set itemTitle = item.title %}
+  {% set itemExcerpt = item.excerpt %}
 
-        {{ readingListItem(url=itemURL, title=itemTitle, excerpt=itemExcerpt) }}
+  {{ readingListItem(url=itemURL, title=itemTitle, excerpt=itemExcerpt) }}
 
-    {% endfor %}
+{% endfor %}
 
 </div>
