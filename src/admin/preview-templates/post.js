@@ -22,7 +22,7 @@ const Post = createClass({
 
           <!--<p>${entry.getIn(["data", "summary"], "")}</p>-->
 
-              <p class="mt-0>Tagged as:
+              <p class="mt-0">Tagged as:
             ${entry
         .getIn(["data", "tags"], [])
         .map((tag) => html` <a href="#" rel="tag">${tag}</a> `)}
