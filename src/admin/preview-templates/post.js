@@ -15,7 +15,8 @@ const Post = createClass({
 
               Published: <time
                 >${format(
-      entry.getIn(["data", "date"], new Date().toLocaleString('default', { month: 'long' }))
+      entry.getIn(["data", "date"], new Date()),
+      "dd MMMM yyyy"
     )}</time
               >
           </p>
