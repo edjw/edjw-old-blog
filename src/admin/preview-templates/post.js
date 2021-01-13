@@ -7,30 +7,30 @@ const html = htm.bind(h);
 const Post = createClass({
   render() {
     const entry = this.props.entry;
-
     return html`
       <main>
-        <article>
-          <h1>${entry.getIn(["data", "title"], null)}</h1>
+        <article class="prose">
+          <h2>${entry.getIn(["data", "title"], null)}</h2>
           <p>
-            <small>
-              <time
+
+              Published: <time
                 >${format(
-                  entry.getIn(["data", "date"], new Date()),
-                  "dd MMM yyyy"
-                )}</time
+      entry.getIn(["data", "date"], new Date()),
+      "dd MM yyyy"
+    )}</time
               >
-            </small>
           </p>
 
-          <p>${entry.getIn(["data", "summary"], "")}</p>
+          <!--<p>${entry.getIn(["data", "summary"], "")}</p>-->
+
+              <p>Tagged as:
+            ${entry
+        .getIn(["data", "tags"], [])
+        .map((tag) => html` <a href="#" rel="tag">${tag}</a> `)}
+          </p>
 
           ${this.props.widgetFor("body")}
-          <p>
-            ${entry
-              .getIn(["data", "tags"], [])
-              .map((tag) => html` <a href="#" rel="tag">${tag}</a> `)}
-          </p>
+
         </article>
       </main>
     `;
