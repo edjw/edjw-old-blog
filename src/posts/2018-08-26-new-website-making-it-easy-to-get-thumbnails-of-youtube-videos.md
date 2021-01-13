@@ -10,7 +10,7 @@ tags:
 I made a web app that makes it easy to download thumbnails for YouTube videos. It’s called [Get YouTube Thumbnails](https://youtubethumbnails.pythonanywhere.com).
 
 <blockquote>
-Update 12 Jan 2021: This broke and I forgot how it worked so I couldn’t fix it. I’ve rebuilt it here: [getyoutubethumbnails.netlify.app](https://getyoutubethumbnails.netlify.app)
+Update 12 Jan 2021: This broke and I forgot how it worked so I couldn’t fix it. I’ve rebuilt it here: <a href="https://getyoutubethumbnails.netlify.app">getyoutubethumbnails.netlify.app</a>
 </blockquote>
 
 When you submit a YouTube URL, you get back the image, a link to that image, and the original height and width of that image (even if it's scaled down on your screen size).
