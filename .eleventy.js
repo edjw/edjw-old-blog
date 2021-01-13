@@ -1,6 +1,6 @@
 // RSS imports
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const dateToISO = require("@11ty/eleventy-plugin-rss/src/dateToISO");
+const dateToISO = require("@11ty/eleventy-plugin-rss/src/dateRfc3339");
 const absoluteUrl = require("@11ty/eleventy-plugin-rss/src/absoluteUrl");
 const htmlToAbsoluteUrls = require("@11ty/eleventy-plugin-rss/src/htmlToAbsoluteUrls");
 
