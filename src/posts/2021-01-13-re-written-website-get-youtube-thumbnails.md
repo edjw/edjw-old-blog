@@ -2,6 +2,9 @@
 title: "Re-written website: Get YouTube Thumbnails"
 date: 2021-01-13T19:01:23.800Z
 socialDescription: Ed Johnson-Williams' blog
+tags:
+  - new website
+  - svelte
 ---
 A few years ago, I made a tool called Get YouTube Thumbnails. [See my original blog post about it](https://edjohnsonwilliams.co.uk/2018/08/26/making-it-easy-to-get-thumbnails-of-youtube-videos.html).
 
