@@ -27,7 +27,7 @@ module.exports = async () => {
                         title: item.title,
                         url: item.link,
                         excerpt: item.excerpt,
-                        tags: items.tags
+                        tags: item.tags
                     })
                 }
             });
