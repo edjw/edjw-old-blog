@@ -27,10 +27,10 @@ module.exports = {
     bundle: false,
     hmr: true,
   },
-  optimize: {
-    bundle: true,
-    minify: true,
-    target: "es2020",
-  },
-
+  // Uncomment once https://github.com/snowpackjs/snowpack/commit/0fc858cf0e5ff65be57337985be63d68fa94035b is in Snowpack
+  // optimize: {
+  //   bundle: true,
+  //   minify: true,
+  //   target: "es2020",
+  // }
 };
