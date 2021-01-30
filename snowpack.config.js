@@ -15,9 +15,7 @@ module.exports = {
     "@snowpack/plugin-postcss",
   ],
   packageOptions: {
-    NODE_ENV: true,
-    source: "skypack",
-
+    NODE_ENV: true
   },
   buildOptions: {
     clean: true,
