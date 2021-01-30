@@ -27,11 +27,10 @@ module.exports = {
     bundle: false,
     hmr: true,
   },
-  experiments: {
-    optimize: {
-      bundle: true,
-      minify: true,
-      target: "es2020",
-    },
+  optimize: {
+    bundle: true,
+    minify: true,
+    target: "es2020",
   },
+
 };
