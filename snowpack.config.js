@@ -16,6 +16,8 @@ module.exports = {
   ],
   packageOptions: {
     NODE_ENV: true,
+    source: "skypack",
+
   },
   buildOptions: {
     clean: true,
@@ -33,6 +35,5 @@ module.exports = {
       minify: true,
       target: "es2020",
     },
-    source: "skypack",
   },
 };
