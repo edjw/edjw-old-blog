@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include "partials/head.njk" %}
-  <header class="">
+  <header>
     {% include "partials/header.njk" %}
   </header>
 
-  <body class="container grid h-screen max-w-4xl px-4 pt-4 mx-auto grid-cols-full grid-rows-auto-1-auto  ">
+  <body class="container grid h-screen max-w-4xl px-4 pt-4 mx-auto bg-white grid-cols-full grid-rows-auto-1-auto dark:bg-trueGray-800">
 
-    <main class=" ">
-            {{ content | safe }}
-        </main>
+    <main class="prose dark:prose-light">
+      {{ content | safe }}
+    </main>
 
-        {% include "partials/footer.njk" %}
+    {% include "partials/footer.njk" %}
 
-        {# <script type="module" src="/scripts/main.js" defer></script> #}
+    {# <script type="module" src="/scripts/main.js" defer></script> #}
 
-    </body>
+  </body>
 
 </html>

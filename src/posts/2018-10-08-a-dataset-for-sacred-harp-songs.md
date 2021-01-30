@@ -14,9 +14,9 @@ To make future analysis easiser, I've prepared a single dataset of all the songs
 
 ***
 
-**Download the** [**.CSV spreadsheet**](https://raw.githubusercontent.com/edjw/Sacred-Harp-datasets/master/sacred_harp_songs_data.csv) (Right click on this link and click Save or Download)
+**Download the [.CSV spreadsheet](https://raw.githubusercontent.com/edjw/Sacred-Harp-datasets/master/sacred_harp_songs_data.csv)** (Right click on this link and click Save or Download)
 
-**Download the** [**.JSON file**](https://raw.githubusercontent.com/edjw/Sacred-Harp-datasets/master/sacred_harp_songs_data.json) (Right click on this link and click Save or Download)
+**Download the [.JSON file](https://raw.githubusercontent.com/edjw/Sacred-Harp-datasets/master/sacred_harp_songs_data.json)** (Right click on this link and click Save or Download)
 
 ***
 

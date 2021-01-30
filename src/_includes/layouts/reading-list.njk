@@ -3,8 +3,8 @@ layout: layouts/page.njk
 section: reading-list
 ---
 
-<p class="">See what I've saved in Pocket, Raindrop, and Feedbin.</p>
-<h3 class="">
+<p>See what I've saved in Pocket, Raindrop, and Feedbin.</p>
+<h3>
         Latest 3 Pocket articles
     </h3>
 
@@ -12,7 +12,7 @@ section: reading-list
 
   <section class="readingListItem">
 
-    <p class="">
+    <p>
       <a href="{{ readingList[i].resolved_url }}"
                 class=" ">{{ readingList[i].resolved_title if readingList[i].resolved_title else readingList[i].resolved_url }}</a>
             {% if readingList

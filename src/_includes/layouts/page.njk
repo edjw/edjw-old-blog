@@ -2,10 +2,10 @@
 layout: layouts/base.njk
 section: page
 ---
-<article class="prose">
+<article class="prose dark:prose-light">
 
   {% if tagPage != true %}
-    <h2 class="">{{ title }}</h2>
+    <h2>{{ title }}</h2>
   {% endif %}
 
   {{ content | safe }}

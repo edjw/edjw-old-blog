@@ -1,13 +1,13 @@
 {% macro readingListItem(url, title, excerpt, publication) %}
-  <section class="readingListItem">
+  <section class="prose readingListItem dark:prose-light dark:bg-gray-800">
     <p class="leading-tight">
-      <a href="{{ url }}" class=" ">
-                {{ title }}
-            </a>
+      <a href="{{ url }}" >
+        {{ title }}
+      </a>
 
-        </p>
-        {% if excerpt %}
-            <p class="-mt-4">{{ excerpt }}</p>
+    </p>
+    {% if excerpt %}
+      <p class="-mt-4">{{ excerpt }}</p>
     {% endif %}
 
     {% if publication %}

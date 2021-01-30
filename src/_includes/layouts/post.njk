@@ -3,7 +3,7 @@ layout: layouts/base.njk
 section: post
 ---
 
-<article class="prose h-entry ">
+<article class="prose h-entry dark:prose-light">
 
   <!-- h-entry things -->
   <div class="hidden">
@@ -14,7 +14,7 @@ section: post
   <!-- End of h-entry things -->
 
   <h2 class="-mt-0 p-name ">{{ title }}</h2>
-  <section class="">
+  <section>
     <p class="my-1 ">
       <span>Published:</span>
       {{ page.date | readableDate }}</p>
@@ -36,7 +36,7 @@ section: post
       {% endif%}
 
     </section>
-    <div class="e-content  ">
+    <div class="e-content ">
       {{ content | safe }}
     </div>
 
