@@ -1,9 +1,13 @@
-<h1 class="text-4xl prose dark:prose-light">
-    <a class="text-4xl leading-relaxed no-underline border-b-8 border-yellow-200 hover:border-transparent h-card" rel="me" href="/"
-        {% if page.url == "/" %}
-            aria-current="page"
-        {% endif %}>
-        {{ site.title }}
-    </a>
-</h1>
+<div class="flex">
+    <h1 class="mr-6 text-4xl prose dark:prose-light">
+        <a class="text-4xl leading-relaxed no-underline border-b-8 border-yellow-200 hover:border-transparent h-card" rel="me" href="/"
+            {% if page.url == "/" %}
+                aria-current="page"
+            {% endif %}>
+            {{ site.title }}
+        </a>
+    </h1>
+    <button id="themeButton" class="pt-2.5 dark:text-white"></button>
+
+</div>
 {% include "partials/nav.njk" %}

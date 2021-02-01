@@ -6,7 +6,7 @@ module.exports = {
     "./src/**/*.njk",
     "./src/**/**/*.njk",
   ],
-  darkMode: "media", // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -33,6 +33,9 @@ module.exports = {
               'a:hover': {
                 backgroundColor: theme('colors.yellow.200'),
                 color: theme("colors.trueGray.800")
+              },
+              button: {
+                color: theme('colors.white'),
               },
               strong: {
                 color: theme('colors.white'),

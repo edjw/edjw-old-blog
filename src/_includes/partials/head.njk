@@ -21,25 +21,25 @@
   {# Twitter metadata #}
   <meta name="twitter:card" content="summary">
   {% if site.author.twitterUsername %}
-    <meta name="twitter:site" content="{{ site.author.twitterUsername }}">
+  <meta name="twitter:site" content="{{ site.author.twitterUsername }}">
   {% endif %}
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ socialDescription or site.description }}">
   {% if site.author.twitterUsername %}
-    <meta name="twitter:creator" content="{{ site.author.twitterUsername }}">
+  <meta name="twitter:creator" content="{{ site.author.twitterUsername }}">
   {% endif %}
   {#
   <meta name="twitter:image" content="http://www.example.com/image.jpg"> #}
   {# End of Twitter metadata #}
 
   {# Facebook / Open Graph metadata #}
-  <meta property="og:title" content="{{ title }}"/>
-  <meta property="og:type" content="article"/>
-  <meta property="og:url" content="{{ site.url}}{{ page.url }}"/>
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ site.url}}{{ page.url }}" />
   {#
   <meta property="og:image" content="http://example.com/image.jpg" /> #}
-  <meta property="og:description" content="{{ socialDescription or site.description }}"/>
-  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:description" content="{{ socialDescription or site.description }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
   {# End of Facebook / Open Graph metadata #}
 
   {# Rel links #}
@@ -87,5 +87,58 @@
   </style> #}
 
   <link rel="stylesheet" href="/styles/styles.css">
-<link rel='alternate' type='application/rss+xml' title="RSS feed for Ed Johnson-Williams’ blog" href='/feed.xml' />
+  <link rel="alternate" type="application/rss+xml" title="RSS feed for Ed Johnson-Williams’ blog" href="/feed.xml" />
+
+  <script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+
+      let theme = localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+
+      const toggleTheme = () => {
+        if (theme === "dark") {
+          switchToLight();
+        } else if (theme === "light") {
+          switchToDark();
+        }
+      };
+
+      const switchToDark = () => {
+        localStorage.theme = "dark";
+        theme = "dark";
+        document
+          .documentElement
+          .classList
+          .add("dark");
+        themeButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        class="w-6 h-6">
+        <title id="switch-to-dark-theme-title">Switch to dark theme</title>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg > `;
+      };
+
+      const switchToLight = () => {
+        localStorage.theme = "light";
+        theme = "light";
+        document
+          .documentElement
+          .classList
+          .remove("dark");
+        themeButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"   class="w-6 h-6">
+        <title id="switch-to-light-theme-title">Switch to light theme</title>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>`;
+      };
+
+      const themeButton = document.querySelector("button#themeButton");
+
+      themeButton.addEventListener("click", toggleTheme);
+
+      if (theme === "dark") {
+        switchToDark();
+      }
+
+      else if (theme === "light") {
+        switchToLight();
+      }
+
+    });
+  </script>
 </head>
