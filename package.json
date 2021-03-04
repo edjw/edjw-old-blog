@@ -25,7 +25,7 @@
     "eleventy-plugin-reading-time": "^0.0.1",
     "luxon": "^1.25.0",
     "markdown-it-footnote": "^3.0.2",
-    "postcss": "^8.2.6",
+    "postcss": "^8.2.7",
     "postcss-cli": "^8.3.1",
     "snowpack": "^3.0.11",
     "tailwindcss": "^2.0.3",
