@@ -9,7 +9,7 @@
     "start": "npm run dev"
   },
   "devDependencies": {
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.0.2",
     "html-minifier": "^4.0.0"
   },
   "dependencies": {
