@@ -20,7 +20,7 @@
     "@snowpack/plugin-postcss": "^1.1.0",
     "@snowpack/plugin-run-script": "^2.3.0",
     "@tailwindcss/typography": "^0.4.0",
-    "autoprefixer": "^10.2.4",
+    "autoprefixer": "^10.2.6",
     "dotenv": "^8.2.0",
     "eleventy-plugin-reading-time": "^0.0.1",
     "luxon": "^1.25.0",
